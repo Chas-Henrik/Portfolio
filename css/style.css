@@ -1,0 +1,77 @@
+/* General Selectors */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --day-color: #45406C;
+    --night-color: #D9D9D9;
+    --day-background: #FFFFFF;
+    --night-background: #191919;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--day-color);
+    background: var(--day-background);
+}
+
+body {
+    margin: 10px 40px;
+}
+
+section {
+    margin: 10svh 0;
+    text-align: center;
+}
+
+/* Introduction Section */
+
+.introduction-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin: 15svh 0;
+}
+
+.introduction-textbox {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.introduction-textbox p {
+    margin: 6px 0;
+}
+
+.blue-purple-gradient-text-color {
+    background-image: linear-gradient(to right, #25a5fa 0%, #a74afd 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.gradient-border-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f52bc9, #34adfd);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;   
+}
+
+/* Tech Stack Section */
+
+/* Projects Section */
+
