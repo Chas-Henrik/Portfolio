@@ -86,7 +86,7 @@ section {
 
 .project-card {
     width: 260px;
-    min-width: 260px;
+    min-width: 230px;
     height: 390px;
     min-height: 390px;
     border-radius: 15px;
@@ -111,18 +111,15 @@ section {
     margin: 0 10px;
     text-align: left;
     overflow: hidden;
+    text-wrap: nowrap;
 }
 
-.project-card-bottom > h3 {
-    height: 10%;
-    margin: 10px 0;
-    text-align: center;
+.project-card-title {
+    text-align: center;    
 }
 
 .project-card-bottom > p {
-    margin: 5px 0;
     color: gray;
-    overflow: hidden;
 }
 
 .project-card-bottom p > span {
@@ -130,14 +127,20 @@ section {
 }
 
 .project-card-description {
-    height: 50%;
+    height: 45%;
+    overflow: hidden;
+    text-wrap: wrap;
+}
+
+.project-tech-stack {
+    margin-bottom: 0;
 }
 
 .project-card-footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: bold;   
+    font-weight: bold;  
 }
 
 .project-card-footer-container a {
