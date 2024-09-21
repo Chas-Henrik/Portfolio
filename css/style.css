@@ -26,13 +26,27 @@ body {
     padding: 0;
 }
 
-main {
-    margin: 5svh 40px;
+header {
+    padding: 0 4vw;
+}
+
+main, footer {
+    margin: 5svh 5vw;
 }
 
 section {
     margin: 5svh 0;
     text-align: center;
+}
+
+hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
+.first-flexbox-item {
+    margin-right: auto;
 }
 
 .gradient-text {
@@ -68,10 +82,6 @@ nav {
     flex-wrap: wrap;
     text-align: center;
     margin: 0px 40px;
-}
-
-.first-menu-item {
-    margin-right: auto;
 }
 
 .row-menu-links {
@@ -244,10 +254,21 @@ nav {
     color: var(--day-color);
 }
 
+/*** Contact Section ***/
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5vw;
+}
+
+
 /*** Media Queries ***/
 
-/* On screens that are 780px or more */
-@media only screen and (min-width: 780px) {
+/* On screens that are 950px or more */
+@media only screen and (min-width: 950px) {
     header {
         height: 75px;
     }
@@ -256,18 +277,8 @@ nav {
     }
 }
 
-/* On screens that are 640px to 700px */
-@media only screen and (min-width: 640px) and (max-width: 780px) {
-    header {
-        height: 125px;
-    }
-    html {
-        scroll-padding-top: calc(125px + 3svh);
-    }
-}
-
-/* On screens that are 520px to 640px */
-@media only screen and (min-width: 520px) and (max-width: 640px) {
+/* On screens that are 640px to 950px */
+@media only screen and (min-width: 640px) and (max-width: 950px) {
     header {
         height: 150px;
     }
@@ -276,8 +287,8 @@ nav {
     }
 }
 
-/* On screens that are 370px to 520px */
-@media only screen and (min-width: 370px) and (max-width: 520px) {
+/* On screens that are 520px to 640px */
+@media only screen and (min-width: 520px) and (max-width: 640px) {
     header {
         height: 200px;
     }
@@ -286,13 +297,23 @@ nav {
     }
 }
 
+/* On screens that are 370px to 520px */
+@media only screen and (min-width: 370px) and (max-width: 520px) {
+    header {
+        height: 250px;
+    }
+    html {
+        scroll-padding-top: calc(250px + 3svh);
+    }
+}
+
 /* On screens that are less than 370px */
 @media only screen and (max-width: 370px) {
     header {
-        height: 320px;
+        height: 370px;
     }
     html {
-        scroll-padding-top: calc(320px + 3svh);
+        scroll-padding-top: calc(370px + 3svh);
     }
 /*
     .row-menu-links {
