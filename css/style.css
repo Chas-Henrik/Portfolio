@@ -104,11 +104,17 @@ nav {
 }
 
 .row-menu-list li a {
+    display: inline-block;
+    padding: 4px 6px;
     text-decoration: none;
     text-wrap: nowrap;
     color: inherit;
 }
 
+.hamburger-menu {
+    display: none;
+    margin-left: auto;
+}
 
 /*** Introduction Section ***/
 
@@ -288,4 +294,17 @@ nav {
     html {
         scroll-padding-top: calc(320px + 3svh);
     }
+/*
+    .row-menu-links {
+        display: none;
+        flex-direction: column;
+    }
+    .row-menu-icons {
+        display: none;
+        flex-direction: column;
+    }
+    .hamburger-menu {
+        display: inline-block;
+    }
+*/
 }
