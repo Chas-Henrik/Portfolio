@@ -101,10 +101,9 @@ nav {
 }
 
 .row-menu-links {
-    list-style-type: none;
     padding-inline-start: 0px;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -112,16 +111,16 @@ nav {
 }
 
 .row-menu-icons {
-    list-style-type: none;
     padding-inline-start: 0px;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
     width: stretch;
 }
 
 .row-menu-list li {
+    list-style: none;
     padding: 5px;
     color: #666666;
     font-weight: bold;
@@ -348,8 +347,8 @@ nav {
     }
 }
 
-/* On screens that are 370px to 520px */
-@media only screen and (min-width: 370px) and (max-width: 520px) {
+/* On screens that are 300px to 520px */
+@media only screen and (min-width: 300px) and (max-width: 520px) {
     header {
         height: 250px;
     }
@@ -358,8 +357,8 @@ nav {
     }
 }
 
-/* On screens that are less than 370px */
-@media only screen and (max-width: 370px) {
+/* On screens that are less than 300px */
+@media only screen and (max-width: 300px) {
     header {
         height: 370px;
     }
@@ -367,9 +366,6 @@ nav {
         scroll-padding-top: calc(370px + 3svh);
     }
     .row-menu-links {
-        flex-direction: column;
-    }
-    .row-menu-icons {
         flex-direction: column;
     }
     .hamburger-menu {
