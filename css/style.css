@@ -45,6 +45,14 @@ hr {
     border: none;
 }
 
+.biggest-font-size {
+    font-size: 1.8rem;
+}
+
+.smallest-font-size {
+    font-size: 0.7rem;
+}
+
 .first-flexbox-item {
     margin-right: auto;
 }
@@ -65,7 +73,15 @@ hr {
     background-image: linear-gradient(to right, #25a5fa, #a74afd);
 }
 
-/*** Header Section ***/
+.purple-purple-light-gradient {
+    background-image: linear-gradient(to right, #9C27BA, #A816B4);
+}
+
+.purple-purple-red-gradient {
+    background-image: linear-gradient(to right, #B106B1, #C500A8);
+}
+
+/*** Header ***/
 header {
     position: sticky;
     top: 0px;
@@ -85,16 +101,19 @@ nav {
 }
 
 .row-menu-links {
+    list-style-type: none;
+    padding-inline-start: 0px;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    font-size: 0.7rem;
     font-weight: lighter;
 }
 
 .row-menu-icons {
+    list-style-type: none;
+    padding-inline-start: 0px;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
@@ -103,10 +122,9 @@ nav {
 }
 
 .row-menu-list li {
-    padding: 10px;
+    padding: 5px;
     color: #666666;
     font-weight: bold;
-    list-style: none;
 }
 
 .row-menu-list li:hover {
@@ -132,7 +150,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     gap: 10px;
 }
@@ -153,16 +171,16 @@ nav {
     align-items: center;
     background: linear-gradient(to bottom, #f52bc9, #34adfd);
     border-radius: 50%;
-    width: 150px;
-    min-width: 150px;
-    height: 150px;
-    min-height: 150px;
+    width: 200px;
+    min-width: 200px;
+    height: 200;
+    min-height: 200px;
 }
 
 .profile-image {
     border-radius: 50%;
     width: 95%;
-    height: 95%;
+    aspect-ratio: 1/1;
     object-fit: cover;   
 }
 
@@ -264,6 +282,18 @@ nav {
     gap: 5vw;
 }
 
+/*** Footer ***/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.footer-span {
+    margin-left: auto;
+}
 
 /*** Media Queries ***/
 
@@ -315,17 +345,15 @@ nav {
     html {
         scroll-padding-top: calc(370px + 3svh);
     }
-/*
     .row-menu-links {
-        display: none;
         flex-direction: column;
     }
     .row-menu-icons {
-        display: none;
         flex-direction: column;
     }
     .hamburger-menu {
         display: inline-block;
+        justify-self: start end;
+        align-self: start end;
     }
-*/
 }
