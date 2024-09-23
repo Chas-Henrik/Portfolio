@@ -49,9 +49,6 @@ hr {
     display: inline-block;
     width: 20px;
     height: 20px;
-    position: relative;
-    top: 5px;
-    left: -2px;
 }
 
 .biggest-font-size {
@@ -112,7 +109,7 @@ nav {
 .row-menu-links {
     padding-inline-start: 0px;
     display: inline-flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -125,17 +122,19 @@ nav {
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
+    gap: 5px;
     width: stretch;
+    margin-left: 20px;
 }
 
 .row-menu-list li {
     list-style: none;
-    padding: 5px;
+    padding: 2px 5px;
     color: #666666;
     font-weight: bold;
 }
 
-.row-menu-list li:hover {
+.row-menu-list li a:hover {
     color: rgb(84, 196, 248);
 }
 
@@ -282,6 +281,16 @@ nav {
     font-weight: bold; 
     text-align: center;
     padding: 2px;
+}
+
+.project-card-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: -2px;
+    z-index: -1;
 }
 
 .project-card-footer-container a {
