@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    <title>Flexbox Exercise - Profile Card</title>
+
     <title>Henrik's Portfolio Page</title>
 </head>
 <body>
-    <header>
+    <header class="dm-sans-normal">
         <nav>
             <span class="first-flexbox-item gradient-text blue-red-gradient"><strong>{007}<br>henriksuurik</strong></span>
-            <ul class="row-menu-links row-menu-list smallest-font-size">
+            <ul class="row-menu-links row-menu-list">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#tech-stack">Tech Stack</a></li>
@@ -30,10 +37,10 @@
         <section id="about">
             <div class="introduction-container">
                 <div class="introduction-textbox">
-                    <h2 class="biggest-font-size">Hi👋,<br>
+                    <h1>Hi👋,<br>
                     My name is<br>
                     <span class="gradient-text blue-purple-gradient">Henrik Suurik<br></span>
-                    I build things for web</h2>
+                    I build things for web</h1>
                 </div>
                 <div class="gradient-border-container">
                     <img class="profile-image" src="./img/Henrik.jpg" alt="Henrik.jpg">
@@ -65,24 +72,24 @@
             <h2>Projects</h2>
             <p>Things I've built so far</p>
             <div class="project-card-container">
-                <div class="project-card">
+                <div class="project-card poppins-regular">
                     <img class="project-card-image" src="./img/project1.jpg" alt="project1.jpg">
                     <div class="project-card-bottom">
-                        <h3 class="project-card-title">Profile Card</h3>
-                        <p class="project-card-description">Contains profile cards created with HTML & CSS. Profile dialog popup for the 'Profile' button has not been implemented.</p>
-                        <p class="project-tech-stack"><span>Tech Stack</span> : HTML, CSS</p>
+                        <p class="project-card-title poppins-medium">Profile Card</p>
+                        <p class="project-card-description poppins-light">Contains profile cards created with HTML & CSS. Profile dialog popup for the 'Profile' button has not been implemented.</p>
+                        <p class="project-tech-stack">Tech Stack : <span class="poppins-light">HTML, CSS</span></p>
                         <div class="project-card-footer-container">
                             <p><a href="https://chas-henrik.github.io/Profile-Card/" target="_blank"><img class="project-card-icon" src="./svg/link-icon.svg" alt="link-icon.svg">Live Preview</a></p>
                             <p><a href="https://github.com/Chas-Henrik/Profile-Card" target="_blank"><img class="project-card-icon" src="./svg/github-icon.svg" alt="github-icon.svg">View Code</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card poppins-regular">
                     <img class="project-card-image" src="./img/project2.jpg" alt="project2.jpg">
                     <div class="project-card-bottom">
-                        <h3 class="project-card-title">Menu Nailbiter</h3>
-                        <p class="project-card-description">Contains a hamburger menu intended for cellphone navigation. Press the hamburger to toggle the menu. The search functionality has not been implemented.</p>
-                        <p class="project-tech-stack"><span>Tech Stack</span> : HTML, CSS</p>
+                        <p class="project-card-title poppins-medium">Menu Nailbiter</p>
+                        <p class="project-card-description poppins-light">Contains a hamburger menu intended for cellphone navigation. Press the hamburger to toggle the menu. The search functionality has not been implemented.</p>
+                        <p class="project-tech-stack">Tech Stack : <span class="poppins-light">HTML, CSS</span></p>
                         <div class="project-card-footer-container">
                             <p><a href="https://chas-henrik.github.io/Menu-Nailbiter/" target="_blank"><img class="project-card-icon" src="./svg/link-icon.svg" alt="link-icon.svg">Live Preview</a></p>
                             <p><a href="https://github.com/Chas-Henrik/Menu-Nailbiter" target="_blank"><img class="project-card-icon" src="./svg/github-icon.svg" alt="github-icon.svg">View Code</a></p>
@@ -92,9 +99,9 @@
                 <div class="project-card">
                     <img class="project-card-image" src="./img/project3.jpg" alt="project3.jpg">
                     <div class="project-card-bottom">
-                        <h3 class="project-card-title">Project 3 Title goes here</h3>
-                        <p class="project-card-description">This is a sample project description random things are here in description This is a sample project lorem ipsum generator for dummy content</p>
-                        <p class="project-tech-stack"><span>Tech Stack</span> : HTML, CSS</p>
+                        <p class="project-card-title poppins-medium">Project Tile goes here</p>
+                        <p class="project-card-description poppins-light">This is a sample project description random things are here in description This is a sample project lorem ipsum generator for dummy content</p>
+                        <p class="project-tech-stack">Tech Stack : <span class="poppins-light">HTML, JavaScript, SASS, React</span></p>
                         <div class="project-card-footer-container">
                             <p><a href="#" target="_blank"><img class="project-card-icon" src="./svg/link-icon.svg" alt="link-icon.svg">Live Preview</a></p>
                             <p><a href="#" target="_blank"><img class="project-card-icon" src="./svg/github-icon.svg" alt="github-icon.svg">View Code</a></p>
@@ -104,9 +111,9 @@
                 <div class="project-card">
                     <img class="project-card-image" src="./img/project4.jpg" alt="project4.jpg">
                     <div class="project-card-bottom">
-                        <h3 class="project-card-title">Project 4 Title goes here</h3>
-                        <p class="project-card-description">This is a sample project description random things are here in description This is a sample project lorem ipsum generator for dummy content</p>
-                        <p class="project-tech-stack"><span>Tech Stack</span> : HTML, CSS</p>
+                        <p class="project-card-title poppins-medium">Project Tile goes here</p>
+                        <p class="project-card-description poppins-light">This is a sample project description random things are here in description This is a sample project lorem ipsum generator for dummy content</p>
+                        <p class="project-tech-stack">Tech Stack : <span class="poppins-light">HTML, JavaScript, SASS, React</span></p>
                         <div class="project-card-footer-container">
                             <p><a href="#" target="_blank"><img class="project-card-icon" src="./svg/link-icon.svg" alt="link-icon.svg">Live Preview</a></p>
                             <p><a href="#" target="_blank"><img class="project-card-icon" src="./svg/github-icon.svg" alt="github-icon.svg">View Code</a></p>
@@ -116,9 +123,9 @@
                 <div class="project-card">
                     <img class="project-card-image" src="./img/project5.jpg" alt="project5.jpg">
                     <div class="project-card-bottom">
-                        <h3 class="project-card-title">Project 5 Title goes here</h3>
-                        <p class="project-card-description">This is a sample project description random things are here in description This is a sample project lorem ipsum generator for dummy content</p>
-                        <p class="project-tech-stack"><span>Tech Stack</span> : HTML, CSS</p>
+                        <p class="project-card-title poppins-medium">Project Tile goes here</p>
+                        <p class="project-card-description poppins-light">This is a sample project description random things are here in description This is a sample project lorem ipsum generator for dummy content</p>
+                        <p class="project-tech-stack">Tech Stack : <span class="poppins-light">HTML, JavaScript, SASS, React</span></p>
                         <div class="project-card-footer-container">
                             <p><a href="#" target="_blank"><img class="project-card-icon" src="./svg/link-icon.svg" alt="link-icon.svg">Live Preview</a></p>
                             <p><a href="#" target="_blank"><img class="project-card-icon" src="./svg/github-icon.svg" alt="github-icon.svg">View Code</a></p>
@@ -128,9 +135,9 @@
                 <div class="project-card">
                     <img class="project-card-image" src="./img/project6.jpg" alt="project6.jpg">
                     <div class="project-card-bottom">
-                        <h3 class="project-card-title">Project 6 Title goes here</h3>
-                        <p class="project-card-description">This is a sample project description random things are here in description This is a sample project lorem ipsum generator for dummy content</p>
-                        <p class="project-tech-stack"><span>Tech Stack</span> : HTML, CSS</p>
+                        <p class="project-card-title poppins-medium">Project Tile goes here</p>
+                        <p class="project-card-description poppins-light">This is a sample project description random things are here in description This is a sample project lorem ipsum generator for dummy content</p>
+                        <p class="project-tech-stack">Tech Stack : <span class="poppins-light">HTML, JavaScript, SASS, React</span></p>
                         <div class="project-card-footer-container">
                             <p><a href="#" target="_blank"><img class="project-card-icon" src="./svg/link-icon.svg" alt="link-icon.svg">Live Preview</a></p>
                             <p><a href="#" target="_blank"><img class="project-card-icon" src="./svg/github-icon.svg" alt="github-icon.svg">View Code</a></p>
@@ -143,8 +150,8 @@
         <section id="contact">
             <div class="contact-container">
                 <h2 class="first-flexbox-item"><strong>{007}<br>henriksuurik</strong></h2>
-                <p class="smallest-font-size">+46 (0)70 7180388</p>
-                <p class="smallest-font-size">henrik.suurik@chasacademy.se</p>
+                <p class="contact-phone">+46 (0)70 7180388</p>
+                <p class="contact-email dm-sans">henrik.suurik@chasacademy.se</p>
                 <ul class="row-menu-icons row-menu-list">
                     <li><a href="https://github.com/Chas-Henrik?tab=repositories" target="_blank"><img class="icon" src="./svg/github-icon.svg" alt="github-icon.svg"></a></li>
                     <li><a href="https://x.com/home" target="_blank"><img class="icon" src="./svg/twitter-icon.svg" alt="twitter-icon.svg"></a></li>
@@ -156,14 +163,14 @@
     <footer>
         <hr>
         <div class="footer">
-            <ul class="row-menu-links row-menu-list smallest-font-size">
+            <ul class="dm-sans-small row-menu-links row-menu-list">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#tech-stack">Technologies</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <span class="footer-span smallest-font-size">Designed and built by <span class="gradient-text blue-purple-gradient">Henrik Suurik</span> with <span class="gradient-text purple-purple-light-gradient">Love</span> & <span class="gradient-text purple-purple-red-gradient">Coffee</span></span>
+            <span class="footer-span">Designed and built by <span class="gradient-text blue-purple-gradient">Henrik Suurik</span> with <span class="gradient-text purple-purple-light-gradient">Love</span> & <span class="gradient-text purple-purple-red-gradient">Coffee</span></span>
         </div>
     </footer>
 </body>

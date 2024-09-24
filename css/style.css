@@ -11,14 +11,28 @@
     --day-background: #FFFFFF;
     --night-background: #191919;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
     color: var(--day-color);
     background: var(--day-background);
 }
 
 html {
     scroll-padding-top: calc(50px + 5svh);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 5.8rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+p {
+    font-size: 3.2rem;
 }
 
 body {
@@ -35,7 +49,7 @@ main, footer {
 }
 
 section {
-    margin: 5svh 0;
+    margin-top: 20svh;
     text-align: center;
 }
 
@@ -45,18 +59,44 @@ hr {
     border: none;
 }
 
+.poppins-light {
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dm-sans-normal {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.dm-sans-small {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
 .icon {
     display: inline-block;
     width: 20px;
     height: 20px;
-}
-
-.biggest-font-size {
-    font-size: 1.8rem;
-}
-
-.smallest-font-size {
-    font-size: 0.7rem;
 }
 
 .first-flexbox-item {
@@ -72,7 +112,7 @@ hr {
 }
 
 .blue-red-gradient {
-    background-image: linear-gradient(to right, #34adfd, #f52bc9);
+    background-image: linear-gradient(to right, #13B0F5, #CA24B4);
 }
 
 .blue-purple-gradient {
@@ -102,6 +142,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    align-content: flex-start;
     text-align: center;
     margin: 0px 40px;
 }
@@ -113,7 +154,6 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    font-weight: lighter;
 }
 
 .row-menu-icons {
@@ -131,7 +171,6 @@ nav {
     list-style: none;
     padding: 2px 5px;
     color: #666666;
-    font-weight: bold;
 }
 
 .row-menu-list li a:hover {
@@ -163,25 +202,25 @@ nav {
 }
 
 .introduction-textbox {
-    font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
 }
 
-.introduction-textbox p {
+.introduction-textbox > h1 {
     margin: 6px 0;
+    font-size: 5.8rem;
 }
 
 .gradient-border-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #f52bc9, #34adfd);
+    background: linear-gradient(to bottom, #E70FAA, #00C0FD);
     border-radius: 50%;
-    width: 200px;
-    min-width: 200px;
-    height: 200;
-    min-height: 200px;
+    width: 349px;
+    min-width: 349px;
+    height: 349;
+    min-height: 349px;
 }
 
 .profile-image {
@@ -199,12 +238,12 @@ nav {
     justify-content: start;
     align-items: center;
     gap: 8vw;
-    margin: 7svh 0;
+    margin: 10svh 0;
 }
 
 .tech-stack-img {
-    width: 75px;
-    aspect-ratio: 1/1;
+    width: 120px;
+    height: auto;
 }
 
 /*** Projects Section ***/
@@ -219,21 +258,20 @@ nav {
 }
 
 .project-card {
-    width: 260px;
-    min-width: 230px;
-    height: 390px;
-    min-height: 390px;
+    width: 373px;
+    min-width: 373px;
+    height: 567px;
+    min-height: 567px;
     border-radius: 15px;
     box-shadow: 2px 2px 4px 2px rgba(189, 188, 188, 0.5);
-    font-size: 13px;
     overflow: hidden;
     transition: all 0.1s ease-in;
+    font-size: 1.6rem;
 }
 
 .project-card * {
     margin: 0;
     padding: 0;
-    font-family: Poppins, Verdana, sans-serif;
 }
 
 .project-card:hover {
@@ -248,7 +286,7 @@ nav {
 
 .project-card-bottom {
     height: 55%;
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 .project-card-bottom > * {
@@ -263,24 +301,36 @@ nav {
     padding: 10px;
     text-align: center;
     text-wrap: nowrap;
+    font-size: 2.8rem;
 }
 
 .project-card-description {
-    height: 45%;
+    height: 50%;
+    font-size: 1.125rem;
+    color: #666666;
+    font-size: 1.8rem;
 }
 
 .project-tech-stack {
-    height: 15%;
+    height: 10%;
+    font-size: 1.6rem;
+}
+
+.project-tech-stack > span {
+    font-size: 1.4rem;
 }
 
 .project-card-footer-container {
     height: 22%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    font-weight: bold; 
     text-align: center;
     padding: 2px;
+}
+
+.project-card-footer-container p {
+    font-size: 1.6rem;
 }
 
 .project-card-icon {
@@ -297,10 +347,6 @@ nav {
     color: var(--day-color);
 }
 
-.project-card-bottom > p {
-    color: gray;
-}
-
 .project-card-bottom p > span {
     color: var(--day-color);
 }
@@ -315,6 +361,14 @@ nav {
     gap: 5vw;
 }
 
+.contact-phone {
+    font-size: 1.8rem;
+}
+
+.contact-email {
+    font-size: 1.8rem;
+}
+
 /*** Footer ***/
 
 .footer {
@@ -322,6 +376,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    font-size: 1.8rem;
 }
 
 .footer-span {
@@ -331,8 +386,8 @@ nav {
 
 /*** Media Queries ***/
 
-/* On screens that are 950px or more */
-@media only screen and (min-width: 950px) {
+/* On screens that are 940px or more */
+@media only screen and (min-width: 1040px)  {
     header {
         height: 75px;
     }
@@ -341,28 +396,8 @@ nav {
     }
 }
 
-/* On screens that are 640px to 950px */
-@media only screen and (min-width: 640px) and (max-width: 950px) {
-    header {
-        height: 150px;
-    }
-    html {
-        scroll-padding-top: calc(150px + 3svh);
-    }
-}
-
 /* On screens that are 520px to 640px */
-@media only screen and (min-width: 520px) and (max-width: 640px) {
-    header {
-        height: 200px;
-    }
-    html {
-        scroll-padding-top: calc(200px + 3svh);
-    }
-}
-
-/* On screens that are 300px to 520px */
-@media only screen and (min-width: 300px) and (max-width: 520px) {
+@media only screen and (min-width: 640px) and (max-width: 1040px) {
     header {
         height: 250px;
     }
@@ -371,13 +406,23 @@ nav {
     }
 }
 
+/* On screens that are 300px to 520px */
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+    header {
+        height: 300px;
+    }
+    html {
+        scroll-padding-top: calc(300px + 3svh);
+    }
+}
+
 /* On screens that are less than 300px */
 @media only screen and (max-width: 300px) {
     header {
-        height: 370px;
+        height: 400px;
     }
     html {
-        scroll-padding-top: calc(370px + 3svh);
+        scroll-padding-top: calc(400px + 3svh);
     }
     .row-menu-links {
         flex-direction: column;
