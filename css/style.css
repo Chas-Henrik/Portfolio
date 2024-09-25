@@ -6,13 +6,11 @@
 }
 
 :root {
-    --day-color: #45406C;
-    --night-color: #D9D9D9;
-    --day-background: #FFFFFF;
-    --night-background: #191919;
-
-    color: var(--day-color);
-    background: var(--day-background);
+    --header-color: #45406C;
+    --paragraph-color: #666666;
+    --background-color: #FFFFFF;
+    --card-black-color: #000000;
+    --card-gray-color: #666666;
 }
 
 html {
@@ -21,18 +19,22 @@ html {
     font-weight: 400;
     font-style: normal;
     font-size: 62.5%;
+    background: var(--background-color);
 }
 
 h1 {
     font-size: 5.8rem;
+    color: var(--header-color);
 }
 
 h2 {
     font-size: 4.8rem;
+    color: var(--header-color);
 }
 
 p {
     font-size: 3.2rem;
+    color: var(--paragraph-color);
 }
 
 body {
@@ -131,7 +133,7 @@ hr {
 header {
     position: sticky;
     top: 0px;
-    background-color: var(--day-background);
+    background-color: var(--background-color);
     margin: 0;
     width: 100%;
     height: 50px;
@@ -286,28 +288,28 @@ nav {
 
 .project-card-bottom {
     height: 55%;
-    margin: 0 30px;
+    margin: 0 7.5%;
 }
 
 .project-card-bottom > * {
-    width: 100%;
     overflow: hidden;
     text-wrap: wrap;
     text-align: left;
 }
 
 .project-card-title {
-    height: 18%;
-    padding: 10px;
+    height: 20%;
+    padding: 10px 0;
     text-align: center;
     text-wrap: nowrap;
     font-size: 2.8rem;
+    color: var(--card-black-color);
 }
 
 .project-card-description {
-    height: 50%;
+    height: 45%;
     font-size: 1.125rem;
-    color: #666666;
+    color: var(--card-gray-color);
     font-size: 1.8rem;
 }
 
@@ -321,7 +323,7 @@ nav {
 }
 
 .project-card-footer-container {
-    height: 22%;
+    height: 20%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -344,11 +346,11 @@ nav {
 }
 
 .project-card-footer-container a {
-    color: var(--day-color);
+    color: var(--card-black-color);
 }
 
 .project-card-bottom p > span {
-    color: var(--day-color);
+    color: var(--card-black-color);
 }
 
 /*** Contact Section ***/
