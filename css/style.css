@@ -11,6 +11,7 @@
     --background-color: #FFFFFF;
     --card-black-color: #000000;
     --card-gray-color: #666666;
+    --text-alignment: center;
 }
 
 html {
@@ -52,7 +53,7 @@ main {
 
 section {
     margin-top: 20svh;
-    text-align: center;
+    text-align: var(--text-alignment);
 }
 
 hr {
@@ -151,9 +152,9 @@ nav {
     font-size: 2rem;
 }
 
-/* .first-flexbox-item {
+.first-flexbox-item {
     margin-right: auto;
-} */
+}
 
 .header-menu {
     display: flex;
@@ -324,7 +325,7 @@ nav {
 
 .project-card-title {
     height: 20%;
-    text-align: center;
+    text-align: var(--text-alignment);
     text-wrap: nowrap;
     font-size: 2.8rem;
     color: var(--card-black-color);
@@ -422,11 +423,15 @@ nav {
 
 /* On screens that are 940px or more */
 @media only screen and (max-width: 940px)  {
+    :root {
+        --text-alignment: left;
+    }
     header {
         height: 280px;
     }
     html {
         scroll-padding-top: calc(280px + 3svh);
+        font-size: calc(62.5% / 2);
     }
     nav {
         align-items: flex-start;
