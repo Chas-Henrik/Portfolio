@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-color: #45406C;
+    --paragraph-color: #666666;
+    --background-color: #FFFFFF;
+    --card-black-color: #000000;
+    --card-gray-color: #666666;
+    --text-alignment: center;
+    
+    /* gradient colors */
+    --logo-gradient-start: #13B0F5;
+    --logo-gradient-end: #CA24B4;
+    --name-gradient-start: #25a5fa;
+    --name-gradient-end: #a74afd;
+    --border-gradient-start: #E70FAA;
+    --border-gradient-end: #00C0FD;
+    --love-gradient-start: #9C27BA;
+    --love-gradient-end: #A816B4;
+    --coffee-gradient-start: #B106B1;
+    --coffee-gradient-end: #C500A8;
+}
