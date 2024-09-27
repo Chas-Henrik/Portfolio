@@ -1,5 +1,17 @@
 
 /*** General Selectors ***/
+:root {
+    /* Local Styles */
+    --local-solid-heading: #42446E;
+    --local-dark-content: #666666;
+    --local-solid-heading-dark-mode: #CCCCCC;
+    --local-light-content: #A7A7A7;
+    --local-dark-mode: #191919;
+    --local-button-text: #018C0F;
+    --local-button-success: #D7FFE0;
+    --text-alignment: center;
+}
+
 
 html {
     scroll-padding-top: calc(50px + 5svh);
@@ -40,8 +52,8 @@ section {
 }
 
 hr {
-    height: 1px;
-    background-color: #ccc;
+    height: 2px;
+    background-color: var(--local-solid-heading);
     border: none;
 }
 
@@ -279,6 +291,88 @@ header nav > label {
     aspect-ratio: 1/1;
     object-fit: cover;   
 }
+
+/*** Work Experience Section ***/
+.work-experiences-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.work-experience-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid var(--border-light);
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.work-experience-role {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-experience-role > .role {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    letter-spacing: 1;
+    color: var(--local-dark-content);
+}
+
+.work-experience-role > .job-type {
+    width: 84px;
+    height: 24px;
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--local-button-text);
+    background-color: var(--local-button-success);
+    border-radius: 100px;
+}
+
+.work-experience-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-experience-info p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    letter-spacing: 1;
+    color: var(--local-light-content);
+    text-align: left;
+}
+
+.work-experience-info img {
+    width: 16px;
+    height: 12px;
+}
+
+.work-experience-info > .company {
+    flex: 3;
+}
+
+.work-experience-info > .location {
+    flex: 4;
+}
+
+.work-experience-info > .date {
+    flex: 3;
+    text-align: right;
+}
+
 
 /*** Tech Stack Section ***/
 
