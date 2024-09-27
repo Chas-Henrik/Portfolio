@@ -38,6 +38,7 @@ p {
 }
 
 body {
+    min-width: 350px;
     margin: 3svh 5vw;
     padding: 0;
 }
@@ -117,7 +118,6 @@ hr {
 /*** Header ***/
 header {
     width: 100%;
-    min-width: 360px;
     position: sticky;
     top: 0px;
     background-color: var(--background-color);
