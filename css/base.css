@@ -7,9 +7,12 @@
 :root {
     --primary-font: "Poppins", sans-serif;
     --secondary-font: "DM Sans", sans-serif;
-    --background-color: #FFFFFF;
-    --border-light: #ebeaed;
-    --border-dark: #42446e;
+    --primary-color-light-mode: #42446E;
+    --primary-color-dark-mode: #CCCCCC;
+    --primary-background-light-mode: #FFFFFF;
+    --primary-background-dark-mode: #191919;
+    --primary-border-color-light-mode: #ebeaed;
+    --primary-border-color-dark-mode: #42446e;
 
     /* gradient colors */
     --logo-gradient-start: #13B0F5;
@@ -153,4 +156,40 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+.logo-gradient {
+    background-image: var(--logo-gradient-start);
+    background-image: -webkit-linear-gradient(to right, var(--logo-gradient-start), var(--logo-gradient-end));
+    background-image: linear-gradient(to right, var(--logo-gradient-start), var(--logo-gradient-end));
+}
+
+.name-gradient {
+    background-image: var(--name-gradient-start);
+    background-image: -webkit-linear-gradient(to right, var(--name-gradient-start), var(--name-gradient-end));
+    background-image: linear-gradient(to right, var(--name-gradient-start), var(--name-gradient-end));
+}
+
+.border-gradient {
+    background: var(--border-gradient-start);
+    background: -webkit-linear-gradient(to bottom, var(--border-gradient-start), var(--border-gradient-end));
+    background: linear-gradient(to bottom, var(--border-gradient-start), var(--border-gradient-end));
+}
+
+.contact-gradient {
+    background-image: var(--contact-gradient-start);
+    background-image: -webkit-linear-gradient(to right, var(--contact-gradient-start) -2.06%, var(--contact-gradient-end) 100%);
+    background-image: linear-gradient(to right, var(--contact-gradient-start) -2.06%, var(--contact-gradient-end) 100%);
+}
+
+.love-gradient {
+    background-image: var(--love-gradient-start);
+    background-image: -webkit-linear-gradient(to right, var(--love-gradient-start), var(--love-gradient-end));
+    background-image: linear-gradient(to right, var(--love-gradient-start), var(--love-gradient-end));
+}
+
+.coffee-gradient {
+    background-image: var(--coffee-gradient-start);
+    background-image: -webkit-linear-gradient(to right, var(--coffee-gradient-start), var(--coffee-gradient-end));
+    background-image: linear-gradient(to right, var(--coffee-gradient-start), var(--coffee-gradient-end));
 }
