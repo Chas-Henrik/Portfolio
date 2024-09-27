@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -17,6 +19,8 @@
     --name-gradient-end: #a74afd;
     --border-gradient-start: #E70FAA;
     --border-gradient-end: #00C0FD;
+    --contact-gradient-start: #13b0f5;
+    --contact-gradient-end: #e70faa;
     --love-gradient-start: #9C27BA;
     --love-gradient-end: #A816B4;
     --coffee-gradient-start: #B106B1;
