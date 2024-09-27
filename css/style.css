@@ -26,16 +26,12 @@ p {
 }
 
 body {
-    margin: 0;
+    margin: 3svh 5vw;
     padding: 0;
 }
 
 header {
     padding: 0 4vw;
-}
-
-main {
-    margin: 5svh 5vw;
 }
 
 section {
@@ -139,17 +135,18 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     text-align: center;
     font-size: 2rem;
 }
 
 .first-flexbox-item {
+    margin: 0;
     margin-right: auto;
 }
 
-.header-menu {
+#header-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -180,7 +177,7 @@ nav {
     margin-left: 20px;
 }
 
-.header-menu .row-menu-icons img {
+#header-menu .row-menu-icons img {
     filter: invert(50%);
 }
 
@@ -206,6 +203,22 @@ nav {
     display: none;
     width: 50px;
     height: auto;
+}
+
+header nav > label {
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none; /* hide the checkbox (only used for menu toggle) */
+}
+
+#header-menu {
+    display: none;
+}
+
+#menu-toggle:checked+#header-menu {
+    display: flex;
 }
 
 /*** Introduction Section ***/
@@ -427,9 +440,10 @@ nav {
         align-items: flex-start;
     }
     .first-flexbox-item {
+        margin: 0;
         margin-right: none;
     }
-    .header-menu {
+    #header-menu {
         width: 70%;
         flex-direction: column;
         justify-content: flex-start;
@@ -452,7 +466,7 @@ nav {
         margin: 0;
     }
     .hamburger-menu-icon {
-        display: inline-block;
+        display: block;
         justify-self: start end;
         align-self: start end;
         margin-left: auto;

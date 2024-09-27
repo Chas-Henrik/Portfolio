@@ -17,8 +17,9 @@
 <body>
     <header class="dm-sans-normal">
         <nav>
-            <span class="first-flexbox-item gradient-text logo-gradient"><strong>{007}<br>henriksuurik</strong></span>
-            <div class="header-menu">
+            <p class="first-flexbox-item gradient-text logo-gradient"><strong>{007}<br>henriksuurik</strong></p>
+            <input id="menu-toggle" type="checkbox">
+            <div id="header-menu">
                 <ul class="row-menu-links row-menu-list">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -32,7 +33,9 @@
                     <li><a href="https://www.linkedin.com/in/henrik-suurik-90a3167" target="_blank"><img class="icon" src="./svg/linkedin-icon.svg" alt="linkedin-icon.svg"></a></li>
                 </ul>
             </div>
-            <span><img class="hamburger-menu-icon" src="./svg/hamburger-menu.svg" alt="hamburger-menu.svg"></span>
+            <label for="menu-toggle">
+                <img class="hamburger-menu-icon" src="./svg/hamburger-menu.svg" alt="hamburger-menu.svg">
+            </label>
         </nav>
     </header>
     <main>
