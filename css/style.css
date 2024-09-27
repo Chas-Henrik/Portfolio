@@ -9,7 +9,8 @@
     --local-dark-mode: #191919;
     --local-button-text: #018C0F;
     --local-button-success: #D7FFE0;
-    --text-alignment: center;
+    --text-alignment-primary: left;
+    --text-alignment-secondary: center;
 }
 
 
@@ -41,6 +42,7 @@ body {
     min-width: 350px;
     margin: 3svh 5vw;
     padding: 0;
+    text-align: var(--text-alignment-primary);
 }
 
 header {
@@ -49,7 +51,6 @@ header {
 
 section {
     margin-top: 20svh;
-    text-align: var(--text-alignment);
 }
 
 hr {
@@ -254,7 +255,7 @@ header nav > label {
 }
 
 /*** Work Experience Section ***/
-.work-experiences-container {
+.experiences-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -263,7 +264,7 @@ header nav > label {
     align-items: flex-start;
 }
 
-.work-experience-container {
+.experience-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -272,16 +273,17 @@ header nav > label {
     border-bottom: 2px solid var(--border-light);
     margin-bottom: 1em;
     padding-bottom: 1em;
+    gap: 5px;
 }
 
-.work-experience-role {
+.experience-role {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.work-experience-role > .role {
+.experience-role > .role {
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.8rem;
@@ -289,7 +291,7 @@ header nav > label {
     color: var(--local-dark-content);
 }
 
-.work-experience-role > .job-type {
+.experience-role > .job-type {
     width: 84px;
     height: 24px;
     font-size: 9px;
@@ -301,14 +303,14 @@ header nav > label {
     text-align: center;
 }
 
-.work-experience-info {
+.experience-info {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.work-experience-info > p, .work-experience-container > .location {
+.experience-info > p, .experience-container > .location {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.8rem;
@@ -317,20 +319,20 @@ header nav > label {
     text-align: left;
 }
 
-.work-experience-info img {
+.experience-info img {
     width: 16px;
     height: 12px;
 }
 
-.work-experience-info > .company {
+.experience-info > .provider {
     flex: 3;
 }
 
-.work-experience-info > .location {
+.experience-info > .location {
     flex: 4;
 }
 
-.work-experience-info > .date {
+.experience-info > .date {
     flex: 3;
     text-align: right;
 }
@@ -404,7 +406,7 @@ header nav > label {
 
 .project-card-title {
     height: 20%;
-    text-align: var(--text-alignment);
+    text-align: var(--text-alignment-secondary);
     text-wrap: nowrap;
     font-size: 2.8rem;
     color: var(--card-black-color);
@@ -505,9 +507,6 @@ header nav > label {
 
 /* On screens that are 600px or less */
 @media only screen and (max-width: 600px)  {
-    :root {
-        --text-alignment: left;
-    }
     header {
         height: 280px;
     }
