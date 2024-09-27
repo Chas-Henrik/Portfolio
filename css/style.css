@@ -57,10 +57,10 @@ hr {
     border: none;
 }
 
-.desktop {
+.desktop-block {
     display: block;
 }
-.mobile {
+.mobile-block {
     display: block;
 }
 
@@ -268,7 +268,7 @@ header nav > label {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     border-bottom: 2px solid var(--border-light);
     margin-bottom: 1em;
     padding-bottom: 1em;
@@ -298,6 +298,7 @@ header nav > label {
     color: var(--local-button-text);
     background-color: var(--local-button-success);
     border-radius: 100px;
+    text-align: center;
 }
 
 .work-experience-info {
@@ -307,7 +308,7 @@ header nav > label {
     align-items: center;
 }
 
-.work-experience-info p {
+.work-experience-info > p, .work-experience-container > .location {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.8rem;
@@ -549,20 +550,20 @@ header nav > label {
         align-self: start end;
         margin-left: auto;
     }
-    .desktop {
+    .desktop-block {
         display: none;
     }
-    .mobile {
+    .mobile-block {
         display: block;
     }
 }
 
 /* On screens that are 600px or more */
 @media only screen and (min-width: 600px)  {
-    .desktop {
+    .desktop-block {
         display: block;
     }
-    .mobile {
+    .mobile-block {
         display: none;
     }
 }
