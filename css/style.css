@@ -211,7 +211,7 @@ header nav > label {
     display: none;
 }
 
-#menu-toggle:checked+#header-menu {
+#menu-toggle:not(:checked)+#header-menu {
     display: flex;
 }
 
