@@ -11,6 +11,10 @@
     --local-button-success: #D7FFE0;
     --text-alignment-primary: left;
     --text-alignment-secondary: center;
+    --experience-light-content-light-mode: #A7A7A7;
+    --experience-dark-content-light-mode: #666666;
+    --experience-light-content-dark-mode: #CCCCCC;
+    --experience-dark-content-dark-mode: #FFFFFF;
     --header-gray-color-dark-mode: #A7A7A7;
     --header-gray-color-light-mode: #666666;
     --card-gray-color-light-mode: #666666;
@@ -293,6 +297,8 @@ header {
 .experience-info img {
     width: 16px;
     height: 12px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
 
 .experience-info > .provider {
@@ -562,14 +568,20 @@ header {
     header {
         background-color: var(--primary-background-dark-mode);
     }
+    .experience-container {
+        border-bottom: 2px solid var(--primary-border-color-dark-mode);
+    }
+    .experience-container * {
+        color: var(--experience-light-content-dark-mode);
+    }
+    .experience-role .role {
+        color: var(--experience-dark-content-dark-mode);
+    }
     .row-menu-list li a {
         color:var(--header-gray-color-dark-mode);
     }
     hr {
         background-color: var(--primary-border-color-dark-mode);
-    }
-    .experience-container {
-        border-bottom: 2px solid var(--primary-border-color-dark-mode);
     }
     .project-card * {
         color: var(--card-gray-color-dark-mode);
@@ -588,6 +600,15 @@ header {
     header {
         background-color: var(--primary-background-light-mode);
     }
+    .experience-container {
+        border-bottom: 2px solid var(--primary-border-color-light-mode);
+    }
+    .experience-container * {
+        color: var(--experience-light-content-light-mode);
+    }
+    .experience-role .role {
+        color: var(--experience-dark-content-light-mode);
+    }
     .row-menu-list li a {
         color: var(--header-gray-color-light-mode);
     }
@@ -600,8 +621,5 @@ header {
     .project-card-description, .project-card-tech-stack {
         color: var(--card-gray-color-light-mode);
     }    
-    .experience-container {
-        border-bottom: 2px solid var(--primary-border-color-light-mode);
-    }
 }
 
