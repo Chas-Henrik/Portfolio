@@ -1,3 +1,4 @@
+@import url("./base.css");
 
 /*** General Selectors ***/
 :root {
@@ -57,6 +58,10 @@ body {
 header {
     padding: 0 4vw;
     background-color: var(--primary-background-light-mode);
+    font-family: var(--secondary-font);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 section {
@@ -263,7 +268,6 @@ header {
     font-weight: 400;
     line-height: 2.8rem;
     letter-spacing: 1;
-    color: var(--local-dark-content);
 }
 
 .experience-role > .job-type {
@@ -290,7 +294,6 @@ header {
     font-weight: 500;
     line-height: 2.8rem;
     letter-spacing: 1;
-    color: var(--local-light-content);
     text-align: left;
 }
 
@@ -452,10 +455,32 @@ header {
     align-items: center;
     gap: 0;
     text-align: center;
+    font-family: var(--secondary-font);
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5.8rem;
+}
+
+.contact-container p {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 3rem;
 }
 
 .contact-container .row-menu-icons img {
     filter: invert(27%);
+}
+
+.contact-container .contact-questions {
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    line-height: 8rem;
+}
+
+.contact-container .gradient-text {
+    font-family: var(--secondary-font);
+    font-size: 5rem;
 }
 
 /*** Footer ***/
@@ -469,6 +494,9 @@ header {
 }
 
 .footer ul {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    line-height: 2.6rem;
     font-size: 1.8rem;
 }
 
