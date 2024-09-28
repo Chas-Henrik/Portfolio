@@ -3,16 +3,20 @@
 :root {
     /* Local Styles */
     --local-solid-heading: #42446E;
-    --local-dark-content: #666666;
     --local-solid-heading-dark-mode: #CCCCCC;
     --local-light-content: #A7A7A7;
+    --local-dark-content: #666666;
     --local-dark-mode: #191919;
     --local-button-text: #018C0F;
     --local-button-success: #D7FFE0;
     --text-alignment-primary: left;
     --text-alignment-secondary: center;
-    --card-black-color: #000000;
-    --card-gray-color: #666666;
+    --header-gray-color-dark-mode: #A7A7A7;
+    --header-gray-color-light-mode: #666666;
+    --card-gray-color-light-mode: #666666;
+    --card-black-color-light-mode: #000000;
+    --card-gray-color-dark-mode: #CCCCCC;
+    --card-white-color-dark-mode: #FFFFFF;
 }
 
 
@@ -144,7 +148,6 @@ header {
 }
 
 .row-menu-list li a {
-    color: var(--local-dark-content);
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.6rem;
@@ -354,9 +357,13 @@ header {
     box-shadow: 0px 0px 4px 2px rgba(189, 188, 188, 0.5);
 }
 
+.project-card > :not(img) {
+    padding: 0 2.5rem;
+}
+
 .project-card-image {
     flex: 40;
-    display: block; /* Must be block to avoid gap between next vertical element */
+    display: block;
     width: 100%;
     object-fit: cover;
 }
@@ -369,39 +376,34 @@ header {
 
 .project-card-title {
     flex: 20;
-    padding: 20px 25px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     text-align: var(--text-alignment-secondary);
     text-wrap: nowrap;
     font-weight: 500;
     font-size: 2.8rem;
     line-height: 2.6rem;
-    color: var(--card-black-color);
 }
 
 .project-card-description {
     flex: 25;
-    padding: 0 25px;
-    color: var(--card-gray-color);
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 2.6rem;
 }
 
-.project-tech-stack {
+.project-card-tech-stack {
     flex: 5;
-    padding: 0 25px;
     height: 10%;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.6rem;
-    color: var(--card-black-color);
 }
 
-.project-tech-stack span {
+.project-card-tech-stack span {
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 2.6rem;
-    color: var(--card-black-color);
 }
 
 .project-card-footer-container {
@@ -410,25 +412,19 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 0 30px;
-}
-
-.project-card-footer-container p {
-    font-size: 1.6rem;
+    margin-right: 1rem;
 }
 
 .project-card-icon {
     display: inline-block;
     width: 20px;
-    height: 20px;
-    position: relative;
-    top: 5px;
-    left: -2px;
-    z-index: -1;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 1rem;
 }
 
 .project-card-footer-container a {
-    color: var(--card-black-color);
+    font-size: 1.6rem;
 }
 
 /*** Contact Section ***/
@@ -557,6 +553,7 @@ header {
     }
 }
 
+/* Dark Theme */
 @media (prefers-color-scheme: dark) {
     html {
         background-color: var(--primary-background-dark-mode);
@@ -565,14 +562,24 @@ header {
     header {
         background-color: var(--primary-background-dark-mode);
     }
+    .row-menu-list li a {
+        color:var(--header-gray-color-dark-mode);
+    }
     hr {
         background-color: var(--primary-border-color-dark-mode);
     }
     .experience-container {
         border-bottom: 2px solid var(--primary-border-color-dark-mode);
     }
+    .project-card * {
+        color: var(--card-gray-color-dark-mode);
+    }
+    .project-card-footer-container {
+        color: var(--card-white-color-dark-mode);
+    }
 }
 
+/* Light Theme */
 @media (prefers-color-scheme: light) {
     html {
         background: var(--primary-background-light-mode);
@@ -581,11 +588,20 @@ header {
     header {
         background-color: var(--primary-background-light-mode);
     }
+    .row-menu-list li a {
+        color: var(--header-gray-color-light-mode);
+    }
     hr {
         background-color: var(--primary-border-color-light-mode);
     }
+    .project-card * {
+        color: var(--card-black-color-light-mode);
+    }
+    .project-card-description, .project-card-tech-stack {
+        color: var(--card-gray-color-light-mode);
+    }    
     .experience-container {
         border-bottom: 2px solid var(--primary-border-color-light-mode);
-    } 
+    }
 }
 
