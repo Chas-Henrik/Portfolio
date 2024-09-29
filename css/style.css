@@ -2,28 +2,8 @@
 
 /*** General Selectors ***/
 :root {
-    /* Local Styles */
-    --local-solid-heading-light-mode: #42446E;
-    --local-solid-heading-dark-mode: #CCCCCC;
-    --local-light-content-dark-mode: #A7A7A7;
-    --local-dark-content-light-mode: #666666;
-    --local-dark-mode: #191919;
-    --local-button-text: #018C0F;
-    --local-button-success: #D7FFE0;
     --text-alignment-primary: left;
     --text-alignment-secondary: center;
-    --icon-black-fill-dark-mode: #000000;
-    --icon-white-fill-dark-mode: #FFFFFF;
-    --experience-light-content-light-mode: #A7A7A7;
-    --experience-dark-content-light-mode: #666666;
-    --experience-light-content-dark-mode: #CCCCCC;
-    --experience-dark-content-dark-mode: #FFFFFF;
-    --header-gray-color-dark-mode: #A7A7A7;
-    --header-gray-color-light-mode: #666666;
-    --card-gray-color-light-mode: #666666;
-    --card-black-color-light-mode: #000000;
-    --card-gray-color-dark-mode: #CCCCCC;
-    --card-white-color-dark-mode: #FFFFFF;
 }
 
 
@@ -56,7 +36,7 @@ body {
 
 header {
     padding: 0 4vw;
-    background-color: var(--primary-background-light-mode);
+    background-color: var(--background-light-mode);
     font-family: var(--secondary-font);
     font-optical-sizing: auto;
     font-weight: 500;
@@ -275,8 +255,8 @@ header {
     font-size: 9px;
     font-weight: 600;
     line-height: 26px;
-    color: var(--local-button-text);
-    background-color: var(--local-button-success);
+    color: var(--button-text);
+    background-color: var(--button-success);
     border-radius: 100px;
     text-align: center;
 }
@@ -473,12 +453,6 @@ header {
     filter: invert(27%);
 }
 
-.contact-container .contact-questions {
-    font-family: var(--secondary-font);
-    font-size: 4rem;
-    line-height: 8rem;
-}
-
 .contact-container .gradient-text {
     font-family: var(--secondary-font);
     font-size: 5rem;
@@ -594,6 +568,12 @@ header {
     .mobile-flex {
         display: flex;
     }
+
+    .contact-container .mobile-block.contact-questions {
+        font-family: var(--secondary-font);
+        font-size: 4rem;
+        line-height: 8rem;
+    }
 }
 
 /* On screens that are 600px or more */
@@ -622,92 +602,96 @@ header {
 /* Dark Theme */
 @media (prefers-color-scheme: dark) {
     html {
-        background-color: var(--primary-background-dark-mode);
-        color: var(--primary-color-dark-mode);
+        background-color: var(--background-dark-mode);
+        color: var(--solid-heading-dark-mode);
     }
 
-    h1, h2, h3 {
-        color: var(--local-solid-heading-dark-mode);
+    h1, h2 {
+        color: var(--solid-heading-dark-mode);
     }
 
     p {
-        color: var(--local-light-content-dark-mode);
+        color: var(--light-content-dark-mode);
     }
 
     header {
-        background-color: var(--primary-background-dark-mode);
+        background-color: var(--background-dark-mode);
     }
 
     .row-menu-list li a {
-        color:var(--header-gray-color-dark-mode);
+        color:var(--light-content-dark-mode);
     }
 
     header-menu .row-menu-icons img svg {
-        fill: "var(--header-gray-color-dark-mode)";
-    }
-
-    #tech-stack img svg {
-        fill: "var(--icon-white-fill-dark-mode)";
+        fill: "var(--light-content-dark-mode)";
     }
 
     .experience-container {
-        border-bottom: 2px solid var(--primary-border-color-dark-mode);
+        border-bottom: 2px solid var(--border-color-dark-mode);
     }
 
     .experience-container * {
-        color: var(--experience-light-content-dark-mode);
+        color: var(--light-content-dark-mode);
     }
 
     .experience-role .role {
-        color: var(--experience-dark-content-dark-mode);
+        color: var(--solid-heading-dark-mode);
     }
 
-    .tech-stack-container .dark-mode-target img {
+    .tech-stack-container .dark-mode-invert img {
         filter: invert(100%);
     }
 
     hr {
-        background-color: var(--primary-border-color-dark-mode);
+        background-color: var(--border-color-dark-mode);
     }
 
     .project-card * {
-        color: var(--card-gray-color-dark-mode);
+        color: var(--solid-heading-dark-mode);
     }
 
     .project-card-footer-container * {
-        color: var(--card-white-color-dark-mode);
+        color: var(--black-content-dark-mode);
     }
 
     .project-card-footer-container img {
         filter: invert(100%);
+    }
+
+    .contact-container .mobile-block.contact-questions {
+        color: var(--black-content-dark-mode);
+    }
+
+    .contact-container .desktop-block.contact-questions {
+        color: var(--contact-dark-mode);
     }
 }
 
 /* Light Theme */
 @media (prefers-color-scheme: light) {
     html {
-        background: var(--primary-background-light-mode);
-        color: var(--primary-color-light-mode);
+        background: var(--background-light-mode);
+        color: var(--solid-heading-light-mode);
     }
 
-    h1, h2, h3 {
-        color: var(--local-solid-heading-light-mode);
+    h1, h2 {
+        color: var(--solid-heading-light-mode);
     }
 
     p {
-        color: var(--local-dark-content-light-mode);
+        color: var(--dark-content-light-mode);
     }
 
     header {
-        background-color: var(--primary-background-light-mode);
+        background-color: var(--background-light-mode);
     }
 
     .row-menu-list li a {
-        color: var(--header-gray-color-light-mode);
+        color: var(--dark-content-light-mode);
     }
 
     header-menu .row-menu-icons img svg {
-        fill: "var(--header-gray-color-light-mode)";
+        fill: "var(--dark-content-light-mode)";
     }
 
     #tech-stack img svg {
@@ -715,31 +699,39 @@ header {
     }
 
     .experience-container {
-        border-bottom: 2px solid var(--primary-border-color-light-mode);
+        border-bottom: 2px solid var(--border-color-light-mode);
     }
 
     .experience-container * {
-        color: var(--experience-light-content-light-mode);
+        color: var(--light-content-dark-mode);
     }
 
     .experience-role .role {
-        color: var(--experience-dark-content-light-mode);
+        color: var(--dark-content-light-mode);
     }
 
     hr {
-        background-color: var(--primary-border-color-light-mode);
+        background-color: var(--border-color-light-mode);
     }
 
     .project-card * {
-        color: var(--card-black-color-light-mode);
+        color: var(--black-content-light-mode);
     }
 
     .project-card-description, .project-card-tech-stack {
-        color: var(--card-gray-color-light-mode);
+        color: var(--dark-content-light-mode);
     }
     
     .project-card-icon svg {
         fill: "var(--icon-black-fill-light-mode)";
+    }
+
+    .contact-container .mobile-block.contact-questions {
+        color: var(--black-content-light-mode);
+    }
+
+    .contact-container .desktop-block.contact-questions {
+        color: var(--contact-light-mode);
     }
 }
 

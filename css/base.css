@@ -5,14 +5,25 @@
 }
 
 :root {
+    /* Fonts*/
     --primary-font: "Poppins", sans-serif;
     --secondary-font: "DM Sans", sans-serif;
-    --primary-color-light-mode: #42446E;
-    --primary-color-dark-mode: #CCCCCC;
-    --primary-background-light-mode: #FFFFFF;
-    --primary-background-dark-mode: #191919;
-    --primary-border-color-light-mode: #ebeaed;
-    --primary-border-color-dark-mode: #42446e;
+
+    /* Theme colors */
+    --background-light-mode: #FFFFFF;
+    --background-dark-mode: #191919;
+    --solid-heading-light-mode: #42446E;
+    --solid-heading-dark-mode: #CCCCCC;
+    --dark-content-light-mode: #666666;
+    --light-content-dark-mode: #A7A7A7;
+    --black-content-light-mode: #000000;
+    --black-content-dark-mode: #FFFFFF;
+    --contact-light-mode: #1E0E62;
+    --contact-dark-mode: #f4f5f3;
+    --border-color-light-mode: #ebeaed;
+    --border-color-dark-mode: #42446e;
+    --button-text: #018C0F;
+    --button-success: #D7FFE0;
 
     /* gradient colors */
     --logo-gradient-start: #13B0F5;
@@ -28,6 +39,45 @@
     --coffee-gradient-start: #B106B1;
     --coffee-gradient-end: #C500A8;
 }
+
+.logo-gradient {
+    background-image: var(--logo-gradient-start);
+    background-image: -webkit-linear-gradient(to right, var(--logo-gradient-start), var(--logo-gradient-end));
+    background-image: linear-gradient(to right, var(--logo-gradient-start), var(--logo-gradient-end));
+}
+
+.name-gradient {
+    background-image: var(--name-gradient-start);
+    background-image: -webkit-linear-gradient(to right, var(--name-gradient-start), var(--name-gradient-end));
+    background-image: linear-gradient(to right, var(--name-gradient-start), var(--name-gradient-end));
+}
+
+.border-gradient {
+    background: var(--border-gradient-start);
+    background: -webkit-linear-gradient(to bottom, var(--border-gradient-start), var(--border-gradient-end));
+    background: linear-gradient(to bottom, var(--border-gradient-start), var(--border-gradient-end));
+}
+
+.contact-gradient {
+    background-image: var(--contact-gradient-start);
+    background-image: -webkit-linear-gradient(to right, var(--contact-gradient-start) -2.06%, var(--contact-gradient-end) 100%);
+    background-image: linear-gradient(to right, var(--contact-gradient-start) -2.06%, var(--contact-gradient-end) 100%);
+}
+
+.love-gradient {
+    background-image: var(--love-gradient-start);
+    background-image: -webkit-linear-gradient(to right, var(--love-gradient-start), var(--love-gradient-end));
+    background-image: linear-gradient(to right, var(--love-gradient-start), var(--love-gradient-end));
+}
+
+.coffee-gradient {
+    background-image: var(--coffee-gradient-start);
+    background-image: -webkit-linear-gradient(to right, var(--coffee-gradient-start), var(--coffee-gradient-end));
+    background-image: linear-gradient(to right, var(--coffee-gradient-start), var(--coffee-gradient-end));
+}
+
+
+
 
 .poppins-thin {
     font-family: "Poppins", sans-serif;
@@ -156,40 +206,4 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-
-.logo-gradient {
-    background-image: var(--logo-gradient-start);
-    background-image: -webkit-linear-gradient(to right, var(--logo-gradient-start), var(--logo-gradient-end));
-    background-image: linear-gradient(to right, var(--logo-gradient-start), var(--logo-gradient-end));
-}
-
-.name-gradient {
-    background-image: var(--name-gradient-start);
-    background-image: -webkit-linear-gradient(to right, var(--name-gradient-start), var(--name-gradient-end));
-    background-image: linear-gradient(to right, var(--name-gradient-start), var(--name-gradient-end));
-}
-
-.border-gradient {
-    background: var(--border-gradient-start);
-    background: -webkit-linear-gradient(to bottom, var(--border-gradient-start), var(--border-gradient-end));
-    background: linear-gradient(to bottom, var(--border-gradient-start), var(--border-gradient-end));
-}
-
-.contact-gradient {
-    background-image: var(--contact-gradient-start);
-    background-image: -webkit-linear-gradient(to right, var(--contact-gradient-start) -2.06%, var(--contact-gradient-end) 100%);
-    background-image: linear-gradient(to right, var(--contact-gradient-start) -2.06%, var(--contact-gradient-end) 100%);
-}
-
-.love-gradient {
-    background-image: var(--love-gradient-start);
-    background-image: -webkit-linear-gradient(to right, var(--love-gradient-start), var(--love-gradient-end));
-    background-image: linear-gradient(to right, var(--love-gradient-start), var(--love-gradient-end));
-}
-
-.coffee-gradient {
-    background-image: var(--coffee-gradient-start);
-    background-image: -webkit-linear-gradient(to right, var(--coffee-gradient-start), var(--coffee-gradient-end));
-    background-image: linear-gradient(to right, var(--coffee-gradient-start), var(--coffee-gradient-end));
 }
