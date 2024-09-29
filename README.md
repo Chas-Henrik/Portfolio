@@ -40,8 +40,7 @@ Man kan anända följande metoder för att utveckla responsiva sidor:
 3. Använd rätt relativ enhet så att objektet skalar bra med skärmstorleken.
 4. Designa utifrån innehållet (ibland behövs fler Media Queries för att innehållet ska vara 'läsbart' för alla skärm resolutioner)
 5. Gör bilder responsiva så att de stretchar i förhållande till sin behållare och behåller sina proportioner.
-6. Använd moderna layout tekniker (CSS Flexbox & Grid).
-   CSS Flexbox:
+6. Använd moderna layout tekniker (CSS Flexbox & Grid). I CSS Flexbox så kan t.ex. följande Flexbox egenskaper användas för att föra sidan responsiv:
    1. flex-direction: row/column
    2. flex-wrap: nowrap/wrap
    3. flex: (flex-grow, flex-shrink, flex-basis)
