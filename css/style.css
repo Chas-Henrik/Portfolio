@@ -54,11 +54,19 @@ hr {
 }
 
 .desktop-block {
-    display: block;
+    display: none;
 }
 
 .mobile-block {
     display: block;
+}
+
+.desktop-flex {
+    display: none;
+}
+
+.mobile-flex {
+    display: flex;
 }
 
 .icon {
@@ -479,6 +487,12 @@ header {
     filter: invert(27%);
 }
 
+.contact-container .mobile-block.contact-questions {
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    line-height: 8rem;
+}
+
 /*** Footer ***/
 
 .footer {
@@ -507,31 +521,6 @@ header {
 }
 
 /*** Media Queries ***/
-
-/* On screens that are 600px or less (Mobiles) */
-@media only screen and (max-width: 600px) {
-    .desktop-block {
-        display: none;
-    }
-
-    .mobile-block {
-        display: block;
-    }
-
-    .desktop-flex {
-        display: none;
-    }
-
-    .mobile-flex {
-        display: flex;
-    }
-
-    .contact-container .mobile-block.contact-questions {
-        font-family: var(--secondary-font);
-        font-size: 4rem;
-        line-height: 8rem;
-    }
-}
 
 /* On screens that are 601px or more (Tablets & Desktops) */
 @media only screen and (min-width: 601px) {
