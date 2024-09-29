@@ -19,9 +19,18 @@ Notes:
 Frågor:
 1) Vad är HTML och dess roll inom frontend? Vad menas med semantiskt html?
 
-HTML står för 'Hyper Text Markup Language' och beskriver strukturen i en web sida.
+HTML är grunden för alla web platser och används av webläsare för att visa och presentera innehållet korrekt.
+HTML står för 'Hyper Text Markup Language' och används för att skapa och struktur & innehåll på en webplats (rubriker, paragrafer, bilder, listor etc). En webläsare vill endast läsa in HTML filer initialt och sedan kan HTML sidan innehålla CSS och JavaScript, men det är HTML som utgör grunden till alla websidor.
+
+Semantisk HTML innebär att man använder HTML-element som tydligt beskriver sitt innehåll och sin funktion på ett sätt som är meningsfullt både för människor och maskiner, särskilt sökmotorer och skärmläsare.
+Icke semantiska HTML element som <div> och <span> ger ingen tydlig indikation på vad innehållet representerar medan semantiska element som <header>, <nav>, <article>, <section>, <footer>, <aside> och <main> ger en starkare struktur och förklaring till innehållet, vilket gör det lättare att förstå för både utvecklare och teknologier som bearbetar webbsidor (t.ex. sökmotorer och skärmläsare). 
 
 2) Vad är CSS och dess roll inom frontend? 
+
+CSS står för Cascading Style Sheet och är ett stilmalls-språk som beskriver utseendet & styling på en websida. Cascading betyder att när flera stilregler kan tillämpas på ett element, så finns det en specifik ordning och prioritering som avgör vilken stil som ska gälla.
+
+CSS används för att förändra färg, form, typsnitt, layout, animation m.m. på en web sida.
+CSS filen länkas in från HTML sidan med <link> elementet (t.ex. <link rel="stylesheet" href="./css/style.css">) och är valfri, medan HTML filen är ett krav och måste finnas på alla web platser.
 
 3) Vad menas med responsiv design samt med vilka metoder man kan utveckla responsiva sidor?
 
