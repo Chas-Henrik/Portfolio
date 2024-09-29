@@ -457,14 +457,19 @@ header {
     align-items: center;
     gap: 0;
     text-align: center;
+}
+
+.contact-container > h2 {
     font-family: var(--secondary-font);
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-size: 5.8rem;
+    line-height: 7rem;
+    letter-spacing: -1px;
 }
 
-.contact-container p {
+.contact-container > p {
     font-family: var(--secondary-font);
     font-weight: 500;
     font-size: 3rem;
@@ -472,11 +477,6 @@ header {
 
 .contact-container .row-menu-icons img {
     filter: invert(27%);
-}
-
-.contact-container .gradient-text {
-    font-family: var(--secondary-font);
-    font-size: 5rem;
 }
 
 /*** Footer ***/
