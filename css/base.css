@@ -12,6 +12,7 @@
     /* Theme colors */
     --background-light-mode: #FFFFFF;
     --background-dark-mode: #191919;
+    --background-card-dark-mode: #363636;
     --solid-heading-light-mode: #42446E;
     --solid-heading-dark-mode: #CCCCCC;
     --dark-content-light-mode: #666666;
@@ -38,6 +39,9 @@
     --love-gradient-end: #A816B4;
     --coffee-gradient-start: #B106B1;
     --coffee-gradient-end: #C500A8;
+
+    /* misc */
+    --drop-shadow: 2px 2px 100px 0px #00000033;
 }
 
 .logo-gradient {
