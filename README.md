@@ -15,7 +15,7 @@ Known problems:
 Notes:
 1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile.
 
-#Frågor:
+## Frågor:
 1. Vad är HTML och dess roll inom frontend? Vad menas med semantiskt html?
 
 HTML är grunden för alla web platser och används av webläsare för att visa och presentera innehållet korrekt.
