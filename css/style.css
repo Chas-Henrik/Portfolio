@@ -262,7 +262,6 @@ header {
     align-items: flex-start;
     margin-bottom: 1em;
     padding-bottom: 1em;
-    gap: 0.5rem;
 }
 
 .experience-role {
@@ -480,7 +479,6 @@ header {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 5.8rem;
     line-height: 7rem;
     letter-spacing: -1px;
 }
@@ -618,6 +616,10 @@ header {
 
     .project-card-description {
         flex: 23;
+    }
+
+    .contact-container > h2 {
+        font-size: 5.8rem;
     }
 
     .footer .row-menu-list {
