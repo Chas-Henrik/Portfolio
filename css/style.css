@@ -115,6 +115,7 @@ header {
     align-items: center;
     align-content: flex-start;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .row-menu-list {
@@ -126,10 +127,8 @@ header {
     flex-wrap: nowrap;
     gap: 0;
     padding-inline-start: 0;
-}
-
-.header-menu .row-menu-list {
     margin-block-start: 4rem;
+    margin-block-end: 2rem;
 }
 
 .row-menu-icons {
