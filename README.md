@@ -10,7 +10,7 @@ This is a multi-page, mobile first portfolio site consisting of 5 pages:
 The design is responsive and has a mobile version (for screen widths at 600 pixels or less) and a combined Tablet/Desktop version. As the site only use HTML & CSS, there is limited support for interaction. The mobile version do support hamburger menu button though, and the site supports ‘dark theme’ configured through the operating system settings as well. All images except 'project images' are 'svg formatted' to seamlessly scale to different resolutions. 
 
 Known problems:
-1. There is a known problem with the hamburger menu, as the nav bar menu stays hidden/collapsed when resizing to desktop mode.
+1. None
 
 Notes:
 1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile.

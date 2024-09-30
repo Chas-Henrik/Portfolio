@@ -10,12 +10,12 @@
     display: none;
 }
 
-.mobile-block {
-    display: block;
-}
-
 .desktop-flex {
     display: none;
+}
+
+.mobile-block {
+    display: block;
 }
 
 .mobile-flex {
@@ -58,8 +58,8 @@ body {
     text-align: var(--text-alignment-primary);
 }
 
-section>h2 {
-    margin-top: 2em;
+section > h2 {
+    margin: 4.2rem 0;
 }
 
 hr {
@@ -143,8 +143,10 @@ header {
     padding-inline-start: 0;
 }
 
-#header-menu .row-menu-icons img {
-    filter: invert(50%);
+.row-menu-icons img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
 }
 
 .row-menu-list li {
@@ -153,13 +155,14 @@ header {
 
 .row-menu-list li a {
     display: inline-block;
-    padding: 0.4rem 1rem;
+    padding: 0 1rem;
     text-decoration: none;
     text-wrap: nowrap;
     color: inherit;
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.6rem;
+    vertical-align: middle;
 }
 
 .row-menu-list li a:hover {
@@ -268,7 +271,7 @@ header {
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.8rem;
-    letter-spacing: 1;
+    letter-spacing: 0.1rem;
 }
 
 .experience-role > .job-type {
@@ -290,7 +293,7 @@ header {
     align-items: center;
 }
 
-.experience-info > p, .experience-container > .location {
+.experience-info > span, .experience-container > .location {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.8rem;
@@ -333,7 +336,7 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 3vh;
+    gap: 7rem;
 }
 
 .tech-stack-img {
@@ -435,16 +438,18 @@ header {
     padding-bottom: 2rem;
 }
 
-.project-card-icon {
+.project-card-footer-container a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.project-card-footer-container img {
     display: inline-block;
     width: 2rem;
     height: auto;
     vertical-align: middle;
     margin-right: 1rem;
-}
-
-.project-card-footer-container a {
-    font-size: 1.6rem;
 }
 
 /*** Contact Section ***/
@@ -479,10 +484,6 @@ header {
     font-family: var(--secondary-font);
     font-weight: 500;
     font-size: 3rem;
-}
-
-.contact-container .row-menu-icons img {
-    filter: invert(27%);
 }
 
 .contact-container .mobile-block.contact-questions {
@@ -577,11 +578,17 @@ header {
         margin-left: 2rem;
     }
 
+    .row-menu-icons img {
+        width: 30px;
+        height: auto;
+    }
+
     .hamburger-menu-icon {
         display: none;
-        /* justify-self: unset;
-        align-self: unset;
-        margin-left: unset; */
+    }
+
+    #header-menu {
+        display: flex;
     }
 
     .introduction-container {
@@ -610,12 +617,12 @@ header {
         display: block;
     }
 
-    .mobile-block {
-        display: none;
-    }
-
     .desktop-flex {
         display: flex;
+    }
+
+    .mobile-block {
+        display: none;
     }
 
     .mobile-flex {
@@ -646,8 +653,8 @@ header {
         color: var(--light-content-dark-mode);
     }
 
-    header-menu .row-menu-icons img svg {
-        fill: "var(--light-content-dark-mode)";
+    #header-menu .row-menu-icons img {
+        filter: invert(100%) brightness(109%); /* => #A7A7A7*/
     }
 
     .nav-container .dark-mode-invert img {
@@ -686,10 +693,14 @@ header {
         color: var(--black-content-dark-mode);
     }
 
-    .project-card-footer-container img {
-        filter: invert(100%);
+    .project-card-link-chain img {
+        filter: invert(99%); /* => #FCFCFC */
     }
 
+    .project-card-github img {
+        filter: invert(100%);
+    }
+    
     .contact-container .mobile-block.contact-questions {
         color: var(--black-content-dark-mode);
     }
@@ -722,14 +733,6 @@ header {
         color: var(--dark-content-light-mode);
     }
 
-    header-menu .row-menu-icons img svg {
-        fill: "var(--dark-content-light-mode)";
-    }
-
-    #tech-stack img svg {
-        fill: "var(--icon-black-fill-light-mode)";
-    }
-
     .experience-container {
         border-bottom: 0.2rem solid var(--border-color-light-mode);
     }
@@ -752,10 +755,6 @@ header {
 
     .project-card-description, .project-card-tech-stack {
         color: var(--dark-content-light-mode);
-    }
-
-    .project-card-icon svg {
-        fill: "var(--icon-black-fill-light-mode)";
     }
 
     .contact-container .mobile-block.contact-questions {
