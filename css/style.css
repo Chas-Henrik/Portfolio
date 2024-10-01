@@ -91,37 +91,46 @@ header {
 .nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     text-align: center;
     font-size: 2rem;
 }
 
-.first-flexbox-item {
-    margin: 0;
-    margin-right: none;
+.profile-logo {
+    flex: 1 1 15%;
 }
 
 #header-menu {
+    flex: 1 1 70%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: flex-start;
     flex-wrap: wrap;
-    flex-grow: 1;
+}
+
+.hamburger-menu {
+    flex: 1 1 15%;
 }
 
 .menu-list {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: flex-start;
-    flex-wrap: nowrap;
-    gap: 0.5rem;
-    padding-inline-start: 0;
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-buttons {
     margin-block-start: 4rem;
     margin-block-end: 2rem;
+}
+
+.menu-buttons li{
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+.menu-buttons li a {
+    padding: 0.25em 0.5em;
+}
+
+.menu-icons li{
+    flex: 1;
 }
 
 .menu-list li {
@@ -130,7 +139,6 @@ header {
 
 .menu-list li a {
     display: inline-block;
-    padding: 0 1rem;
     text-decoration: none;
     text-wrap: nowrap;
     color: inherit;
@@ -144,18 +152,7 @@ header {
     color: var(--menu-hover);
 }
 
-.row-menu-icons {
-    width: 100%;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: 0.5rem;
-    margin: 0;
-    padding-inline-start: 0;
-}
-
-.row-menu-icons img {
+.menu-icons img {
     width: 20px;
     height: auto;
     vertical-align: middle;
@@ -491,8 +488,8 @@ header {
 
 /*** Media Queries ***/
 
-/* On screens that are 768px to 1200px (Tablets & Desktops) */
-@media only screen and (min-width: 768px) {
+/* On screens that are 600px to 1200px (Tablets & Medium Desktops) */
+@media only screen and (min-width: 600px) {
     :root {
         --text-alignment-secondary: center;
     }
@@ -502,50 +499,36 @@ header {
         scroll-padding-top: calc(5.9rem + 3svh);
     }
 
-    header {
-        height: 8.3rem;
+    .profile-logo {
+        flex: 1 1 15%;
     }
-
-    .nav-container {
-        align-items: center;
+    
+    .hamburger-menu {
+        flex: 1 1 0%;
     }
-
-    .first-flexbox-item {
-        margin-right: auto;
-    }
-
+    
     #header-menu {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
-        row-gap: 1rem;
+        flex: 1 1 85%;
+        display: flex;
         flex-wrap: wrap;
     }
 
-    .menu-list {
-        width: 100%;
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        align-content: flex-start;
-        flex-wrap: nowrap;
-        row-gap: 0.5rem;
-        column-gap: 3rem;
-        margin-block-start: 0;
-        margin-block-end: 0;
+    .menu-buttons {
+        margin-block-start: 0rem;
     }
 
-    .menu-list li a {
-        padding: 0;
+    .menu-buttons li{
+        flex: 1 1 33.33%;
+    }
+
+    .menu-buttons li a {
+        padding: 0.5em 1em;
         font-weight: 500;
         font-size: 2rem;
         line-height: 2.6rem;
     }
 
-    .row-menu-icons {
+    .menu-icons {
         padding: 0 1rem;
         width: 40%;
         display: inline-flex;
@@ -556,7 +539,7 @@ header {
         gap: 0rem;
     }
 
-    .row-menu-icons img {
+    .menu-icons img {
         width: 30px;
         height: auto;
         filter: unset; /* => #666666*/
@@ -619,41 +602,70 @@ header {
     }
 }
 
-/* On screens that are 1200px or more (Desktops) */
+/* On screens that are 1200px or more (Large Desktops) */
 @media only screen and (min-width: 1200px) {
     html {
         font-size: 62.5%;
         scroll-padding-top: calc(5.9rem + 3svh);
     }
 
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profile-logo {
+        flex: 1 1 15%;
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+    
     #header-menu {
-        width: 100%;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        align-content: center;
+        flex: 1 1 85%;
         flex-wrap: nowrap;
     }
 
-    .menu-list {
-        width: fit-content;
+    .hamburger-menu {
+        flex: 1 1 0%;
+    }
+
+    .menu-buttons {
+        flex: 1 1 80%;
+        display: flex;
         justify-content: flex-end;
+        column-gap: 2em;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-block-end: 0;
     }
 
-    .menu-list li a {
-        padding: 0 1rem;
+    .menu-icons {
+        flex: 1 1 20%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
     }
 
-    .row-menu-buttons {
-        gap: 2rem;
+    .menu-buttons li{
+        flex: unset;
+        display: flex;
+        justify-content: space-around;
     }
 
-    .row-menu-icons {
-        width: fit-content;
-        justify-content: flex-end;
-        flex-direction: row;
-        margin-left: 2rem;
-        gap: 0.5rem;
+    .menu-buttons li:first-child {
+        margin-left: auto;
+    }
+
+    .menu-buttons li a {
+        padding: 0.25em 0.5em;
+    }
+
+    .menu-icons li{
+        flex: 1;
+    }
+
+    .profile-logo {
+        margin-right: auto;
     }
 
     .introduction-container {
@@ -776,7 +788,7 @@ header {
         color: var(--light-content-dark-mode);
     }
 
-    #header-menu .row-menu-icons img {
+    #header-menu .menu-icons img {
         filter: invert(100%) brightness(109%); /* => #A7A7A7*/
     }
 

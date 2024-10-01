@@ -1,19 +1,20 @@
 # Portfolio page from design sketch
 
-This is a multi-page, mobile first portfolio site consisting of 5 pages:
+This is a multi-page, 'Portfolio Site' consisting of 5 pages:
 - Home
 - About
 - Tech Stack
 - Projects
 - Contact
 
-The design is responsive and is 'mobile first' and support Tablet & Desktop versions as well. Media Queries have been added at 768px for the Mobile version and 1200px for the Desktop version (using a content driven approach). As the site only use HTML & CSS, there is limited support for interaction. The mobile version do support hamburger menu button though, and the site supports ‘dark theme’ configured through the operating system settings as well. All images except 'project images' are 'svg formatted' to seamlessly scale to different resolutions. 
+The design is a 'mobile first' responsive design that support Tablet & Desktops as well. Media Queries have been added using a content driven approach. Breakpoints have been set at 600px for Mobile and 1200px for Large Desktop's, and everything between (600px to 1200px) can be used for Tablets and small Desktops. 
+Since the site only use HTML & CSS, there is limited support for interaction. The mobile version supports for the hamburger menu button though, and the menu can be collapsed/expanded by pressing the hamburger button. The site also supports ‘dark theme’ configured through the operating system settings. All images except the 'artistic project images' have been 'svg formatted' to scale seamlessly to different resolutions.
 
 Known problems:
 1. None
 
 Notes:
-1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile.
+1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile at this time.
 
 ## Frågor:
 1. Vad är HTML och dess roll inom frontend? Vad menas med semantiskt html?
