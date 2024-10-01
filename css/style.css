@@ -61,11 +61,6 @@ section > h2 {
     margin: 4.2rem 0;
 }
 
-hr {
-    height: 2px;
-    border: none;
-}
-
 .icon {
     display: inline-block;
     width: 3rem;
@@ -702,10 +697,6 @@ header {
         color: var(--dark-content-light-mode);
     }
 
-    hr {
-        background-color: var(--border-color-light-mode);
-    }
-
     .project-card {
         background-color: var(--background-light-mode);
     }
@@ -791,10 +782,6 @@ header {
 
     .tech-stack-container .dark-mode-invert img {
         filter: invert(100%);
-    }
-
-    hr {
-        background-color: var(--border-color-dark-mode);
     }
 
     .project-card {
