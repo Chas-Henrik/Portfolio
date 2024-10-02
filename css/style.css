@@ -1,10 +1,6 @@
 @import url("./base.css");
 
 /*** General Selectors ***/
-:root {
-    --text-alignment-primary: left;
-    --text-alignment-secondary: left;
-}
 
 html {
     scroll-padding-top: calc(24rem + 3svh);
@@ -38,7 +34,7 @@ body {
     min-width: 35rem;
     margin: 3svh 12.5vw;
     padding: 0;
-    text-align: var(--text-alignment-primary);
+    text-align: left;
 }
 
 section>h2 {
@@ -385,7 +381,7 @@ header {
     flex: 20;
     padding-top: 2.5rem;
     padding-bottom: 1.5rem;
-    text-align: var(--text-alignment-secondary);
+    text-align: left;
     text-wrap: nowrap;
     font-weight: 500;
     font-size: 2.8rem;
@@ -487,9 +483,6 @@ header {
 
 /* On screens that are 600px to 1200px (Tablets & Medium Desktops) */
 @media only screen and (min-width: 600px) {
-    :root {
-        --text-alignment-secondary: center;
-    }
 
     html {
         font-size: calc(62.5% / 1.25);
@@ -593,6 +586,10 @@ header {
         min-height: 56.7rem;
         border-radius: 1rem;
         box-shadow: 0.2rem 0.2rem 0.4rem 0.2rem rgba(189, 188, 188, 0.5);
+    }
+
+    .project-card-title {
+        text-align: center;
     }
 
     .project-card-description {
