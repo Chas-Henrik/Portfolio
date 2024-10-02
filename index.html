@@ -111,24 +111,27 @@
                 <img class="tech-stack-img" src="./svg/TailwindCSS.svg" alt="TailwindCSS.svg">
                 <img class="tech-stack-img" src="./svg/Sass.svg" alt="Sass.svg">
                 <img class="desktop-block tech-stack-img" src="./svg/Git.svg" alt="Git.svg">
-                <div>
-                    <img class="desktop-block light-block tech-stack-img" src="./svg/Greensock.svg" alt="Greensock.svg">
-                    <img class="desktop-block dark-block tech-stack-img" src="./svg/Greensock-dark.svg" alt="Greensock-dark.svg">
-                </div>
+                <picture class="desktop-block">
+                    <source srcset="./svg/Greensock.svg" media="(prefers-color-scheme: light)" />
+                    <source srcset="./svg/Greensock-dark.svg" media="(prefers-color-scheme: dark)" />
+                    <img class="tech-stack-img" src="./svg/Greensock.svg" alt="Greensock.svg" />
+                </picture>
                 <img class="desktop-block tech-stack-img" src="./svg/VSCode.svg" alt="VSCode.svg">
-                <div>
-                    <img class="desktop-block light-block tech-stack-img" src="./svg/GitHub.svg" alt="GitHub.svg">
-                    <img class="desktop-block dark-block tech-stack-img" src="./svg/GitHub-dark.svg" alt="GitHub-dark.svg">
-                </div>
+                <picture class="desktop-block">
+                    <source srcset="./svg/GitHub.svg" media="(prefers-color-scheme: light)" />
+                    <source srcset="./svg/GitHub-dark.svg" media="(prefers-color-scheme: dark)" />
+                    <img class="tech-stack-img" src="./svg/GitHub.svg" alt="GitHub.svg" />
+                </picture>
             </div>
             <h2 class="mobile-block">Tools</h2>
             <div class="mobile-flex tech-stack-container">
                 <img class="mobile-block tech-stack-img" src="./svg/VSCode.svg" alt="VSCode.svg">
                 <img class="mobile-block tech-stack-img" src="./svg/Git.svg" alt="Git.svg">
-                <div>
-                    <img class="mobile-block light-block tech-stack-img" src="./svg/GitHub.svg" alt="GitHub.svg">
-                    <img class="mobile-block dark-block tech-stack-img" src="./svg/GitHub-dark.svg" alt="GitHub-dark.svg">
-                </div>
+                <picture class="mobile-block" >
+                    <source srcset="./svg/GitHub.svg" media="(prefers-color-scheme: light)" />
+                    <source srcset="./svg/GitHub-dark.svg" media="(prefers-color-scheme: dark)" />
+                    <img class="tech-stack-img" src="./svg/GitHub.svg" alt="GitHub.svg" />
+                </picture>
                 <img class="mobile-block tech-stack-img" src="./svg/Figma.svg" alt="Figma.svg">
                 <img class="mobile-block tech-stack-img" src="./svg/NPM.svg" alt="NPM.svg">
                 <img class="mobile-block tech-stack-img" src="./svg/Postman.svg" alt="Postman.svg">
@@ -150,15 +153,21 @@
                     <div class="project-card-footer-container">
                         <span>
                             <a href="#" target="_blank">
-                                <img class="light-inline-block" src="./svg/ChainCard.svg" alt="ChainCard.svg">
-                                <img class="dark-inline-block" src="./svg/ChainCard-dark.svg" alt="ChainCard-dark.svg">
+                                <picture>
+                                    <source srcset="./svg/ChainCard.svg" media="(prefers-color-scheme: light)" />
+                                    <source srcset="./svg/ChainCard-dark.svg" media="(prefers-color-scheme: dark)" />
+                                    <img src="./svg/ChainCard.svg" alt="ChainCard.svg" />
+                                </picture>
                                 Live Preview
                             </a>
                         </span>
                         <span>
                             <a href="https://github.com/" target="_blank">
-                                <img class="light-inline-block" src="./svg/GitHubCard.svg" alt="GitHubCard.svg">
-                                <img class="dark-inline-block" src="./svg/GitHubCard-dark.svg" alt="GitHubCard-dark.svg">
+                                <picture>
+                                    <source srcset="./svg/GitHubCard.svg" media="(prefers-color-scheme: light)" />
+                                    <source srcset="./svg/GitHubCard-dark.svg" media="(prefers-color-scheme: dark)" />
+                                    <img src="./svg/GitHubCard.svg" alt="GitHubCard.svg" />
+                                </picture>
                                 View Code
                             </a>
                         </span>
