@@ -344,8 +344,8 @@ header {
     width: 100%;
     height: auto;
     min-width: 50vw;
-    border-radius: 2rem;
-    box-shadow: var(--drop-shadow);
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
     transition: all 0.1s ease-in;
     font-size: 1.6rem;
     display: flex;
@@ -369,6 +369,7 @@ header {
     display: block;
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .project-card-title-container {
@@ -584,8 +585,7 @@ header {
         height: 56.7rem;
         min-width: 37.3rem;
         min-height: 56.7rem;
-        border-radius: 1rem;
-        box-shadow: 0.2rem 0.2rem 0.4rem 0.2rem rgba(189, 188, 188, 0.5);
+        border-radius: 16px;
     }
 
     .project-card-title {

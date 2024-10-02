@@ -42,7 +42,7 @@
     --coffee-gradient-end: #C500A8;
 
     /* misc */
-    --drop-shadow: 2px 2px 100px 0px #00000033;
+    --box-shadow: 2px 2px 100px 0px #00000033;
 }
 
 .logo-gradient {
