@@ -476,8 +476,12 @@ header {
 /*** Footer ***/
 
 .footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     text-align: center;
-    margin: 3rem 0;
+    padding: 2rem 0;
 }
 
 /*** Media Queries ***/
@@ -762,6 +766,11 @@ header {
         color: var(--contact-light-mode);
     }
 
+    .footer {
+        background: var(--background-light-mode);
+        color: var(--dark-content-light-mode);
+    }
+    
     .light-inline-block {
         display: inline-block;
     }
@@ -854,6 +863,11 @@ header {
 
     .contact-container .contact-questions {
         color: var(--contact-dark-mode);
+    }
+
+    .footer {
+        background: var(--background-dark-mode);
+        color: var(--light-content-dark-mode);
     }
 
     .light-inline-block {
