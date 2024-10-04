@@ -10,27 +10,16 @@ html {
     font-size: calc(62.5% / 1.5);
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 5.8rem;
-    line-height: 7.0rem;
-    letter-spacing: -0.1rem;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 4.2rem;
-    line-height: 5.2rem;
-    letter-spacing: -0.04rem;
-}
-
-p {
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.6rem;
-}
-
 body {
+    min-width: 35rem;
+}
+
+header {
+    padding: 1svh 3vw;
+    padding-top: 3svh;
+}
+
+main {
     min-width: 35rem;
     margin: 3svh 12.5vw;
     padding: 0;
@@ -55,6 +44,32 @@ section>h2 {
 
 .mobile-flex {
     display: flex;
+}
+
+.header__size-title {
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 7.0rem;
+    letter-spacing: -0.1rem;
+}
+
+.header__size-default {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    letter-spacing: -0.04rem;
+}
+
+.paragraph__size-default {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
+.paragraph__size-small {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
 }
 
 .icon {
@@ -96,56 +111,61 @@ header {
     font-style: normal;
 }
 
-.nav-container {
+.nav {
     display: flex;
     justify-content: space-between;
     text-align: center;
     font-size: 2rem;
 }
 
-.profile-logo {
+.logo-henrik {
     flex: 1 1 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: auto;
+    margin-left: 0.5rem;
 }
 
-#header-menu {
+#menu {
     flex: 1 1 70%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.hamburger-menu {
+.label__hamburger {
     flex: 1 1 15%;
 }
 
-.menu-list {
+.menu__list {
     flex: 1 1 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.menu-buttons {
+.menu__list-buttons {
     margin-block-start: 4rem;
     margin-block-end: 2rem;
 }
 
-.menu-buttons li {
+.menu__list-buttons li {
     flex: 1 1 100%;
     flex-wrap: wrap;
 }
 
-.menu-buttons li a {
+.menu__list-buttons li a {
     padding: 0.25em 0.5em;
 }
 
-.menu-icons li {
+.menu__list-icons li {
     flex: 1;
 }
 
-.menu-list li {
+.menu__list li {
     list-style: none;
 }
 
-.menu-list li a {
+.menu__list li a {
     display: inline-block;
     text-decoration: none;
     text-wrap: nowrap;
@@ -156,11 +176,11 @@ header {
     vertical-align: middle;
 }
 
-.menu-list li a:hover {
+.menu__list li a:hover {
     color: var(--menu-hover);
 }
 
-.menu-icons img {
+.menu__list-icons img {
     width: 20px;
     height: auto;
     vertical-align: middle;
@@ -168,29 +188,30 @@ header {
     /* => #000000*/
 }
 
-.hamburger-menu-icon {
+.icon__hamburger {
     display: block;
     width: 5rem;
     height: auto;
     justify-self: center;
     align-self: start;
     margin-left: auto;
+    
 }
 
-.nav-container>label {
+.label__hamburger {
     cursor: pointer;
 }
 
-#menu-toggle {
+#input__checkbox {
     display: none;
     /* hide the checkbox (only used for menu toggle) */
 }
 
-#header-menu {
+#menu {
     display: none;
 }
 
-#menu-toggle:checked+#header-menu {
+#input__checkbox:checked+#menu {
     display: flex;
 }
 
@@ -215,7 +236,7 @@ header {
     font-size: 5.8rem;
 }
 
-.gradient-border-container {
+.container-gradient {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,11 +256,11 @@ header {
 
 /*** About, Work Experience & Education Section ***/
 
-#about {
+#section-about {
     max-width: 100%;
 }
 
-.container-grid {
+.grid {
     width: 100%;
     display: grid;
     grid-template-columns: 6fr 4fr;
@@ -252,7 +273,7 @@ header {
     margin: 2rem 0;
 }
 
-.container-grid>h2 {
+.grid__item-role {
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.8rem;
@@ -261,7 +282,7 @@ header {
 }
 
 
-.container-grid>p {
+.grid__item-type {
     width: 8.4rem;
     height: 2.4rem;
     font-size: 0.9rem;
@@ -274,26 +295,26 @@ header {
     justify-self: right;
 }
 
-.provider {
+.grid__item-provider {
     justify-self: left;
 }
 
-.date {
+.grid__item-date {
     justify-self: right;
 }
 
-.location {
+.grid__item-location {
     justify-self: left;
 }
 
-.container-grid>span {
+.grid>span {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.8rem;
     letter-spacing: 0.1rem;
 }
 
-.container-grid span img {
+.grid span img {
     width: 1.6rem;
     height: 1.2rem;
     vertical-align: middle;
@@ -303,11 +324,7 @@ header {
 
 /*** Tech Stack Section ***/
 
-#tech-stack>p {
-    font-size: 2.0rem;
-}
-
-.tech-stack-container {
+.flexbox-tech-stack {
     width: 100%;
     margin: 10svh 0;
     display: flex;
@@ -318,16 +335,12 @@ header {
     gap: 7rem;
 }
 
-.tech-stack-img {
+.image-tech-stack {
     width: 10rem;
     height: auto;
 }
 
 /*** Projects Section ***/
-
-#projects>p {
-    font-size: 2.0rem;
-}
 
 .container-project-card {
     display: flex;
@@ -428,12 +441,12 @@ header {
 
 /*** Contact Section ***/
 
-#contact {
+#section-contact {
     width: 100%;
     height: 70svh;
 }
 
-.contact-container {
+.container-contact {
     width: 100%;
     height: 100%;
     display: flex;
@@ -450,18 +463,18 @@ header {
     letter-spacing: -1px;
 }
 
-.contact-container>h2 {
+.container-contact>h2 {
     font-size: 3rem;
     line-height: 5rem;
     letter-spacing: -1px;
 }
 
-.contact-container>p {
+.container-contact>p {
     font-size: 2rem;
     font-weight: 500;
 }
 
-.contact-container .mobile-block.contact-questions {
+.container-contact .mobile-block.contact-questions {
     font-size: 3rem;
     line-height: 6rem;
 }
@@ -487,36 +500,36 @@ header {
         scroll-padding-top: calc(5.9rem + 3svh);
     }
 
-    .profile-logo {
-        flex: 1 1 15%;
+    header {
+        padding: 1svh 6vw;
+        padding-top: 3svh;
     }
 
-    .hamburger-menu {
+    .label__hamburger {
         flex: 1 1 0%;
     }
 
-    #header-menu {
-        flex: 1 1 85%;
+    #menu {
         display: flex;
-        flex-wrap: wrap;
+        flex: 1 1 85%;
     }
 
-    .menu-buttons {
+    .menu__list-buttons {
         margin-block-start: 0rem;
     }
 
-    .menu-buttons li {
+    .menu__list-buttons li {
         flex: 1 1 33.33%;
     }
 
-    .menu-buttons li a {
+    .menu__list-buttons li a {
         padding: 0.5em 1em;
         font-weight: 500;
         font-size: 2rem;
         line-height: 2.6rem;
     }
 
-    .menu-icons {
+    .menu__list-icons {
         padding: 0 1rem;
         width: 40%;
         display: inline-flex;
@@ -527,30 +540,26 @@ header {
         gap: 0rem;
     }
 
-    .menu-icons img {
+    .menu__list-icons img {
         width: 30px;
         height: auto;
         filter: unset;
         /* => #666666*/
     }
 
-    .hamburger-menu-icon {
+    .icon__hamburger {
         display: none;
-    }
-
-    #header-menu {
-        display: flex;
     }
 
     .introduction-container {
         width: 75%;
     }
 
-    #about {
+    #section-about {
         max-width: 710px;
     }
 
-    .container-grid.job-experience {
+    .grid-experience {
         width: 100%;
         display: grid;
         grid-template-columns: 6fr 3fr 4fr;
@@ -559,44 +568,44 @@ header {
             'provider location date';
     }
 
-    .job-experience>.role {
+    .grid-experience .grid__item-role {
         grid-column: 1 / 3;
     }
 
-    .job-experience :nth-child(1) {
+    .grid-experience :nth-child(1) {
         order: 1;
     }
 
-    .job-experience :nth-child(2) {
+    .grid-experience :nth-child(2) {
         order: 2;
     }
 
-    .job-experience :nth-child(3) {
+    .grid-experience :nth-child(3) {
         order: 3;
     }
 
-    .job-experience :nth-child(4) {
+    .grid-experience :nth-child(4) {
         order: 5;
     }
 
-    .job-experience :nth-child(5) {
+    .grid-experience :nth-child(5) {
         order: 4;
     }
 
-    .container-grid.education {
+    .grid-education {
         width: 100%;
         display: grid;
         grid-template-columns: 7fr 3fr;
         grid-template-rows: auto;
-        grid-template-areas: 'role job-type'
+        grid-template-areas: 'role type'
             'provider date';
     }
 
-    .container-grid>.location {
+    .grid__item-location {
         text-align: left;
     }
 
-    .container-grid>.date {
+    .grid__item-date {
         align-self: flex-end;
     }
 
@@ -620,13 +629,13 @@ header {
         font-weight: 400;
     }
 
-    .contact-container>h2 {
+    .container-contact>h2 {
         font-size: 5.8rem;
         line-height: 7rem;
         letter-spacing: -1px;
     }
 
-    .contact-container>p {
+    .container-contact>p {
         font-size: 3rem;
         font-weight: 500;
     }
@@ -655,27 +664,25 @@ header {
         scroll-padding-top: calc(5.9rem + 3svh);
     }
 
-    .nav-container {
+    header {
+        padding: 1svh 12.5vw;
+        padding-top: 3svh;
+    }
+
+    .nav {
         display: flex;
         justify-content: space-between;
     }
 
-    .profile-logo {
-        flex: 1 1 15%;
-        justify-content: flex-start;
-        margin-right: auto;
-    }
-
-    #header-menu {
-        flex: 1 1 85%;
+    #menu {
         flex-wrap: nowrap;
     }
 
-    .hamburger-menu {
+    .label__hamburger {
         flex: 1 1 0%;
     }
 
-    .menu-buttons {
+    .menu__list-buttons {
         flex: 1 1 80%;
         display: flex;
         justify-content: flex-end;
@@ -685,33 +692,29 @@ header {
         margin-block-end: 0;
     }
 
-    .menu-icons {
+    .menu__list-icons {
         flex: 1 1 20%;
         display: flex;
         justify-content: center;
         flex-direction: row-reverse;
     }
 
-    .menu-buttons li {
+    .menu__list-buttons li {
         flex: unset;
         display: flex;
         justify-content: space-around;
     }
 
-    .menu-buttons li:first-child {
+    .menu__list-buttons li:first-child {
         margin-left: auto;
     }
 
-    .menu-buttons li a {
+    .menu__list-buttons li a {
         padding: 0.25em 0.5em;
     }
 
-    .menu-icons li {
+    .menu__list-icons li {
         flex: 1;
-    }
-
-    .profile-logo {
-        margin-right: auto;
     }
 
     .introduction-container {
@@ -736,24 +739,24 @@ header {
     }
 
     header,
-    .nav-container {
+    .nav {
         background-color: var(--background-light-mode);
         color: var(--black-content-light-mode);
     }
 
-    .menu-list li a {
+    .menu__list li a {
         color: var(--black-content-light-mode);
     }
 
-    .container-grid {
+    .grid {
         border-bottom: 0.2rem solid var(--border-color-light-mode);
     }
 
-    .container-grid * {
+    .grid * {
         color: var(--light-content-dark-mode);
     }
 
-    .container-grid>.role {
+    .grid__item-role {
         color: var(--dark-content-light-mode);
     }
 
@@ -774,11 +777,11 @@ header {
         color: var(--dark-content-light-mode);
     }
 
-    .contact-container .mobile-block.contact-questions {
+    .container-contact .mobile-block.contact-questions {
         color: var(--black-content-light-mode);
     }
 
-    .contact-container .desktop-block.contact-questions {
+    .container-contact .desktop-block.contact-questions {
         color: var(--contact-light-mode);
     }
 
@@ -813,7 +816,7 @@ header {
 
 /* On screens that larger than 601px (Tablets & Desktops), we needed to override Light Theme above */
 @media only screen and (min-width: 601px) {
-    .menu-list li a {
+    .menu__list li a {
         color: var(--dark-content-light-mode);
     }
 }
@@ -835,33 +838,32 @@ header {
     }
 
     header,
-    .nav-container {
+    .nav {
         background-color: var(--background-dark-mode);
         color: var(--light-content-dark-mode);
     }
 
-    .menu-list li a {
+    .menu__list li a {
         color: var(--light-content-dark-mode);
     }
 
-    #header-menu .menu-icons img {
-        filter: invert(100%) brightness(109%);
-        /* => #A7A7A7*/
+    #menu .menu__list-icons img {
+        filter: invert(100%) brightness(109%); /* => #A7A7A7*/
     }
 
-    .nav-container .dark-mode-invert img {
+    .image__color-invert img {
         filter: invert(100%);
     }
 
-    .container-grid {
+    .grid {
         border-bottom: 0.2rem solid var(--border-color-dark-mode);
     }
 
-    .container-grid * {
+    .grid * {
         color: var(--light-content-dark-mode);
     }
 
-    .container-grid>.role {
+    .grid__item-role {
         color: var(--solid-heading-dark-mode);
     }
 
@@ -877,7 +879,7 @@ header {
         color: var(--black-content-dark-mode);
     }
 
-    .contact-container .contact-questions {
+    .container-contact .contact-questions {
         color: var(--contact-dark-mode);
     }
 

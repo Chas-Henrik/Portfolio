@@ -14,25 +14,27 @@
 </head>
 <body>
     <header>
-        <nav class="nav-container">
-            <p class="profile-logo gradient-text logo-gradient"><strong>{007}<br>henriksuurik</strong></p>
-            <input id="menu-toggle" type="checkbox">
-            <div id="header-menu">
-                <ul class="menu-list menu-buttons">
+        <nav class="nav">
+            <div class="logo-henrik">
+                <p class="gradient-text logo-gradient"><strong>{007}<br>henriksuurik</strong></p>
+            </div>
+            <input id="input__checkbox" type="checkbox">
+            <div id="menu">
+                <ul class="menu__list menu__list-buttons">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#tech-stack">Tech Stack</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#section-about">About</a></li>
+                    <li><a href="#section-tech-stack">Tech Stack</a></li>
+                    <li><a href="#section-projects">Projects</a></li>
+                    <li><a href="#section-contact">Contact</a></li>
                 </ul>
-                <ul class="menu-list menu-icons">
-                    <li><a href="https://github.com/" target="_blank"><img class="icon" src="./svg/GitHubHeader.svg" alt="GitHubHeader.svg"></a></li>
-                    <li><a href="https://www.linkedin.com/" target="_blank"><img class="icon" src="./svg/LinkedInHeader.svg" alt="LinkedInHeader.svg"></a></li>
-                    <li><a href="https://x.com/home" target="_blank"><img class="icon" src="./svg/TwitterHeader.svg" alt="TwitterHeader.svg"></a></li>
+                <ul class="menu__list menu__list-icons">
+                    <li><a href="https://github.com/" target="_blank"><img class="icon" src="./svg/GitHubHeader.svg" alt="./svg/GitHubHeader.svg"></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><img class="icon" src="./svg/LinkedInHeader.svg" alt="./svg/LinkedInHeader.svg"></a></li>
+                    <li><a href="https://x.com/home" target="_blank"><img class="icon" src="./svg/TwitterHeader.svg" alt="./svg/TwitterHeader.svg"></a></li>
                 </ul>
             </div>
-            <label class="hamburger-menu dark-mode-invert" for="menu-toggle">
-                <img class="hamburger-menu-icon" src="./svg/hamburger-menu.svg" alt="hamburger-menu.svg">
+            <label class="label__hamburger image__color-invert" for="input__checkbox">
+                <img class="icon__hamburger" src="./svg/hamburger-menu.svg" alt="hamburger-menu.svg">
             </label>
         </nav>
     </header>
@@ -41,103 +43,103 @@
         <div>
             <article class="introduction-container">
                 <div class="introduction-textbox">
-                    <h1>Hi👋,<br>
+                    <h1 class="header__size-title">Hi👋,<br>
                     My name is<br>
                     <span class="gradient-text name-gradient">Henrik Suurik<br></span>
                     I build things for web</h1>
                 </div>
-                <div class="gradient-border-container border-gradient">
-                    <img class="profile-image" src="./img/Henrik.jpg" alt="Henrik.jpg">
+                <div class="container-gradient border-gradient">
+                    <img class="profile-image" src="./img/Henrik.jpg" alt="./img/Henrik.jpg">
                 </div>
             </article>
         </div>
         <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
-            <h2>Work Experience</h2>
-            <article class="container-grid job-experience">
-                <h2 class="role">Junior Web Developer</h2>
-                <p class="job-type">Full-Time</p>
-                <span class="provider"><img src="./svg/office-building.svg" alt="office-building.svg">Dr. Rajkumar's Learning App</span>
-                <span class="date"><img src="./svg/calender.svg" alt="calender.svg">Sep 2021 - Dec 2021</span>
-                <span class="location"><img src="./svg/location.svg" alt="location.svg">Bengaluru</span>
+        <section id="section-about">
+            <h2 class="header__size-default">About Me</h2>
+            <p class="paragraph__size-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+            <h2 class="header__size-default">Work Experience</h2>
+            <article class="grid grid-experience">
+                <h2 class="grid__item-role">Junior Web Developer</h2>
+                <p class="grid__item-type">Full-Time</p>
+                <span class="grid__item-provider"><img src="./svg/office-building.svg" alt="./svg/office-building.svg">Dr. Rajkumar's Learning App</span>
+                <span class="grid__item-date"><img src="./svg/calender.svg" alt="./svg/calender.svg">Sep 2021 - Dec 2021</span>
+                <span class="grid__item-location"><img src="./svg/location.svg" alt="./svg/location.svg">Bengaluru</span>
             </article>
-            <article class="container-grid job-experience">
-                <h2 class="role">Web Development Intern</h2>
-                <p class="job-type">Internship</p>
-                <span class="provider"><img src="./svg/office-building.svg" alt="office-building.svg">IonPixelz Web Solutions</span>
-                <span class="date"><img src="./svg/calender.svg" alt="calender.svg">Sep 2021 - Dec 2021</span>
-                <span class="location"><img src="./svg/location.svg" alt="location.svg">Bengaluru</span>
+            <article class="grid grid-experience">
+                <h2 class="grid__item-role">Web Development Intern</h2>
+                <p class="grid__item-type">Internship</p>
+                <span class="grid__item-provider"><img src="./svg/office-building.svg" alt="./svg/office-building.svg">IonPixelz Web Solutions</span>
+                <span class="grid__item-date"><img src="./svg/calender.svg" alt="./svg/calender.svg">Sep 2021 - Dec 2021</span>
+                <span class="grid__item-location"><img src="./svg/location.svg" alt="./svg/location.svg">Bengaluru</span>
             </article>
-            <article class="container-grid job-experience">
-                <h2 class="role">SEO / SEM Specialist</h2>
-                <p class="job-type">Internship</p>
-                <span class="provider"><img src="./svg/office-building.svg" alt="office-building.svg">HAAPS</span>
-                <span class="date"><img src="./svg/calender.svg" alt="calender.svg">Sep 2021 - Dec 2021</span>
-                <span class="location"><img src="./svg/location.svg" alt="location.svg">Bengaluru</span>
+            <article class="grid grid-experience">
+                <h2 class="grid__item-role">SEO / SEM Specialist</h2>
+                <p class="grid__item-type">Internship</p>
+                <span class="grid__item-provider"><img src="./svg/office-building.svg" alt="./svg/office-building.svg">HAAPS</span>
+                <span class="grid__item-date"><img src="./svg/calender.svg" alt="./svg/calender.svg">Sep 2021 - Dec 2021</span>
+                <span class="grid__item-location"><img src="./svg/location.svg" alt="./svg/location.svg">Bengaluru</span>
             </article>
-            <h2>Education</h2>
-            <article class="container-grid education">
-                <h2 class="role">Frontend Development</h2>
-                <p class="job-type">Full-Time</p>
-                <span class="provider"><img src="./svg/office-building.svg" alt="office-building.svg">Udemy, YouTube, Google, Medium</span>
-                <span class="date"><img src="./svg/calender.svg" alt="calender.svg">Jan 2022 - Present</span>
-                <span class="location mobile-block"><img src="./svg/location.svg" alt="location.svg">Online</span>
+            <h2 class="header__size-default">Education</h2>
+            <article class="grid grid-education">
+                <h2 class="grid__item-role">Frontend Development</h2>
+                <p class="grid__item-type">Full-Time</p>
+                <span class="grid__item-provider"><img src="./svg/office-building.svg" alt="./svg/office-building.svg">Udemy, YouTube, Google, Medium</span>
+                <span class="grid__item-date"><img src="./svg/calender.svg" alt="./svg/calender.svg">Jan 2022 - Present</span>
+                <span class="grid__item-location mobile-block"><img src="./svg/location.svg" alt="./svg/location.svg">Online</span>
             </article>
-            <article class="container-grid education">
-                <h2 class="role">Bachelor in Electronics and Communications</h2>
-                <p class="job-type">Full-Time</p>
-                <span class="provider"><img src="./svg/office-building.svg" alt="office-building.svg">Bangalore Institute of Technology</span>
-                <span class="date"><img src="./svg/calender.svg" alt="calender.svg">Aug 2015 - Dec 2020</span>
-                <span class="location mobile-block"><img src="./svg/location.svg" alt="location.svg">Bengaluru</span>
+            <article class="grid grid-education">
+                <h2 class="grid__item-role">Bachelor in Electronics and Communications</h2>
+                <p class="grid__item-type">Full-Time</p>
+                <span class="grid__item-provider"><img src="./svg/office-building.svg" alt="./svg/office-building.svg">Bangalore Institute of Technology</span>
+                <span class="grid__item-date"><img src="./svg/calender.svg" alt="./svg/calender.svg">Aug 2015 - Dec 2020</span>
+                <span class="grid__item-location mobile-block"><img src="./svg/location.svg" alt="./svg/location.svg">Bengaluru</span>
             </article>
         </section>
         <!-- Tech Stack Section -->
-        <section id="tech-stack">
-            <h2>My Tech Stack</h2>
-            <p>Technologies I've been working with recently</p>
-            <div class="tech-stack-container">
-                <img class="tech-stack-img" src="./svg/HTML5.svg" alt="HTML5.svg">
-                <img class="tech-stack-img" src="./svg/CSS3.svg" alt="CSS3.svg">
-                <img class="tech-stack-img" src="./svg/JavaScript.svg" alt="JavaScript.svg">
-                <img class="tech-stack-img" src="./svg/React.svg" alt="React.svg">
-                <img class="tech-stack-img" src="./svg/Redux.svg" alt="Redux.svg">
-                <img class="tech-stack-img" src="./svg/Bootstrap.svg" alt="Bootstrap.svg">
-                <img class="tech-stack-img" src="./svg/TailwindCSS.svg" alt="TailwindCSS.svg">
-                <img class="tech-stack-img" src="./svg/Sass.svg" alt="Sass.svg">
-                <img class="desktop-block tech-stack-img" src="./svg/Git.svg" alt="Git.svg">
+        <section id="section-tech-stack">
+            <h2 class="header__size-default">My Tech Stack</h2>
+            <p class="paragraph__size-default">Technologies I've been working with recently</p>
+            <div class="flexbox-tech-stack">
+                <img class="image-tech-stack" src="./svg/HTML5.svg" alt="./svg/HTML5.svg">
+                <img class="image-tech-stack" src="./svg/CSS3.svg" alt="./svg/CSS3.svg">
+                <img class="image-tech-stack" src="./svg/JavaScript.svg" alt="./svg/JavaScript.svg">
+                <img class="image-tech-stack" src="./svg/React.svg" alt="./svg/React.svg">
+                <img class="image-tech-stack" src="./svg/Redux.svg" alt="./svg/Redux.svg">
+                <img class="image-tech-stack" src="./svg/Bootstrap.svg" alt="./svg/Bootstrap.svg">
+                <img class="image-tech-stack" src="./svg/TailwindCSS.svg" alt="./svg/TailwindCSS.svg">
+                <img class="image-tech-stack" src="./svg/Sass.svg" alt="./svg/Sass.svg">
+                <img class="desktop-block image-tech-stack" src="./svg/Git.svg" alt="./svg/Git.svg">
                 <picture class="desktop-block">
                     <source srcset="./svg/Greensock.svg" media="(prefers-color-scheme: light)" />
                     <source srcset="./svg/Greensock-dark.svg" media="(prefers-color-scheme: dark)" />
-                    <img class="tech-stack-img" src="./svg/Greensock.svg" alt="Greensock.svg" />
+                    <img class="image-tech-stack" src="./svg/Greensock.svg" alt="./svg/Greensock.svg" />
                 </picture>
-                <img class="desktop-block tech-stack-img" src="./svg/VSCode.svg" alt="VSCode.svg">
+                <img class="desktop-block image-tech-stack" src="./svg/VSCode.svg" alt="./svg/VSCode.svg">
                 <picture class="desktop-block">
                     <source srcset="./svg/GitHub.svg" media="(prefers-color-scheme: light)" />
                     <source srcset="./svg/GitHub-dark.svg" media="(prefers-color-scheme: dark)" />
-                    <img class="tech-stack-img" src="./svg/GitHub.svg" alt="GitHub.svg" />
+                    <img class="image-tech-stack" src="./svg/GitHub.svg" alt="./svg/GitHub.svg" />
                 </picture>
             </div>
-            <h2 class="mobile-block">Tools</h2>
-            <div class="mobile-flex tech-stack-container">
-                <img class="mobile-block tech-stack-img" src="./svg/VSCode.svg" alt="VSCode.svg">
-                <img class="mobile-block tech-stack-img" src="./svg/Git.svg" alt="Git.svg">
+            <h2 class="header__size-default mobile-block">Tools</h2>
+            <div class="mobile-flex flexbox-tech-stack">
+                <img class="mobile-block image-tech-stack" src="./svg/VSCode.svg" alt="./svg/VSCode.svg">
+                <img class="mobile-block image-tech-stack" src="./svg/Git.svg" alt="./svg/Git.svg">
                 <picture class="mobile-block" >
                     <source srcset="./svg/GitHub.svg" media="(prefers-color-scheme: light)" />
                     <source srcset="./svg/GitHub-dark.svg" media="(prefers-color-scheme: dark)" />
-                    <img class="tech-stack-img" src="./svg/GitHub.svg" alt="GitHub.svg" />
+                    <img class="image-tech-stack" src="./svg/GitHub.svg" alt="./svg/GitHub.svg" />
                 </picture>
-                <img class="mobile-block tech-stack-img" src="./svg/Figma.svg" alt="Figma.svg">
-                <img class="mobile-block tech-stack-img" src="./svg/NPM.svg" alt="NPM.svg">
-                <img class="mobile-block tech-stack-img" src="./svg/Postman.svg" alt="Postman.svg">
+                <img class="mobile-block image-tech-stack" src="./svg/Figma.svg" alt="./svg/Figma.svg">
+                <img class="mobile-block image-tech-stack" src="./svg/NPM.svg" alt="./svg/NPM.svg">
+                <img class="mobile-block image-tech-stack" src="./svg/Postman.svg" alt="./svg/Postman.svg">
             </div>
         </section>
         
         <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Things I've built so far</p>
+        <section id="section-projects">
+            <h2 class="header__size-default">Projects</h2>
+            <p class="paragraph__size-default">Things I've built so far</p>
             <div class="container-project-card">
                 <article class="card">
                     <img class="card__image" src="./img/Project1.png" alt="Project1.png">
@@ -310,8 +312,8 @@
             </div>
         </section>
         <!-- Contact -->
-        <div id="contact">
-            <article class="contact-container">
+        <div id="section-contact">
+            <article class="container-contact">
                 <h2 class="mobile-block contact-questions">For any questions please drop a mail</h2>
                 <h2 class="mobile-block gradient-text contact-gradient">hi@example.com</h2>
                 <p class="mobile-block">or</p>
@@ -323,7 +325,7 @@
     </main>
     <footer>
         <div class="footer">
-            <p class="footer-span">Designed and built by <span class="gradient-text name-gradient">Henrik Suurik</span> with <span class="gradient-text love-gradient">Love</span> & <span class="gradient-text coffee-gradient">Coffee</span></p>
+            <p class="paragraph__size-small">Designed and built by <span class="gradient-text name-gradient">Henrik Suurik</span> with <span class="gradient-text love-gradient">Love</span> & <span class="gradient-text coffee-gradient">Coffee</span></p>
         </div>
     </footer>
 </body>
