@@ -331,7 +331,7 @@ header {
     font-size: 2.0rem;
 }
 
-.project-card-container {
+.container-project-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -340,7 +340,7 @@ header {
     margin: 7svh 0;
 }
 
-.project-card {
+.card {
     width: 100%;
     height: auto;
     min-width: 50vw;
@@ -355,48 +355,44 @@ header {
     overflow: hidden;
 }
 
-.project-card:hover {
+.card:hover {
     border: 3px solid rgb(77, 188, 224);
 }
 
-.project-card> :not(img) {
+.card> * {
     padding: 0 2.5rem;
     padding-bottom: 1rem;
 }
 
-.project-card>img {
+.card__image {
+    padding: 0;
     flex: 53;
     display: block;
     width: 100%;
+    height: auto;
     object-fit: cover;
     overflow: hidden;
 }
 
-.project-card-title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-card-title {
-    flex: 20;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
-    text-align: left;
-    text-wrap: nowrap;
-    font-weight: 500;
+.card__title {
+    flex: fit-content;
+    padding: 2.5rem 2.5rem;
+    padding-bottom: 2rem;
     font-size: 2.8rem;
     line-height: 2.6rem;
+    font-weight: 500;
+    text-align: center;
+    text-wrap: nowrap;
 }
 
-.project-card-description {
+.card__description {
     flex: 10;
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 2.6rem;
 }
 
-.project-card-tech-stack {
+.card__footnote {
     flex: 5;
     height: 10%;
     font-weight: 500;
@@ -404,29 +400,28 @@ header {
     line-height: 2.6rem;
 }
 
-.project-card-tech-stack span {
+.card__footnote span {
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 2.6rem;
 }
 
-.project-card-footer-container {
+.card__footer {
     flex: 12;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin-right: 1rem;
     padding-bottom: 2rem;
 }
 
-.project-card-footer-container a {
+.footer__link-card {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.6rem;
 }
 
-.project-card-footer-container img {
+.footer__img-card {
     width: 2rem;
     height: auto;
     vertical-align: middle;
@@ -584,7 +579,7 @@ header {
         text-align: left;
     }
 
-    .project-card {
+    .card {
         width: 37.3rem;
         height: 56.7rem;
         min-width: 37.3rem;
@@ -592,15 +587,15 @@ header {
         border-radius: 16px;
     }
 
-    .project-card-title {
+    .card__title {
         text-align: center;
     }
 
-    .project-card-description {
+    .card__description {
         flex: 23;
     }
 
-    .project-card-tech-stack {
+    .card__footnote {
         font-weight: 400;
     }
 
@@ -741,20 +736,20 @@ header {
         color: var(--dark-content-light-mode);
     }
 
-    .project-card {
+    .card {
         background-color: var(--background-light-mode);
     }
 
-    .project-card * {
+    .card * {
         color: var(--black-content-light-mode);
     }
 
-    .project-card-description,
-    .project-card-tech-stack {
+    .card__description,
+    .card__footnote {
         color: var(--dark-content-light-mode);
     }
 
-    .project-card-tech-stack>span {
+    .card__footnote>span {
         color: var(--dark-content-light-mode);
     }
 
@@ -790,7 +785,7 @@ header {
 
 /* On screens that are less than 601px (Mobile), we needed to override Light Theme above */
 @media only screen and (max-width: 600px) {
-    .project-card-tech-stack {
+    .card__footnote {
         color: var(--black-content-light-mode);
     }
 }
@@ -849,15 +844,15 @@ header {
         color: var(--solid-heading-dark-mode);
     }
 
-    .project-card {
+    .card {
         background-color: var(--background-card-dark-mode);
     }
 
-    .project-card * {
+    .card * {
         color: var(--solid-heading-dark-mode);
     }
 
-    .project-card-footer-container * {
+    .card__footer * {
         color: var(--black-content-dark-mode);
     }
 
