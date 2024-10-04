@@ -45,27 +45,27 @@ section>h2 {
     display: flex;
 }
 
-.header__size-title {
+.header__size--title {
     font-weight: 700;
     font-size: 5.8rem;
     line-height: 7.0rem;
     letter-spacing: -0.1rem;
 }
 
-.header__size-default {
+.header__size--default {
     font-weight: 700;
     font-size: 4.2rem;
     line-height: 5.2rem;
     letter-spacing: -0.04rem;
 }
 
-.paragraph__size-default {
+.paragraph__size--default {
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.6rem;
 }
 
-.paragraph__size-small {
+.paragraph__size--small {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.6rem;
@@ -142,21 +142,21 @@ header {
     flex-wrap: wrap;
 }
 
-.menu__list-buttons {
+.menu__list--buttons {
     margin-block-start: 4rem;
     margin-block-end: 2rem;
 }
 
-.menu__list-buttons li {
+.menu__list--buttons li {
     flex: 1 1 100%;
     flex-wrap: wrap;
 }
 
-.menu__list-buttons li a {
+.menu__list--buttons li a {
     padding: 0.25em 0.5em;
 }
 
-.menu__list-icons li {
+.menu__list--icons li {
     flex: 1;
 }
 
@@ -179,7 +179,7 @@ header {
     color: var(--menu-hover);
 }
 
-.menu__list-icons img {
+.menu__list--icons img {
     width: 20px;
     height: auto;
     vertical-align: middle;
@@ -272,7 +272,7 @@ header {
     margin: 2rem 0;
 }
 
-.grid__item-role {
+.grid__item--role {
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.8rem;
@@ -281,7 +281,7 @@ header {
 }
 
 
-.grid__item-type {
+.grid__item--type {
     width: 8.4rem;
     height: 2.4rem;
     font-size: 0.9rem;
@@ -294,15 +294,15 @@ header {
     justify-self: right;
 }
 
-.grid__item-provider {
+.grid__item--provider {
     justify-self: left;
 }
 
-.grid__item-date {
+.grid__item--date {
     justify-self: right;
 }
 
-.grid__item-location {
+.grid__item--location {
     justify-self: left;
 }
 
@@ -334,14 +334,14 @@ header {
     gap: 7rem;
 }
 
-.image-tech-stack {
+.image__size--width {
     width: 10rem;
     height: auto;
 }
 
 /*** Projects Section ***/
 
-.container-project-card {
+.flex__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -425,13 +425,13 @@ header {
     padding-bottom: 2rem;
 }
 
-.footer__link-card {
+.footer__link--card {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.6rem;
 }
 
-.footer__img-card {
+.footer__img--card {
     width: 2rem;
     height: auto;
     vertical-align: middle;
@@ -513,22 +513,22 @@ header {
         flex: 1 1 85%;
     }
 
-    .menu__list-buttons {
+    .menu__list--buttons {
         margin-block-start: 0rem;
     }
 
-    .menu__list-buttons li {
+    .menu__list--buttons li {
         flex: 1 1 33.33%;
     }
 
-    .menu__list-buttons li a {
+    .menu__list--buttons li a {
         padding: 0.5em 1em;
         font-weight: 500;
         font-size: 2rem;
         line-height: 2.6rem;
     }
 
-    .menu__list-icons {
+    .menu__list--icons {
         padding: 0 1rem;
         width: 40%;
         display: inline-flex;
@@ -539,7 +539,7 @@ header {
         gap: 0rem;
     }
 
-    .menu__list-icons img {
+    .menu__list--icons img {
         width: 30px;
         height: auto;
         filter: unset;
@@ -567,7 +567,7 @@ header {
             'provider location date';
     }
 
-    .grid-experience .grid__item-role {
+    .grid-experience .grid__item--role {
         grid-column: 1 / 3;
     }
 
@@ -600,11 +600,11 @@ header {
             'provider date';
     }
 
-    .grid__item-location {
+    .grid__item--location {
         text-align: left;
     }
 
-    .grid__item-date {
+    .grid__item--date {
         align-self: flex-end;
     }
 
@@ -681,7 +681,7 @@ header {
         flex: 1 1 0%;
     }
 
-    .menu__list-buttons {
+    .menu__list--buttons {
         flex: 1 1 80%;
         display: flex;
         justify-content: flex-end;
@@ -691,28 +691,28 @@ header {
         margin-block-end: 0;
     }
 
-    .menu__list-icons {
+    .menu__list--icons {
         flex: 1 1 20%;
         display: flex;
         justify-content: center;
         flex-direction: row-reverse;
     }
 
-    .menu__list-buttons li {
+    .menu__list--buttons li {
         flex: unset;
         display: flex;
         justify-content: space-around;
     }
 
-    .menu__list-buttons li:first-child {
+    .menu__list--buttons li:first-child {
         margin-left: auto;
     }
 
-    .menu__list-buttons li a {
+    .menu__list--buttons li a {
         padding: 0.25em 0.5em;
     }
 
-    .menu__list-icons li {
+    .menu__list--icons li {
         flex: 1;
     }
 
@@ -755,7 +755,7 @@ header {
         color: var(--light-content-dark-mode);
     }
 
-    .grid__item-role {
+    .grid__item--role {
         color: var(--dark-content-light-mode);
     }
 
@@ -846,11 +846,11 @@ header {
         color: var(--light-content-dark-mode);
     }
 
-    #menu .menu__list-icons img {
+    #menu .menu__list--icons img {
         filter: invert(100%) brightness(109%); /* => #A7A7A7*/
     }
 
-    .image__color-invert img {
+    .image__color--invert img {
         filter: invert(100%);
     }
 
@@ -862,7 +862,7 @@ header {
         color: var(--light-content-dark-mode);
     }
 
-    .grid__item-role {
+    .grid__item--role {
         color: var(--solid-heading-dark-mode);
     }
 
