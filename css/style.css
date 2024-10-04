@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    min-width: 35rem;
+    min-width: 320px;
 }
 
 header {
@@ -20,7 +20,6 @@ header {
 }
 
 main {
-    min-width: 35rem;
     margin: 3svh 12.5vw;
     padding: 0;
     text-align: left;
