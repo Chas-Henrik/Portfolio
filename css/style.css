@@ -239,45 +239,29 @@ header {
     max-width: 100%;
 }
 
-.container_items-column {
+.container-grid {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'role job-type'
+        'provider date'
+        'location';
+    row-gap: 0;
+    padding-bottom: 1.8rem;
+    margin: 2rem 0;
 }
 
-.table {
-    width: 100%;
-    margin-top: 3em;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 0.5em;
-}
-
-.table > * {
-    flex: 1 1 50%;
-    overflow: hidden;
-}
-
-.table>*:last-child {
-    padding-bottom: 1em;
-}
-
-.table>.role {
+.container-grid>h2 {
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.8rem;
     letter-spacing: 0.1rem;
+    justify-self: left;
 }
 
-.table div {
-    display: flex;
-    justify-content: flex-end;
-}
 
-.table div>.job-type {
+.container-grid>p {
     width: 8.4rem;
     height: 2.4rem;
     font-size: 0.9rem;
@@ -286,16 +270,30 @@ header {
     color: var(--button-text);
     background-color: var(--button-success);
     border-radius: 10rem;
+    text-align: center;
+    justify-self: right;
 }
 
-.table>span {
+.provider {
+    justify-self: left;
+}
+
+.date {
+    justify-self: right;
+}
+
+.location {
+    justify-self: left;
+}
+
+.container-grid>span {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.8rem;
     letter-spacing: 0.1rem;
 }
 
-.table img {
+.container-grid span img {
     width: 1.6rem;
     height: 1.2rem;
     vertical-align: middle;
@@ -359,7 +357,7 @@ header {
     border: 3px solid rgb(77, 188, 224);
 }
 
-.card> * {
+.card>* {
     padding: 0 2.5rem;
     padding-bottom: 1rem;
 }
@@ -552,31 +550,54 @@ header {
         max-width: 710px;
     }
 
-    .table :nth-child(1) {
+    .container-grid.job-experience {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 6fr 3fr 4fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'role role job-type'
+            'provider location date';
+    }
+
+    .job-experience>.role {
+        grid-column: 1 / 3;
+    }
+
+    .job-experience :nth-child(1) {
         order: 1;
     }
 
-    .table :nth-child(2) {
+    .job-experience :nth-child(2) {
         order: 2;
     }
 
-    .table :nth-child(3) {
-        flex: 1 1 50%;
+    .job-experience :nth-child(3) {
         order: 3;
     }
 
-    .table :nth-child(4) {
-        flex: 1 1 30%;
+    .job-experience :nth-child(4) {
         order: 5;
     }
 
-    .table :nth-child(5) {
-        flex: 1 1 20%;
+    .job-experience :nth-child(5) {
         order: 4;
     }
 
-    .table>.location {
+    .container-grid.education {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'role job-type'
+            'provider date';
+    }
+
+    .container-grid>.location {
         text-align: left;
+    }
+
+    .container-grid>.date {
+        align-self: flex-end;
     }
 
     .card {
@@ -724,15 +745,15 @@ header {
         color: var(--black-content-light-mode);
     }
 
-    .table {
+    .container-grid {
         border-bottom: 0.2rem solid var(--border-color-light-mode);
     }
 
-    .table * {
+    .container-grid * {
         color: var(--light-content-dark-mode);
     }
 
-    .table>.role {
+    .container-grid>.role {
         color: var(--dark-content-light-mode);
     }
 
@@ -765,7 +786,7 @@ header {
         background: var(--background-light-mode);
         color: var(--dark-content-light-mode);
     }
-    
+
     .light-inline-block {
         display: inline-block;
     }
@@ -832,15 +853,15 @@ header {
         filter: invert(100%);
     }
 
-    .table {
+    .container-grid {
         border-bottom: 0.2rem solid var(--border-color-dark-mode);
     }
 
-    .table * {
+    .container-grid * {
         color: var(--light-content-dark-mode);
     }
 
-    .table>.role {
+    .container-grid>.role {
         color: var(--solid-heading-dark-mode);
     }
 
