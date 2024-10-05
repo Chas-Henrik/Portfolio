@@ -774,22 +774,6 @@ header {
         background: var(--background-light-mode);
         color: var(--dark-content-light-mode);
     }
-
-    .light-inline-block {
-        display: inline-block;
-    }
-
-    .light-block {
-        display: block;
-    }
-
-    .dark-inline-block {
-        display: none;
-    }
-
-    .dark-block {
-        display: none;
-    }
 }
 
 /* On screens that are less than 601px (Mobile), we needed to override Light Theme above */
@@ -871,21 +855,5 @@ header {
     .footer {
         background: var(--background-dark-mode);
         color: var(--light-content-dark-mode);
-    }
-
-    .light-inline-block {
-        display: none;
-    }
-
-    .light-block {
-        display: none;
-    }
-
-    .dark-inline-block {
-        display: inline-block;
-    }
-
-    .dark-block {
-        display: block;
     }
 }
