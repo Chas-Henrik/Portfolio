@@ -59,6 +59,18 @@ main {
     letter-spacing: -0.04rem;
 }
 
+.heading__size--contact {
+    font-size: 4rem;
+    line-height: 6rem;
+    letter-spacing: -1px;
+}
+
+.heading__size--contact-small {
+    font-size: 3rem;
+    line-height: 6rem;
+    letter-spacing: -1px;
+}
+
 .heading__margin--section {
     margin: 4.2rem 0;
 }
@@ -69,10 +81,21 @@ main {
     line-height: 2.6rem;
 }
 
+.paragraph__size--default-bold {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
 .paragraph__size--small {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.6rem;
+}
+
+.paragraph__size--contact {
+    font-size: 3rem;
+    font-weight: 500;
 }
 
 .gradient__text {
@@ -128,7 +151,7 @@ header {
     margin-left: 0.5rem;
 }
 
-#menu {
+.flex--menu {
     flex: 1 1 70%;
     display: flex;
     flex-wrap: wrap;
@@ -147,10 +170,26 @@ header {
 .menu__list {
     flex: 1 1 100%;
     display: flex;
-    flex-wrap: wrap;
+}
+
+.menu__list li {
+    list-style: none;
+}
+
+.menu__list li a {
+    display: inline-block;
+    text-decoration: none;
+    text-wrap: nowrap;
+    color: inherit;
+    vertical-align: middle;
+}
+
+.menu__list li a:hover {
+    color: var(--menu-hover);
 }
 
 .menu__list--buttons {
+    flex-wrap: wrap;
     margin-block-start: 4rem;
     margin-block-end: 2rem;
 }
@@ -164,35 +203,23 @@ header {
     padding: 0.25em 0.5em;
 }
 
+.menu__list--icons {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 0.2rem;
+}
+
 .menu__list--icons li {
-    flex: 1;
-}
-
-.menu__list li {
-    list-style: none;
-}
-
-.menu__list li a {
-    display: inline-block;
-    text-decoration: none;
-    text-wrap: nowrap;
-    color: inherit;
-    font-weight: 500;
-    font-size: 2rem;
-    line-height: 2.6rem;
-    vertical-align: middle;
-}
-
-.menu__list li a:hover {
-    color: var(--menu-hover);
+    flex: 1; /* => flex: 1 1 33.33%; */
 }
 
 .menu__list--icons img {
-    width: 20px;
+    width: 3rem;
     height: auto;
     vertical-align: middle;
     filter: brightness(0%);
-    /* => #000000*/
+    /* => color #000000*/
 }
 
 .icon__display--hamburger {
@@ -219,7 +246,7 @@ header {
     /* hide the checkbox (only used for menu toggle) */
 }
 
-#menu {
+.flex--menu {
     display: none;
 }
 
@@ -453,24 +480,6 @@ header {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    line-height: 7rem;
-    letter-spacing: -1px;
-}
-
-.container-contact>h2 {
-    font-size: 3rem;
-    line-height: 5rem;
-    letter-spacing: -1px;
-}
-
-.container-contact>p {
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.container-contact .block__display--mobile.contact-questions {
-    font-size: 3rem;
-    line-height: 6rem;
 }
 
 /*** Footer ***/
@@ -503,9 +512,9 @@ header {
         flex: 1 1 0%;
     }
 
-    #menu {
-        display: flex;
+    .flex--menu {
         flex: 1 1 85%;
+        display: flex;
     }
 
     .menu__list--buttons {
@@ -518,25 +527,13 @@ header {
 
     .menu__list--buttons li a {
         padding: 0.5em 1em;
-        font-weight: 500;
-        font-size: 2rem;
-        line-height: 2.6rem;
     }
 
     .menu__list--icons {
-        padding: 0 1rem;
-        width: 40%;
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-        align-items: center;
-        gap: 0rem;
+        flex: 1;
     }
 
     .menu__list--icons img {
-        width: 30px;
-        height: auto;
         filter: unset;
         /* => #666666*/
     }
@@ -623,17 +620,6 @@ header {
         font-weight: 400;
     }
 
-    .container-contact>h2 {
-        font-size: 5.8rem;
-        line-height: 7rem;
-        letter-spacing: -1px;
-    }
-
-    .container-contact>p {
-        font-size: 3rem;
-        font-weight: 500;
-    }
-
     .block__display--desktop {
         display: block;
     }
@@ -668,7 +654,7 @@ header {
         justify-content: space-between;
     }
 
-    #menu {
+    .flex--menu {
         flex-wrap: nowrap;
     }
 
@@ -678,20 +664,18 @@ header {
 
     .menu__list--buttons {
         flex: 1 1 80%;
-        display: flex;
         justify-content: flex-end;
+        align-items: center;
         column-gap: 2.0rem;
         flex-wrap: nowrap;
-        align-items: center;
         margin-block-end: 0;
     }
 
     .menu__list--icons {
         flex: 1 1 20%;
         display: flex;
-        justify-content: center;
         flex-direction: row-reverse;
-        column-gap: 0.5rem;
+        margin-left: 2rem;
     }
 
     .menu__list--buttons li {
@@ -714,6 +698,12 @@ header {
 
     .introduction-container {
         width: 50%;
+    }
+
+    .heading__size--contact {
+        font-size: 5.8rem;
+        line-height: 7rem;
+        letter-spacing: -1px;
     }
 }
 
@@ -842,7 +832,7 @@ header {
         color: var(--light-content-dark-mode);
     }
 
-    #menu .menu__list--icons img {
+    .flex--menu .menu__list--icons img {
         filter: invert(100%) brightness(109%); /* => #A7A7A7*/
     }
 
