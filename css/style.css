@@ -641,6 +641,10 @@ header {
 /* On screens that are 1024px or more (Large Desktops) */
 @media only screen and (min-width: 1024px) {
 
+    html {
+        scroll-padding-top: calc(7rem + 50px);
+    }
+
     header {
         padding: 1svh 12.5vw;
         padding-top: 3svh;
@@ -703,7 +707,6 @@ header {
 @media only screen and (min-width: 1350px) {
     html {
         font-size: 62.5%;
-        scroll-padding-top: calc(7rem + 50px);
     }
 }
 
