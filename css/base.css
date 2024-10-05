@@ -28,57 +28,55 @@
     --menu-hover: #54C4F8;
 
     /* gradient colors */
-    --logo-gradient-start: #13B0F5;
-    --logo-gradient-end: #CA24B4;
-    --name-gradient-start: #25a5fa;
-    --name-gradient-end: #a74afd;
-    --border-gradient-start: #E70FAA;
-    --border-gradient-end: #00C0FD;
-    --contact-gradient-start: #13b0f5;
-    --contact-gradient-end: #e70faa;
-    --love-gradient-start: #9C27BA;
-    --love-gradient-end: #A816B4;
-    --coffee-gradient-start: #B106B1;
-    --coffee-gradient-end: #C500A8;
+    --gradient-logo-start: #13B0F5;
+    --gradient-logo-end: #CA24B4;
+    --gradient-name-start: #25a5fa;
+    --gradient-name-end: #a74afd;
+    --gradient-border-start: #E70FAA;
+    --gradient-border-end: #00C0FD;
+    --gradient-contact-start: #13b0f5;
+    --gradient-contact-end: #e70faa;
+    --gradient-love-start: #9C27BA;
+    --gradient-love-end: #A816B4;
+    --gradient-coffee-start: #B106B1;
+    --gradient-coffee-end: #C500A8;
 
     /* misc */
     --box-shadow: 2px 2px 100px 0px #00000033;
 }
 
-.logo-gradient {
-    background-image: var(--logo-gradient-start);
-    background-image: -webkit-linear-gradient(to right, var(--logo-gradient-start), var(--logo-gradient-end));
-    background-image: linear-gradient(to right, var(--logo-gradient-start), var(--logo-gradient-end));
+.gradient-logo {
+    background-image: var(--gradient-logo-start);
+    background-image: -webkit-linear-gradient(to right, var(--gradient-logo-start), var(--gradient-logo-end));
+    background-image: linear-gradient(to right, var(--gradient-logo-start), var(--gradient-logo-end));
 }
 
-.name-gradient {
-    background-image: var(--name-gradient-start);
-    background-image: -webkit-linear-gradient(to right, var(--name-gradient-start), var(--name-gradient-end));
-    background-image: linear-gradient(to right, var(--name-gradient-start), var(--name-gradient-end));
+.gradient-name {
+    background-image: var(--gradient-name-start);
+    background-image: -webkit-linear-gradient(to right, var(--gradient-name-start), var(--gradient-name-end));
+    background-image: linear-gradient(to right, var(--gradient-name-start), var(--gradient-name-end));
 }
 
-.border-gradient {
-    background: var(--border-gradient-start);
-    background: -webkit-linear-gradient(to bottom, var(--border-gradient-start), var(--border-gradient-end));
-    background: linear-gradient(to bottom, var(--border-gradient-start), var(--border-gradient-end));
+.gradient-border {
+    background-image: var(--gradient-border-start);
+    background-image: -webkit-linear-gradient(to bottom, var(--gradient-border-start), var(--gradient-border-end));
+    background-image: linear-gradient(to bottom, var(--gradient-border-start), var(--gradient-border-end));
 }
 
-.contact-gradient {
-    background-image: var(--contact-gradient-start);
-    background-image: -webkit-linear-gradient(to right, var(--contact-gradient-start) -2.06%, var(--contact-gradient-end) 100%);
-    background-image: linear-gradient(to right, var(--contact-gradient-start) -2.06%, var(--contact-gradient-end) 100%);
+.gradient-contact {
+    background-image: var(--gradient-contact-start);
+    background-image: -webkit-linear-gradient(to right, var(--gradient-contact-start) -2.06%, var(--gradient-contact-end) 100%);
+    background-image: linear-gradient(to right, var(--gradient-contact-start) -2.06%, var(--gradient-contact-end) 100%);
 }
 
-.love-gradient {
-    background-image: var(--love-gradient-start);
-    background-image: -webkit-linear-gradient(to right, var(--love-gradient-start), var(--love-gradient-end));
-    background-image: linear-gradient(to right, var(--love-gradient-start), var(--love-gradient-end));
+.gradient-love {
+    background-image: var(--gradient-love-start);
+    background-image: -webkit-linear-gradient(to right, var(--gradient-love-start), var(--gradient-love-end));
+    background-image: linear-gradient(to right, var(--gradient-love-start), var(--gradient-love-end));
 }
 
-.coffee-gradient {
-    background-image: var(--coffee-gradient-start);
-    background-image: -webkit-linear-gradient(to right, var(--coffee-gradient-start), var(--coffee-gradient-end));
-    background-image: linear-gradient(to right, var(--coffee-gradient-start), var(--coffee-gradient-end));
+.gradient-coffee {
+    background-image: var(--gradient-coffee-start);
+    background-image: -webkit-linear-gradient(to right, var(--gradient-coffee-start), var(--gradient-coffee-end));
+    background-image: linear-gradient(to right, var(--gradient-coffee-start), var(--gradient-coffee-end));
 }
-
-
