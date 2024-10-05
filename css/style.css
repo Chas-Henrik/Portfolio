@@ -542,10 +542,6 @@ header {
         display: none;
     }
 
-    .introduction-container {
-        width: 75%;
-    }
-
     #section-about {
         max-width: 710px;
     }
@@ -694,10 +690,6 @@ header {
 
     .menu__list--icons li {
         flex: 1;
-    }
-
-    .introduction-container {
-        width: 50%;
     }
 
     .heading__size--contact {
