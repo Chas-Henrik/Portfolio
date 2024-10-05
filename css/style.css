@@ -500,7 +500,7 @@ header {
 
 /*** Media Queries ***/
 
-/* On screens that are 600px to 1200px (Tablets & Medium Desktops) */
+/* On screens that are 600px to 1024px (Tablets & Medium Desktops) */
 @media only screen and (min-width: 600px) {
 
     html {
@@ -640,10 +640,6 @@ header {
 
 /* On screens that are 1024px or more (Large Desktops) */
 @media only screen and (min-width: 1024px) {
-    html {
-        font-size: 62.5%;
-        scroll-padding-top: calc(7rem + 50px);
-    }
 
     header {
         padding: 1svh 12.5vw;
@@ -700,6 +696,14 @@ header {
         font-size: 5.8rem;
         line-height: 7rem;
         letter-spacing: -1px;
+    }
+}
+
+/* On screens that are larger than 1350px (Large Desktops) */
+@media only screen and (min-width: 1350px) {
+    html {
+        font-size: 62.5%;
+        scroll-padding-top: calc(7rem + 50px);
     }
 }
 
