@@ -80,3 +80,8 @@
     background-image: -webkit-linear-gradient(to right, var(--gradient-coffee-start), var(--gradient-coffee-end));
     background-image: linear-gradient(to right, var(--gradient-coffee-start), var(--gradient-coffee-end));
 }
+
+.text-shadow-active {
+    color: var(--gradient-name-end) !important;
+    text-shadow: 1px 1px 2px var(--gradient-name-start), 0 0 1em var(--gradient-name-end), 0 0 0.2em var(--gradient-name-end);
+}

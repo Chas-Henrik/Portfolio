@@ -247,11 +247,11 @@ header {
 }
 
 .flex--menu {
-    display: none;
+    display: flex;
 }
 
 #input__checkbox:checked+#menu {
-    display: flex;
+    display: none;
 }
 
 /*** Introduction Section ***/
