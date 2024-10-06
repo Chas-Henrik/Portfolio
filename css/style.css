@@ -246,7 +246,8 @@ header {
 }
 
 .menu__list--icons li {
-    flex: 1; /* => flex: 1 1 33.33%; */
+    flex: 1;
+    /* => flex: 1 1 33.33%; */
 }
 
 .menu__list--icons img {
@@ -263,7 +264,7 @@ header {
 
 .icon__size--hamburger {
     width: 5rem;
-    height: auto; 
+    height: auto;
 }
 
 .icon__position--hamburger {
@@ -376,7 +377,6 @@ header {
     vertical-align: middle;
     margin-right: 0.5rem;
 }
-
 
 /*** Tech Stack Section ***/
 
@@ -569,7 +569,7 @@ header {
             'provider location date';
     }
 
-    .grid--experience > .grid__item--role {
+    .grid--experience>.grid__item--role {
         grid-column: 1 / 3;
     }
 
@@ -611,7 +611,7 @@ header {
     }
 
     /*** Projects Section ***/
-    
+
     .card {
         width: 37.3rem;
         height: 56.7rem;
@@ -659,7 +659,7 @@ header {
     }
 
     /*** Header ***/
-    
+   
     header {
         padding: 1svh 12.5vw;
         padding-top: 3svh;
