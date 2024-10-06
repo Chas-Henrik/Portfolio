@@ -420,6 +420,7 @@ header {
 
 .card:hover {
     border: 3px solid var(--border-color-card);
+    box-shadow: var(--box-shadow-hover);
 }
 
 .card>* {
@@ -780,11 +781,11 @@ header {
         color: var(--dark-content-light-mode);
     }
 
-    .container-contact .block__display--mobile.contact-questions {
+    .block__display--mobile.contact-questions {
         color: var(--black-content-light-mode);
     }
 
-    .container-contact .block__display--desktop.contact-questions {
+    .block__display--desktop.contact-questions {
         color: var(--contact-light-mode);
     }
 
@@ -835,7 +836,8 @@ header {
     }
 
     .flex--menu .menu__list--icons img {
-        filter: invert(100%) brightness(109%); /* => #A7A7A7*/
+        filter: invert(100%) brightness(109%);
+        /* => #A7A7A7*/
     }
 
     .image__color--invert img {
@@ -866,7 +868,7 @@ header {
         color: var(--black-content-dark-mode);
     }
 
-    .container-contact .contact-questions {
+    .contact-questions {
         color: var(--contact-dark-mode);
     }
 

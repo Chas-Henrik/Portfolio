@@ -20,9 +20,9 @@
     --black-content-light-mode: #000000;
     --black-content-dark-mode: #FFFFFF;
     --contact-light-mode: #1E0E62;
-    --contact-dark-mode: #f4f5f3;
-    --border-color-light-mode: #ebeaed;
-    --border-color-dark-mode: #42446e;
+    --contact-dark-mode: #F4F5F3;
+    --border-color-light-mode: #EBEAED;
+    --border-color-dark-mode: #42446E;
     --button-text: #018C0F;
     --button-success: #D7FFE0;
     --menu-color-hover: #54C4F8;
@@ -31,12 +31,12 @@
     /* gradient colors */
     --gradient-logo-start: #13B0F5;
     --gradient-logo-end: #CA24B4;
-    --gradient-name-start: #25a5fa;
-    --gradient-name-end: #a74afd;
+    --gradient-name-start: #25A5FA;
+    --gradient-name-end: #A74AFD;
     --gradient-border-start: #E70FAA;
     --gradient-border-end: #00C0FD;
-    --gradient-contact-start: #13b0f5;
-    --gradient-contact-end: #e70faa;
+    --gradient-contact-start: #13B0F5;
+    --gradient-contact-end: #E70FAA;
     --gradient-love-start: #9C27BA;
     --gradient-love-end: #A816B4;
     --gradient-coffee-start: #B106B1;
@@ -44,6 +44,7 @@
 
     /* misc */
     --box-shadow: 2px 2px 100px 0px #00000033;
+    --box-shadow-hover: 2px 2px 2px 0px #00000033;
 }
 
 .gradient-logo {
