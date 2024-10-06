@@ -477,9 +477,9 @@ header {
     height: 70svh;
 }
 
-.container-contact {
+.container--contact {
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
