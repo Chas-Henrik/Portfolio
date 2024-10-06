@@ -71,9 +71,39 @@ main {
     letter-spacing: -1px;
 }
 
+.heading__size--card-title {
+    font-size: 2.8rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+}
+
 .heading__margin--vertical {
     margin-top: 4.2rem;
     margin-bottom: 4.2rem;
+}
+
+.paragraph__size--footnote-span {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+}
+
+.paragraph__size--card-description {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
+.paragraph__size--footer-link {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.paragraph__size--default-small {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
 }
 
 .paragraph__size--default {
@@ -82,15 +112,15 @@ main {
     line-height: 2.6rem;
 }
 
-.paragraph__size--default-bold {
+.paragraph__size--card-footnote {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 2.6rem;
 }
 
-.paragraph__size--default-small {
-    font-weight: 400;
-    font-size: 1.8rem;
+.paragraph__size--default-bold {
+    font-weight: 500;
+    font-size: 2rem;
     line-height: 2.6rem;
 }
 
@@ -191,7 +221,7 @@ header {
 }
 
 .menu__list li a:hover {
-    color: var(--menu-hover);
+    color: var(--menu-color-hover);
 }
 
 .menu__list--buttons {
@@ -389,7 +419,7 @@ header {
 }
 
 .card:hover {
-    border: 3px solid rgb(77, 188, 224);
+    border: 3px solid var(--border-color-card);
 }
 
 .card>* {
@@ -409,34 +439,19 @@ header {
 
 .card__title {
     flex: fit-content;
-    padding: 2.5rem 2.5rem;
+    padding: 2.5rem;
     padding-bottom: 2rem;
-    font-size: 2.8rem;
-    line-height: 2.6rem;
-    font-weight: 500;
     text-align: center;
     text-wrap: nowrap;
 }
 
 .card__description {
     flex: 10;
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 2.6rem;
 }
 
 .card__footnote {
     flex: 5;
     height: 10%;
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-}
-
-.card__footnote span {
-    font-weight: 300;
-    font-size: 1.4rem;
-    line-height: 2.6rem;
 }
 
 .card__footer {
@@ -446,12 +461,6 @@ header {
     align-items: center;
     text-align: center;
     padding-bottom: 2rem;
-}
-
-.footer__link--card {
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
 }
 
 .footer__img--card {
@@ -619,7 +628,7 @@ header {
         flex: 23;
     }
 
-    .card__footnote {
+    .paragraph__size--card-footnote {
         font-weight: 400;
     }
 
