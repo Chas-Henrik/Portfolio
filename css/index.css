@@ -94,6 +94,13 @@ main {
     line-height: 2.6rem;
 }
 
+.paragraph__size--grid-role {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1rem;
+}
+
 .paragraph__size--footer-link {
     font-weight: 400;
     font-size: 1.6rem;
@@ -112,6 +119,13 @@ main {
     line-height: 2.6rem;
 }
 
+.paragraph__size--grid-span {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1rem;
+}
+
 .paragraph__size--card-footnote {
     font-weight: 500;
     font-size: 1.6rem;
@@ -125,13 +139,19 @@ main {
 }
 
 .paragraph__size--logo {
-    font-size: 2rem;
     font-weight: 500;
+    font-size: 2rem;
 }
 
 .paragraph__size--contact {
-    font-size: 3rem;
     font-weight: 500;
+    font-size: 3rem;
+}
+
+.paragraph__size--grid-type {
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 2.6rem;
 }
 
 .gradient__text {
@@ -331,10 +351,6 @@ header {
 }
 
 .grid__item--role {
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 2.8rem;
-    letter-spacing: 0.1rem;
     justify-self: left;
 }
 
@@ -342,9 +358,6 @@ header {
 .grid__item--type {
     width: 8.4rem;
     height: 2.4rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    line-height: 2.6rem;
     color: var(--button-text);
     background-color: var(--button-success);
     border-radius: 10rem;
@@ -362,13 +375,6 @@ header {
 
 .grid__item--location {
     justify-self: left;
-}
-
-.grid>span {
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 2.8rem;
-    letter-spacing: 0.1rem;
 }
 
 .grid span img {
