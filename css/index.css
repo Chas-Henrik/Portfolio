@@ -420,7 +420,6 @@ header {
     height: auto;
     min-width: 50vw;
     border-radius: 16px;
-    box-shadow: var(--box-shadow);
     transition: all 0.1s ease-in;
     font-size: 1.6rem;
     display: flex;
@@ -432,7 +431,6 @@ header {
 
 .card:hover {
     border: 3px solid var(--border-color-card);
-    box-shadow: var(--box-shadow-hover);
 }
 
 .card>* {
@@ -766,6 +764,11 @@ header {
 
     .card {
         background-color: var(--background-light-mode);
+        box-shadow: var(--box-shadow-light-mode);
+    }
+
+    .card:hover {
+        box-shadow: var(--box-shadow-hover-light-mode);
     }
 
     .card * {
@@ -858,6 +861,11 @@ header {
 
     .card {
         background-color: var(--background-card-dark-mode);
+        box-shadow: var(--box-shadow-dark-mode);
+    }
+
+    .card:hover {
+        box-shadow: var(--box-shadow-hover-dark-mode);
     }
 
     .card * {
