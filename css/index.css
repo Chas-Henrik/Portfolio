@@ -516,8 +516,8 @@ header {
 
 /*** Media Queries ***/
 
-/* On screens that are 600px to 1024px (Tablets & Medium Desktops) */
-@media only screen and (min-width: 600px) {
+/* On screens that are 601px to 1024px (Tablets & Medium Desktops) */
+@media only screen and (min-width: 601px) {
 
     html {
         font-size: calc(62.5% / 1.25);
@@ -799,7 +799,7 @@ header {
 }
 
 /* On screens that are less than 601px (Mobile), we needed to override Light Theme above */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 601px) {
     .card__footnote {
         color: var(--black-content-light-mode);
     }
