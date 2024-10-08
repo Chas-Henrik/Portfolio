@@ -15,8 +15,9 @@ body {
 }
 
 header {
+    height: 32rem;
     padding: 1svh 3vw;
-    padding-top: 3svh;
+    padding-top: 3rem;
 }
 
 main {
@@ -181,10 +182,8 @@ main {
 
 header {
     width: 100%;
-    height: fit-content;
     position: sticky;
     top: 0;
-    height: fit-content;
     font-family: var(--secondary-font);
     font-optical-sizing: auto;
     font-weight: 500;
@@ -521,14 +520,15 @@ header {
 
     html {
         font-size: calc(62.5% / 1.25);
-        scroll-padding-top: 18rem;
+        scroll-padding-top: 20rem;
     }
 
     /*** Header ***/
 
     header {
+        height: 20rem;
         padding: 1svh 6vw;
-        padding-top: 3svh;
+        padding-top: 3rem;
     }
 
     .label__size--hamburger {
@@ -654,14 +654,15 @@ header {
 @media only screen and (min-width: 1024px) {
 
     html {
-        scroll-padding-top: 10rem;
+        scroll-padding-top: 13rem;
     }
 
     /*** Header ***/
 
     header {
+        height: 13rem;
         padding: 1svh 12.5vw;
-        padding-top: 3svh;
+        padding-top: 3rem;
     }
 
     .flex__nav {
