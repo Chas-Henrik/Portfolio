@@ -16,7 +16,7 @@ body {
 
 header {
     height: 32rem;
-    padding: 1svh 3vw;
+    padding: 1rem 3vw;
     padding-top: 3rem;
 }
 
@@ -527,7 +527,7 @@ header {
 
     header {
         height: 20rem;
-        padding: 1svh 6vw;
+        padding: 1rem 6vw;
         padding-top: 3rem;
     }
 
@@ -661,7 +661,7 @@ header {
 
     header {
         height: 13rem;
-        padding: 1svh 12.5vw;
+        padding: 1rem 12.5vw;
         padding-top: 3rem;
     }
 
