@@ -564,7 +564,7 @@ header {
     }
 
     .menu__list--icons img {
-        filter: unset;
+        filter: none;
         /* => #666666*/
     }
 
