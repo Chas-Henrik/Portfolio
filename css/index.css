@@ -21,11 +21,14 @@ header {
 }
 
 main {
-    margin: 50px 12.5vw;
+    margin: 5rem 12.5vw;
     padding: 0;
     text-align: left;
 }
 
+section {
+    margin: 10rem 0;
+}
 
 /*** Recyclables ***/
 
@@ -311,6 +314,10 @@ header {
 
 /*** Introduction Section ***/
 
+.flex-row-wrap__margin--introduction {
+    margin: 10rem 0;
+}
+
 .flex-row-wrap__gap--introduction {
     justify-content: space-between;
     gap: 3rem;
@@ -396,7 +403,7 @@ header {
 }
 
 .flex-row-wrap__margin--tech-stack {
-    margin: 10svh 0;
+    margin: 10rem 0;
 }
 
 .image__size--tech-stack {
@@ -411,7 +418,7 @@ header {
 }
 
 .flex-row-wrap__margin--project-card {
-    margin: 7svh 0;
+    margin: 10rem 0;
 }
 
 .card {
@@ -541,7 +548,7 @@ header {
     }
 
     .menu__list--buttons {
-        margin-block-start: 0rem;
+        margin-block-start: 0;
     }
 
     .menu__list--buttons li {
