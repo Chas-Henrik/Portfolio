@@ -523,7 +523,7 @@ header {
 /*** Media Queries ***/
 
 /* On screens that are 601px to 1024px (Tablets & Medium Desktops) */
-@media only screen and (min-width: 601px) {
+@media (min-width: 601px) {
 
     html {
         font-size: calc(62.5% / 1.25);
@@ -658,7 +658,7 @@ header {
 }
 
 /* On screens that are 1024px or more (Large Desktops) */
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
 
     html {
         scroll-padding-top: 13rem;
@@ -726,7 +726,7 @@ header {
 }
 
 /* On screens that are larger than 1350px (Large Desktops) */
-@media only screen and (min-width: 1350px) {
+@media (min-width: 1350px) {
     html {
         font-size: 62.5%;
     }
@@ -807,14 +807,14 @@ header {
 }
 
 /* On screens that are less than 601px (Mobile), we needed to override Light Theme above */
-@media only screen and (max-width: 601px) {
+@media (max-width: 601px) {
     .card__footnote {
         color: var(--black-content-light-mode);
     }
 }
 
 /* On screens that are larger than 601px (Tablets & Desktops), we needed to override Light Theme above */
-@media only screen and (min-width: 601px) {
+@media (min-width: 601px) {
     .menu__list li a {
         color: var(--dark-content-light-mode);
     }
