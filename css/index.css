@@ -658,14 +658,14 @@ section {
 @media (min-width: 1024px) {
 
     html {
-        scroll-padding-top: 13rem;
+        scroll-padding-top: 10rem;
     }
 
     /*** Header ***/
 
     header {
-        height: 13rem;
-        padding: 1rem 12.5vw;
+        height: 10rem;
+        padding: 1rem 6vw;
         padding-top: 3rem;
     }
 
