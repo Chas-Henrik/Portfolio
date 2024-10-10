@@ -15,9 +15,16 @@ body {
 }
 
 header {
-    height: 32rem;
+    height: fit-content;
+    width: 100%;
+    position: sticky;
     padding: 1rem 3vw;
     padding-top: 3rem;
+    top: 0;
+    font-family: var(--secondary-font);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 main {
@@ -182,16 +189,6 @@ section {
 }
 
 /*** Header ***/
-
-header {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    font-family: var(--secondary-font);
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
 
 .flex__nav {
     display: flex;
