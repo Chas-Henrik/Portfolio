@@ -329,7 +329,7 @@ section {
     display: none;
 }
 
-/*** Introduction Section ***/
+/*** Introduction (Home) Section ***/
 
 .flex-row-wrap__margin--introduction {
     margin: 10rem 0;
@@ -771,7 +771,6 @@ section {
         color: var(--solid-heading-light-mode);
     }
 
-    h1,
     h2 {
         color: var(--solid-heading-light-mode);
     }
@@ -859,7 +858,6 @@ section {
         color: var(--solid-heading-dark-mode);
     }
 
-    h1,
     h2 {
         color: var(--solid-heading-dark-mode);
     }
