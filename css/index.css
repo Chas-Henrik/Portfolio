@@ -331,10 +331,6 @@ section {
 
 /*** Introduction (Home) Section ***/
 
-.flex-row-wrap__margin--introduction {
-    margin: 10rem 0;
-}
-
 .flex-row-wrap__gap--introduction {
     justify-content: space-between;
     gap: 3rem;
@@ -837,14 +833,14 @@ section {
     }
 }
 
-/* On screens that are less than 1024px (Mobile & Tablets), we needed to override Light Theme above */
+/* On screens that are less than 1024px (Mobile & Tablets), we override Light Theme above to match Mobile Mode color */
 @media (max-width: 1023px) {
     .card__footnote {
         color: var(--black-content-light-mode);
     }
 }
 
-/* On screens that are larger than 1024px (Desktops), we needed to override Light Theme above */
+/* On screens that are larger than 1024px (Desktops), we override Light Theme above to match Desktop Mode color */
 @media (min-width: 1024px) {
     .menu__list li a {
         color: var(--dark-content-light-mode);
