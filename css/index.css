@@ -39,20 +39,36 @@ section {
 
 /*** Recyclables ***/
 
-.block__display--desktop {
-    display: none;
-}
-
-.flex__display--desktop {
-    display: none;
-}
-
 .block__display--mobile {
     display: block;
 }
 
 .flex__display--mobile {
     display: flex;
+}
+
+.block__display--mobile-tablet {
+    display: block;
+}
+
+.flex__display--mobile-tablet {
+    display: flex;
+}
+
+.block__display--tablet-desktop {
+    display: none;
+}
+
+.flex__display--tablet-desktop {
+    display: none;
+}
+
+.block__display--desktop {
+    display: none;
+}
+
+.flex__display--desktop {
+    display: none;
 }
 
 .heading__size--title {
@@ -68,18 +84,6 @@ section {
     font-size: 4.2rem;
     line-height: 5.2rem;
     letter-spacing: -0.04rem;
-}
-
-.heading__size--contact {
-    font-size: 4rem;
-    line-height: 6rem;
-    letter-spacing: -1px;
-}
-
-.heading__size--contact-small {
-    font-size: 3rem;
-    line-height: 6rem;
-    letter-spacing: -1px;
 }
 
 .heading__size--card-title {
@@ -130,6 +134,13 @@ section {
     line-height: 2.6rem;
 }
 
+.paragraph__size--contact-small {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 6rem;
+    letter-spacing: -1px;
+}
+
 .paragraph__size--grid-span {
     font-weight: 500;
     font-size: 1.2rem;
@@ -154,15 +165,24 @@ section {
     font-size: 2rem;
 }
 
-.paragraph__size--contact {
-    font-weight: 500;
-    font-size: 3rem;
-}
-
 .paragraph__size--grid-type {
     font-weight: 600;
     font-size: 0.9rem;
     line-height: 2.6rem;
+}
+
+.paragraph__size--contact-small-bold {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 7rem;
+    letter-spacing: -1px;
+}
+
+.paragraph__size--contact {
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 7rem;
+    letter-spacing: -1px;
 }
 
 .gradient__text {
@@ -502,7 +522,6 @@ section {
     text-align: center;
     font-family: var(--secondary-font);
     font-optical-sizing: auto;
-    font-weight: 700;
     font-style: normal;
 }
 
@@ -558,11 +577,6 @@ section {
 
     .menu__list--icons {
         flex: 1;
-    }
-
-    .menu__list--icons img {
-        filter: none;
-        /* => #666666*/
     }
 
     .icon__display--hamburger {
@@ -637,20 +651,20 @@ section {
 
     /*** General Selectors ***/
 
-    .block__display--desktop {
-        display: block;
-    }
-
-    .flex__display--desktop {
-        display: flex;
-    }
-
     .block__display--mobile {
         display: none;
     }
 
     .flex__display--mobile {
         display: none;
+    }
+
+    .block__display--tablet-desktop {
+        display: block;
+    }
+
+    .flex__display--tablet-desktop {
+        display: flex;
     }
 }
 
@@ -715,10 +729,31 @@ section {
         flex: 1;
     }
 
+    .menu__list--icons img {
+        filter: none;
+        /* => #666666*/
+    }
+
     .heading__size--contact {
         font-size: 5.8rem;
         line-height: 7rem;
         letter-spacing: -1px;
+    }
+
+    .block__display--mobile-tablet {
+        display: none;
+    }
+
+    .flex__display--mobile-tablet {
+        display: none;
+    }
+
+    .block__display--desktop {
+        display: block;
+    }
+    
+    .flex__display--desktop {
+        display: flex;
     }
 }
 
@@ -789,7 +824,7 @@ section {
         color: var(--dark-content-light-mode);
     }
 
-    .block__display--mobile.contact-questions {
+    .block__display--mobile-tablet.contact-questions {
         color: var(--black-content-light-mode);
     }
 
@@ -803,15 +838,15 @@ section {
     }
 }
 
-/* On screens that are less than 601px (Mobile), we needed to override Light Theme above */
-@media (max-width: 601px) {
+/* On screens that are less than 1024px (Mobile & Tablets), we needed to override Light Theme above */
+@media (max-width: 1023px) {
     .card__footnote {
         color: var(--black-content-light-mode);
     }
 }
 
-/* On screens that are larger than 601px (Tablets & Desktops), we needed to override Light Theme above */
-@media (min-width: 601px) {
+/* On screens that are larger than 1024px (Desktops), we needed to override Light Theme above */
+@media (min-width: 1024px) {
     .menu__list li a {
         color: var(--dark-content-light-mode);
     }
