@@ -455,7 +455,7 @@ section {
     flex: fit-content;
     padding: 2.5rem;
     padding-bottom: 2rem;
-    text-align: center;
+    text-align: left;
     text-wrap: nowrap;
 }
 
