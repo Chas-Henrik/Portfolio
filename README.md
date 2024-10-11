@@ -7,8 +7,8 @@ This is a multi-page, 'Portfolio Site' consisting of 5 pages:
 - Projects
 - Contact
 
-The design is a 'mobile first' responsive design that also support Tablet & Desktops. Media Queries have been added using a content driven approach. Breakpoints have been set at 600px for Mobile and 1024px for Desktop's, and everything between 600px and 1024px is intended for Tablets and small Desktops. An additional content driven breakpoint has been set at 1350px, to prevent navigation bar overflow (and 'profile picture bouncing') prior to the 1024px breakpoint.
-Since the site only use HTML & CSS, there is limited support for interaction. The mobile version supports the hamburger menu button though, and the menu can be collapsed & expanded by pressing the hamburger button. The site also supports ‘dark theme’ (configured through the operating system settings). All images except the 'artistic images' in the project section are 'formatted' as svg images to scale seamlessly to different resolutions. And the 'artistic images' are png formatted to preserve the details of the image.
+The design is a 'mobile first' responsive design that also support Tablet & Desktops. Media Queries have been added using a content driven approach. Breakpoints have been set at 600px for Mobile and 1024px for Desktop's, and everything between 600px and 1024px is intended for Tablets and small Desktops. An additional content driven breakpoint has been set at 1350px (prior to the 1024px breakpoint), to prevent navigation bar overflow and 'profile picture bouncing'.
+Since the site only use HTML & CSS, there is limited support for interaction. The mobile version supports the hamburger menu button though, and the menu can be collapsed & expanded by pressing the hamburger button. The site also supports ‘dark theme’ (configured through the operating system settings). All images, except the 'artistic images' in the project section, are 'formatted' as svg images to scale seamlessly to different resolutions. And the 'artistic images' are png formatted to preserve the details of the image.
 
 Known problems:
 1. None
