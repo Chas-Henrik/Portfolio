@@ -1,6 +1,9 @@
 @import url("./base.css");
 
 /*** General Selectors ***/
+:root {
+    --main-horizontal-margin: 10vw;
+}
 
 html {
     scroll-padding-top: 32rem;
@@ -28,7 +31,8 @@ header {
 }
 
 main {
-    margin: 5rem 12.5vw;
+    margin: 5rem var(--main-horizontal-margin);
+
     padding: 0;
     text-align: left;
 }
@@ -426,7 +430,8 @@ section {
 /*** Projects Section ***/
 
 .flex-row-wrap__gap--project-card {
-    gap: 3rem;
+    column-gap: 5rem;
+    row-gap: 6.5rem;
 }
 
 .flex-row-wrap__margin--project-card {
@@ -674,7 +679,7 @@ section {
 
     header {
         height: 10rem;
-        padding: 1rem 6vw;
+        padding: 1rem var(--main-horizontal-margin);
         padding-top: 3rem;
     }
 
@@ -901,7 +906,7 @@ section {
         color: var(--button-text);
         background-color: var(--button-success);
     }
-    
+
     .card {
         background-color: var(--background-card-dark-mode);
         box-shadow: var(--box-shadow-dark-mode);
