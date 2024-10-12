@@ -1,6 +1,7 @@
 @import url("./base.css");
 
 /*** General Selectors ***/
+
 :root {
     --main-horizontal-margin: 10vw;
 }
@@ -75,6 +76,31 @@ section {
     display: none;
 }
 
+.gradient__text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.flex-row-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*** Font Sizes ***/
+
 .heading__size--title {
     text-align: left;
     font-weight: 700;
@@ -141,7 +167,7 @@ section {
 .paragraph__size--contact-small {
     font-weight: 400;
     font-size: 3rem;
-    line-height: 6rem;
+    line-height: 4rem;
     letter-spacing: -1px;
 }
 
@@ -164,52 +190,36 @@ section {
     line-height: 2.6rem;
 }
 
-.paragraph__size--logo {
-    font-weight: 800;
-    font-size: 2.3rem;
-}
-
 .paragraph__size--grid-type {
     font-weight: 600;
     font-size: 0.9rem;
     line-height: 2.6rem;
 }
 
-.paragraph__size--contact-small-bold {
+.paragraph__size--contact-mobile-small-bold {
     font-weight: 700;
-    font-size: 3.5rem;
-    line-height: 7rem;
+    font-size: 3rem;
+    line-height: 6rem;
     letter-spacing: -1px;
 }
 
-.paragraph__size--contact {
+.paragraph__size--contact-mobile {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 5rem;
+    letter-spacing: -1px;
+}
+
+.paragraph__size--contact-desktop {
     font-weight: 700;
     font-size: 5.8rem;
     line-height: 7rem;
     letter-spacing: -1px;
 }
 
-.gradient__text {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-}
-
-.flex-row-wrap {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.paragraph__size--logo {
+    font-weight: 800;
+    font-size: 2.3rem;
 }
 
 /*** Header ***/
@@ -523,6 +533,10 @@ section {
     font-family: var(--secondary-font);
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+.contact-questions__margin {
+    margin-bottom: 1.5rem;
 }
 
 /*** Footer ***/
