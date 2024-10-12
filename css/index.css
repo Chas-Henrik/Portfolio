@@ -902,6 +902,10 @@ section {
         filter: invert(100%);
     }
 
+    .heading--title {
+        color: var(--very-light-content-dark-mode);
+    }
+
     .grid {
         border-bottom: 0.2rem solid var(--border-color-dark-mode);
     }
