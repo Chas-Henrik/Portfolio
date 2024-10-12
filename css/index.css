@@ -379,8 +379,6 @@ section {
     grid-area: type;
     width: 8.4rem;
     height: 2.4rem;
-    color: var(--button-text);
-    background-color: var(--button-success);
     border-radius: 10rem;
     text-align: center;
     justify-self: right;
@@ -797,6 +795,11 @@ section {
         color: var(--dark-content-light-mode);
     }
 
+    .grid__item--type {
+        color: var(--button-text);
+        background-color: var(--button-success);
+    }
+
     .card {
         background-color: var(--background-light-mode);
         box-shadow: var(--box-shadow-light-mode);
@@ -893,6 +896,11 @@ section {
         color: var(--solid-heading-dark-mode);
     }
 
+    .grid__item--type {
+        color: var(--button-text);
+        background-color: var(--button-success);
+    }
+    
     .card {
         background-color: var(--background-card-dark-mode);
         box-shadow: var(--box-shadow-dark-mode);
