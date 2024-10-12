@@ -240,10 +240,20 @@ section {
     margin-left: 0.5rem;
 }
 
+#input__checkbox {
+    display: none;
+    /* hide the checkbox (which is only used for Hamburger menu toggle) */
+}
+
 .flex--menu {
     flex: 1 1 70%;
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Hide the Nav Bar Menu when Hamburger checkbox is checked */
+#input__checkbox:checked+.flex--menu {
+    display: none;
 }
 
 .icon__size--menu {
@@ -328,19 +338,6 @@ section {
 
 .label__cursor--hamburger {
     cursor: pointer;
-}
-
-#input__checkbox {
-    display: none;
-    /* hide the checkbox (only used for menu toggle) */
-}
-
-.flex--menu {
-    display: flex;
-}
-
-#input__checkbox:checked+#menu {
-    display: none;
 }
 
 /*** Introduction (Home) Section ***/
@@ -572,7 +569,8 @@ section {
         flex: 1 1 0%;
     }
 
-    .flex--menu {
+    /* Show the Nav Bar Menu (even when hidden by Hamburger checkbox) */
+    #input__checkbox:checked+.flex--menu, .flex--menu {
         flex: 1 1 85%;
         display: flex;
     }
