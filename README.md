@@ -11,7 +11,7 @@ The design is a 'mobile first' responsive design that also support Tablet & Desk
 Since the site only use HTML & CSS, there is limited support for interaction. The mobile version supports the hamburger menu button though, and the menu can be collapsed & expanded by pressing the hamburger button. The site also supports ‘dark theme’ (configured through the operating system settings). All images, except the profile picture and the 'artistic images' in the project section, are 'formatted' as svg images to scale seamlessly to different resolutions. The 'artistic images' are png formatted to preserve the details of the image at a reasonable file size, and the profile picture is jpg formatted as that is the only format available for that particular image.
 
 Known problems:
-1. A thin vertical line appears to the left of the text gradients when the site is printed of some unknown reason.
+1. None
 
 Notes:
 1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile at this time.
