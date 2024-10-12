@@ -410,7 +410,8 @@ section {
 /*** Tech Stack Section ***/
 
 .flex-row-wrap__gap--tech-stack {
-    gap: 7rem;
+    column-gap: 10rem;
+    row-gap: 6rem;
 }
 
 .flex-row-wrap__margin--tech-stack {
@@ -418,7 +419,7 @@ section {
 }
 
 .image__size--tech-stack {
-    width: 12rem;
+    width: 11rem;
     height: auto;
 }
 
