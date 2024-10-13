@@ -455,7 +455,7 @@ section {
     width: 100%;
     height: auto;
     min-width: 50vw;
-    border-radius: 16px;
+    border-radius: 20px;
     transition: all 0.1s ease-in;
     font-size: 1.6rem;
     display: flex;
@@ -476,8 +476,8 @@ section {
 
 .card__figure {
     padding: 0;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .card__image {
