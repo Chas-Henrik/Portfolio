@@ -476,6 +476,8 @@ section {
 
 .card__figure {
     padding: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 .card__image {
@@ -660,7 +662,6 @@ section {
         height: 56.7rem;
         min-width: 37.3rem;
         min-height: 56.7rem;
-        border-radius: 16px;
     }
 
     .card__title {
