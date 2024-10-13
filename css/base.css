@@ -8,6 +8,7 @@
     /* Fonts*/
     --primary-font: "Poppins", sans-serif;
     --secondary-font: "DM Sans", sans-serif;
+    --logo-font: "Noto Sans Mono", monospace; 
 
     /* Theme colors */
     --background-light-mode: #FFFFFF;
@@ -47,13 +48,6 @@
     --gradient-coffee-start: #B106B1;
     --gradient-coffee-end: #C500A8;
 
-}
-
-.noto-sans-mono-normal {
-    font-family: "Noto Sans Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
 }
 
 .gradient-logo {
