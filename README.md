@@ -25,7 +25,7 @@ HTML står för 'Hyper Text Markup Language' och används för att skapa och str
 
 Semantisk HTML innebär att man använder HTML-element som tydligt beskriver sitt innehåll och sin funktion på ett sätt som är meningsfullt för både människor, maskiner, sökmotorer och skärmläsare.
 Icke semantiska HTML element som `<div>` och `<span>` ger ingen tydlig indikation på vad innehållet representerar medan semantiska element ger en starkare struktur och förklaring till innehållet, vilket gör det lättare att förstå för både utvecklare och teknologier som bearbetar webbsidor (t.ex. sökmotorer och skärmläsare). 
-Exempel på semantiska element:
+Exempel på semantiska element är:
 - `<header>`
 - `<nav>`
 - `<main>`
