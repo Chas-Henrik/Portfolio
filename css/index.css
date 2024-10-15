@@ -376,6 +376,7 @@ section {
 .grid {
     width: 100%;
     display: grid;
+    justify-items: left;
     align-items: start;
     grid-template-columns: 75fr 25fr;
     grid-template-rows: auto;
@@ -389,11 +390,6 @@ section {
 
 .grid * {
     display: inline-block;
-}
-
-.grid > * {
-    align-self: start;
-    justify-self: left;
 }
 
 .grid__item--role {
