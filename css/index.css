@@ -388,10 +388,6 @@ section {
     margin: 2rem 0;
 }
 
-.grid * {
-    display: inline-block;
-}
-
 .grid__item--role {
     grid-area: role;
 }
@@ -406,7 +402,7 @@ section {
 }
 
 .grid__figure {
-    display: inline-flex;
+    display: flex;
     align-items: center;
 }
 
