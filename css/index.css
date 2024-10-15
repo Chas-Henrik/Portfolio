@@ -377,7 +377,7 @@ section {
     width: 100%;
     display: grid;
     align-items: start;
-    grid-template-columns: 6fr 4fr;
+    grid-template-columns: 75fr 25fr;
     grid-template-rows: auto;
     grid-template-areas: "role type"
         "provider date"
@@ -392,7 +392,7 @@ section {
 }
 
 .grid > * {
-    align-self: center;
+    align-self: start;
     justify-self: left;
 }
 
@@ -661,7 +661,6 @@ section {
     }
     
     .grid--education {
-        grid-template-columns: 7fr 3fr;
         grid-template-areas: "role type"
         "provider date";
     }
