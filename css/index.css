@@ -170,7 +170,7 @@ section {
     letter-spacing: -1px;
 }
 
-.paragraph__size--grid-span {
+.paragraph__size--grid-fig-caption {
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 2.8rem;
@@ -387,9 +387,17 @@ section {
     margin: 2rem 0;
 }
 
+.grid * {
+    display: inline-block;
+}
+
+.grid > * {
+    align-self: center;
+    justify-self: left;
+}
+
 .grid__item--role {
     grid-area: role;
-    justify-self: left;
 }
 
 .grid__item--type {
@@ -401,9 +409,19 @@ section {
     justify-self: right;
 }
 
+.grid__figure {
+    display: inline-flex;
+    align-items: center;
+}
+
+.grid__figure > img {
+    width: 1.6rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+}
+
 .grid__item--provider {
     grid-area: provider;
-    justify-self: left;
 }
 
 .grid__item--date {
@@ -414,14 +432,6 @@ section {
 
 .grid__item--location {
     grid-area: location;
-    justify-self: left;
-}
-
-.grid span img {
-    width: 1.6rem;
-    height: 1.2rem;
-    vertical-align: middle;
-    margin-right: 0.5rem;
 }
 
 /*** Tech Stack Section ***/
@@ -618,10 +628,7 @@ section {
     }
 
     .grid--experience {
-        width: 100%;
-        display: grid;
         grid-template-columns: 6fr 3fr 4fr;
-        grid-template-rows: auto;
         grid-template-areas: "role role type"
             "provider location date";
     }
@@ -646,13 +653,15 @@ section {
         order: 4;
     }
 
+    /* We must explicitly remove the location grid item, so the grid doesn't put it in implicitly */
+    .grid--education > .grid__item--location {
+        display: none;
+    }
+    
     .grid--education {
-        width: 100%;
-        display: grid;
         grid-template-columns: 7fr 3fr;
-        grid-template-rows: auto;
-        grid-template-areas: 'role type'
-            'provider date';
+        grid-template-areas: "role type"
+        "provider date";
     }
 
     /*** Projects Section ***/
