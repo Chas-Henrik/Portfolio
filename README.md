@@ -11,7 +11,7 @@ The design is a 'mobile first' responsive design that also support Tablet & Desk
 Since the site only use HTML & CSS, there is limited support for interaction. The mobile version supports the hamburger menu button though, and the menu can be collapsed and expanded when pressing the hamburger button. The site also supports ‘dark theme’ (configured through the operating system settings). All images, except the profile picture and the 'artistic images' in the project section are 'formatted' as svg images to scale seamlessly to different resolutions. The 'artistic images' are png formatted to preserve the details of the image with a reasonable file size, and the profile picture is jpg formatted since that's the only format available for that particular image.
 
 The site is published on Netlify (se link below):  
-<a href="https://chas-henrik-u01-designskiss.netlify.app/" target="_blank">https://chas-henrik-u01-designskiss.netlify.app/</a>
+[https://chas-henrik-u01-designskiss.netlify.app/](https://chas-henrik-u01-designskiss.netlify.app/)
 
 Known problems:
 1. Contact gradient don't render properly when printed with Google Chrome.
