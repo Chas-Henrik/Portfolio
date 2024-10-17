@@ -378,7 +378,7 @@ section {
     display: grid;
     justify-items: left;
     align-items: start;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 75fr 25fr;
     grid-template-rows: auto;
     grid-template-areas: "role type"
         "provider date"
