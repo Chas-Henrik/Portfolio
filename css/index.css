@@ -401,9 +401,9 @@ section {
     justify-self: right;
 }
 
-.grid__figure {
-    display: flex;
-    align-items: center;
+.grid__figure > * {
+    display: inline;
+    vertical-align: middle;
 }
 
 .grid__figure > img {
