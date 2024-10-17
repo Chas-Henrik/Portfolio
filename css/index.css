@@ -419,7 +419,6 @@ section {
 .grid__item--date {
     grid-area: date;
     justify-self: right;
-    white-space: nowrap;
 }
 
 .grid__item--location {
