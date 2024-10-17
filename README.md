@@ -17,6 +17,9 @@ Known problems:
 Notes:
 1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile at this time.
 
+The site is published at:
+[https://chas-henrik-u01-designskiss.netlify.app/](https://chas-henrik-u01-designskiss.netlify.app/)
+
 ## Frågor:
 
 ### Vad är HTML och dess roll inom frontend? Vad menas med semantiskt html?
