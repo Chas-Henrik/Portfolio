@@ -10,15 +10,15 @@ This is a multi-page, 'Portfolio Site' consisting of 5 pages:
 The design is a 'mobile first' responsive design that also support Tablet & Desktops. Breakpoints have been set at 600px for Mobile and 1024px for Desktop's, and everything between 600px and 1024px is intended for Tablets and small Desktops. An additional content driven breakpoint has been set at 1350px (prior to the 1024px breakpoint), to prevent navigation bar overflow and 'profile picture bouncing'.
 Since the site only use HTML & CSS, there is limited support for interaction. The mobile version supports the hamburger menu button though, and the menu can be collapsed and expanded when pressing the hamburger button. The site also supports ‘dark theme’ (configured through the operating system settings). All images, except the profile picture and the 'artistic images' in the project section are 'formatted' as svg images to scale seamlessly to different resolutions. The 'artistic images' are png formatted to preserve the details of the image with a reasonable file size, and the profile picture is jpg formatted since that's the only format available for that particular image.
 
+The site is published at:  
+[https://chas-henrik-u01-designskiss.netlify.app/](https://chas-henrik-u01-designskiss.netlify.app/){:target="_blank"}
+
 Known problems:
 1. Contact gradient don't render properly when printed with Google Chrome.
 2. Gradients doesn't render properly when printed with Safari on iPad and iPhone.
 
 Notes:
 1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile at this time.
-
-The site is published at:
-[https://chas-henrik-u01-designskiss.netlify.app/](https://chas-henrik-u01-designskiss.netlify.app/)
 
 ## Frågor:
 
