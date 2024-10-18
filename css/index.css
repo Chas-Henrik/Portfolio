@@ -484,12 +484,10 @@ section {
 }
 
 .card__image {
-    padding: 0;
     flex: 53;
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover;
     overflow: hidden;
 }
 
