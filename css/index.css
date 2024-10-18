@@ -378,7 +378,7 @@ section {
     display: grid;
     justify-items: left;
     align-items: start;
-    grid-template-columns: 75fr 25fr;
+    grid-template-columns: 65fr 35fr;
     grid-template-rows: auto;
     grid-template-areas: "role type"
         "provider date"
@@ -568,8 +568,8 @@ section {
 
 /*** Media Queries ***/
 
-/* On screens that are 601px to 1024px (Tablets & Medium Desktops) */
-@media (min-width: 601px) {
+/* On screens that are 768px to 1024px (Tablets & Small Desktops) */
+@media (min-width: 768px) {
 
     html {
         font-size: calc(62.5% / 1.25);
@@ -692,7 +692,7 @@ section {
     }
 }
 
-/* On screens that are 1024px or more (Large Desktops) */
+/* On screens that are 1024px or more (Medium & Large Desktops) */
 @media (min-width: 1024px) {
 
     html {
@@ -781,7 +781,7 @@ section {
     }
 }
 
-/* On screens that are larger than 1350px (Large Desktops) */
+/* Content driven breakpoint for screens that are larger than 1350px (Large Desktops) */
 @media (min-width: 1350px) {
     html {
         font-size: 62.5%;
