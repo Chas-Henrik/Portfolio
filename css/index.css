@@ -689,6 +689,10 @@ section {
         min-height: 56.7rem;
     }
 
+    .card__image {
+        margin-top: 0px; /* Workaround is not needed for Tablets & Desktops */
+    }
+
     .card__description {
         flex: 23;
     }
