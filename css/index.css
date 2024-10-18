@@ -658,23 +658,6 @@ section {
         "provider date";
     }
 
-    /*** Projects Section ***/
-
-    .card {
-        width: 37.3rem;
-        height: 56.7rem;
-        min-width: 37.3rem;
-        min-height: 56.7rem;
-    }
-
-    .card__description {
-        flex: 23;
-    }
-
-    .paragraph__size--card-footnote {
-        font-weight: 400;
-    }
-
     /*** General Selectors ***/
 
     .block__display--mobile {
@@ -691,6 +674,27 @@ section {
 
     .flex__display--tablet-desktop {
         display: flex;
+    }
+}
+
+/* Content driven breakpoint for screens that are larger than 815px (Tablets & Desktops) */
+@media (min-width: 815px) {
+
+    /*** Projects Section ***/
+
+    .card {
+        width: 37.3rem;
+        height: 56.7rem;
+        min-width: 37.3rem;
+        min-height: 56.7rem;
+    }
+
+    .card__description {
+        flex: 23;
+    }
+
+    .paragraph__size--card-footnote {
+        font-weight: 400;
     }
 }
 
