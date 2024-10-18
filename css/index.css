@@ -487,6 +487,7 @@ section {
 }
 
 .card__image {
+    margin-top: -10px; /* Workaround to hide the 'rounded top corners artifact' that might appear when the image container has rounded corners */
     padding: 0;
     display: block;
     width: 100%;

@@ -17,6 +17,7 @@ The site is published on Netlify (se link below):
 Known problems:
 1. Contact gradient don't render properly when printed with Google Chrome.
 2. Gradients doesn't render properly when printed with Safari on iPad and iPhone.
+3. Weird artifact appears on the top corners at the project images when the card is resized to greater width. The problem has been worked around by setting the image margin-top to -10px.
 
 Notes:
 1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile at this time.
