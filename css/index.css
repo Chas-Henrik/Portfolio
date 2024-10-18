@@ -568,8 +568,8 @@ section {
 
 /*** Media Queries ***/
 
-/* On screens that are 768px to 1024px (Tablets & Small Desktops) */
-@media (min-width: 768px) {
+/* On screens that are 815px to 1024px (Tablets & Small Desktops) */
+@media (min-width: 815px) {
 
     html {
         font-size: calc(62.5% / 1.25);
