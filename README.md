@@ -7,7 +7,7 @@ This is a multi-page, 'Portfolio Site' consisting of 5 pages:
 - Projects
 - Contact
 
-The design is a 'mobile first' responsive design that also support Tablets and Desktops. Breakpoints have been set at 768px for Tablets and Small Desktops, and 1024px for Medium and Large Desktop's.  
+The design is a 'Mobile First' responsive design that also support Tablet's and Desktop's. Breakpoints have been set at 768px for Tablet's and Small Desktop's and 1024px for Medium and Large Desktop's.  
   
 Two additional content driven breakpoints have also been set at 815px and 1350px:  
 - The 815px breakpoint achieves a smooth transition from the 'mobile full screen project card' as the card turns directly into two cards when passing the breakpoint.  
@@ -15,7 +15,7 @@ Two additional content driven breakpoints have also been set at 815px and 1350px
   
 Since the site only use HTML & CSS, there is limited support for interaction. The mobile version supports the hamburger menu button though, and the menu can be collapsed and expanded when pressing the hamburger button. The site also supports ‘dark theme’ (configured through the operating system settings).  
   
-All images, except the profile picture and the 'artistic images' (in the project section) are 'formatted' as svg images to scale seamlessly to different resolutions. The 'artistic images' are png formatted to preserve the details of the image while keeping a reasonable file size, and the profile picture is jpg formatted since that's the only format available for that particular image.  
+All images, except the profile picture and the 'artistic images' (in the project section) are 'formatted' as svg images to scale seamlessly with different screen resolutions. The 'artistic images' are png formatted to preserve the details of the image while keeping a reasonable file size, and the profile picture is jpg formatted as that was the only available format for that particular image.  
   
 The `display: inline; vertical-align: middle;` solution has been selected over the 'flex-box' solution for the 'icon & text grid cells' even though the icon vertical alignment is slightly worse. The reason for this is that the 'line wrap behavior' is way better for the 'vertical-align' solution when the (icon & text) line run out of horizontal space.
 
