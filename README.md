@@ -7,18 +7,19 @@ This is a multi-page, 'Portfolio Site' consisting of 5 pages:
 - Projects
 - Contact
 
-The design is a 'mobile first' responsive design that also support Tablet & Desktops. Breakpoints have been set at 768px for Tablets and Small Desktops and 1024px for Medium and Large Desktop's.  
+The design is a 'mobile first' responsive design that also support Tablets and Desktops. Breakpoints have been set at 768px for Tablets and Small Desktops, and 1024px for Medium and Large Desktop's.  
+  
 Two additional content driven breakpoints have also been set at 815px and 1350px:  
 - The 815px breakpoint achieves a smooth transition from the 'mobile full screen project card' as the card turns directly into two cards when passing the breakpoint.  
 - The 1350px breakpoint prevents navigation bar overflow and 'profile picture bouncing' when resizing the Web Browser on a Desktop.  
   
 Since the site only use HTML & CSS, there is limited support for interaction. The mobile version supports the hamburger menu button though, and the menu can be collapsed and expanded when pressing the hamburger button. The site also supports ‘dark theme’ (configured through the operating system settings).  
   
-All images, except the profile picture and the 'artistic images' in the project section are 'formatted' as svg images to scale seamlessly to different resolutions. The 'artistic images' are png formatted to preserve the details of the image with a reasonable file size, and the profile picture is jpg formatted since that's the only format available for that particular image.  
+All images, except the profile picture and the 'artistic images' (in the project section) are 'formatted' as svg images to scale seamlessly to different resolutions. The 'artistic images' are png formatted to preserve the details of the image while keeping a reasonable file size, and the profile picture is jpg formatted since that's the only format available for that particular image.  
   
-The `display: inline; vertical-align: middle;` solution has been selected over the 'flex-box' solution for the icon & text grid cells even though the icon vertical alignment is slightly worse. The reason for this is that the 'line wrap behavior' is way better for the 'vertical-align' solution when the (icon & text) line run out of horizontal space.
+The `display: inline; vertical-align: middle;` solution has been selected over the 'flex-box' solution for the 'icon & text grid cells' even though the icon vertical alignment is slightly worse. The reason for this is that the 'line wrap behavior' is way better for the 'vertical-align' solution when the (icon & text) line run out of horizontal space.
 
-The site is published on Netlify (se link below):  
+The site has been published on Netlify (se link below):  
 [https://chas-henrik-u01-designskiss.netlify.app/](https://chas-henrik-u01-designskiss.netlify.app/)
 
 Known problems:
@@ -28,7 +29,7 @@ Known problems:
 
 Notes:
 1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile at this time.
-2. The Tech Stack icon sizes deviates slightly from the Figma design as all icons have been scaled (while keeping their aspect ratio) to a width of 11rem. This is to align them perfectly underneath each other when the flex-box wraps, and to shrink them for Tablet & Mobile screens as part of a responsive design.
+2. The Tech Stack icon sizes deviates slightly from the Figma design as all icons have been scaled (while keeping their aspect ratio) to a width of 11rem. This is to align them perfectly underneath each other when the flex-box wraps, and to resize them as part of a responsive design.
 
 ## Frågor:
 
