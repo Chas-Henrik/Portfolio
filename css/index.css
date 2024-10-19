@@ -486,7 +486,7 @@ section {
 }
 
 .card__content {
-    flex: 60;
+    flex: 1; /* Assure the content takes up the remaining space */
     height: auto;
     padding: 1.5rem 2.5rem;
     display: flex;
