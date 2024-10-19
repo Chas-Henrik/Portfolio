@@ -19,13 +19,13 @@ All images, except the profile picture and the 'artistic images' (in the project
   
 The `display: inline; vertical-align: middle;` solution has been selected over the 'flex-box' solution for the 'icon & text grid cells' even though the icon vertical alignment is slightly worse. The reason for this is that the 'line wrap behavior' is way better for the 'vertical-align' solution when the (icon & text) line run out of horizontal space.
 
-The site has been published on Netlify (se link below):  
+The site has also been published on Netlify (see link below):  
 [https://chas-henrik-u01-designskiss.netlify.app/](https://chas-henrik-u01-designskiss.netlify.app/)
 
 Known problems:
-1. Contact gradient don't render properly when printed with Google Chrome.
-2. Gradients doesn't render properly when printed with Safari on iPad and iPhone.
-3. Weird artifact appears on the top corners at the project images when the card is resized to greater width. The problem has been worked around by setting the image margin-top to -10px.
+1. Contact gradient doesn't render properly when printed with Google Chrome.
+2. Gradients don't render properly when printed with Safari on iPad and iPhone.
+3. Weird artifact appears on the top corners at the project images when the card is resized to a 'full screen image'. The problem has been worked around by setting the image margin-top to -10px.
 
 Notes:
 1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile at this time.
