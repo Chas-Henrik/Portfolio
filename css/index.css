@@ -470,7 +470,6 @@ section {
 }
 
 .card__figure {
-    flex: 48;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -487,7 +486,7 @@ section {
 }
 
 .card__content {
-    flex: 52;
+    flex: 60;
     height: auto;
     padding: 1.5rem 2.5rem;
     display: flex;
