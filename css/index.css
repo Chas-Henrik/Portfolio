@@ -3,7 +3,7 @@
 /*** General Selectors ***/
 
 :root {
-    --main-horizontal-margin: 12.5vw;
+    --main-horizontal-margin: 11.5vw;
 }
 
 html {
@@ -444,8 +444,8 @@ section {
 /*** Projects Section ***/
 
 .flex-row-wrap__gap--project-card {
-    column-gap: 5rem;
-    row-gap: 6.5rem;
+    column-gap: 4rem;
+    row-gap: 6rem;
 }
 
 .flex-row-wrap__margin--project-card {
