@@ -461,8 +461,6 @@ section {
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: stretch;
     overflow: hidden;
     box-shadow: var(--box-shadow-light-mode);
 }
@@ -487,7 +485,6 @@ section {
 }
 
 .card__image {
-    margin-top: -10px; /* Workaround to hide the 'rounded top corners artifact' that might appear when the image container has rounded corners */
     padding: 0;
     display: block;
     width: 100%;
@@ -509,7 +506,6 @@ section {
 
 .card__footnote {
     flex: 5;
-    height: 10%;
 }
 
 .card__footer {
@@ -687,10 +683,6 @@ section {
         height: 56.7rem;
         min-width: 37.3rem;
         min-height: 56.7rem;
-    }
-
-    .card__image {
-        margin-top: 0px; /* Workaround is not needed for Tablets & Desktops */
     }
 
     .card__description {
