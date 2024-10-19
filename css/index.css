@@ -489,19 +489,15 @@ section {
 .card__content {
     flex: 52;
     height: auto;
-    padding: 1rem 2.5rem;
+    padding: 1.5rem 2.5rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-}
-
-.card__content>* {
-    margin: 1rem 0;
-    overflow: hidden;
+    gap: 1rem;
 }
 
 .card__title{
-    flex: 1 1 10%;
+    flex: 1 1 15%;
     text-align: center;
     text-wrap: nowrap;
     display: flex;
@@ -510,7 +506,11 @@ section {
 }
 
 .card__description {
-    flex: 1 1 50%;
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
 }
 
 .card__footnote {
@@ -518,6 +518,7 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
 }
 
 .card__footer {
