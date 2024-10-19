@@ -29,6 +29,7 @@ Known problems:
 Notes:
 1. The GitHub, Twitter & LinkedIn icons have not been linked to any profile at this time.
 2. The Tech Stack icon sizes deviates slightly from the Figma design as all icons have been scaled (while keeping their aspect ratio) to a width of 11rem. This is to align them perfectly underneath each other when the flex-box wraps, and to resize them as part of a responsive design.
+3. Deviations from Figma: The Card footer symmetric (it is asymmetric in Figma).
 
 ## Frågor:
 
