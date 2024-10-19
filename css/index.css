@@ -116,9 +116,9 @@ section {
 }
 
 .heading__size--card-title {
-    font-size: 2.8rem;
-    line-height: 2.8rem;
-    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+    font-weight: 600;
 }
 
 .heading__margin--vertical {
@@ -470,8 +470,6 @@ section {
 }
 
 .card__figure {
-    padding: 0;
-    margin: 0;
     width: 100%;
     height: fit-content;
     border-top-left-radius: inherit;
@@ -687,6 +685,14 @@ section {
 /* Content driven breakpoint for screens that are larger than 815px (Tablets & Desktops) */
 @media (min-width: 815px) {
 
+    /*** Font Sizes ***/
+
+    .heading__size--card-title {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+        font-weight: 500;
+    }
+
     /*** Projects Section ***/
 
     .card {
@@ -694,6 +700,10 @@ section {
         height: 56.7rem;
         min-width: 37.3rem;
         min-height: 56.7rem;
+    }
+
+    .card__footer {
+        width: 90%; /* Needed to comply with weird stuff from Figma */
     }
 
     .paragraph__size--card-footnote {
