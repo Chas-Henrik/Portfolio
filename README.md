@@ -23,8 +23,8 @@ A 'three column menu' has been used for Tablet's & Small Desktop's in favor of a
 
 The site is published on Netlify (see hyperlink below):  
 [https://chas-henrik-u01-designskiss.netlify.app/](https://chas-henrik-u01-designskiss.netlify.app/)
-
-
+  
+  
 *Known problems:*
 1. Contact gradient doesn't render properly when printed with Google Chrome.
 2. Gradients don't render properly when printed with Safari on iPad and iPhone.
