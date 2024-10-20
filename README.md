@@ -35,7 +35,7 @@ The site is published on Netlify (see hyperlink below):
 *Deviations from Figma:*
 1. The Tech Stack icons have been scaled to a unified width of 11rem (while keeping their aspect ratio). This is to align them perfectly underneath each other when the flex-box wraps, and to resize them as part of a responsive design.
 2. The Card footer is symmetric (it is asymmetric in Figma).
-3. The Card Title text is centered and use a 28px line-height & 28px font-size (instead of the Figma specified 26px line-height & 28px font-size), to avoid text-clipping on iOS devices.
+3. The Card Title text is centered and use a 28px line-height & 28px font-size (instead of the Figma specified 26px line-height & 28px font-size), to avoid text-clipping on Safari.
 
 ## Frågor:
 
