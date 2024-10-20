@@ -7,7 +7,7 @@ This is a multi-page, 'Portfolio Site' consisting of 5 pages:
 - Projects
 - Contact
 
-The design is a 'Mobile First' responsive design that also support Tablet's and Desktop's. Breakpoints have been set at 768px for Tablet's & Small Desktop's and 1024px for Medium & Large Desktop's.  
+The design is a 'Mobile First' responsive design that also support Tablet's and Desktop's. Breakpoints have been set at 768px for Tablet's & Small Desktop's, and 1024px for Medium & Large Desktop's.  
   
 Two additional content driven breakpoints have been set at 815px and 1350px:  
 - The 815px breakpoint achieves a smooth transition from the 'mobile full screen project card' as the card turns directly into two cards when passing the breakpoint.  
@@ -17,24 +17,25 @@ Since the site only use HTML & CSS, there is limited support for interaction. Th
   
 All images, except the profile picture and the 'artistic images' (in the project section) are 'formatted' as svg images to scale seamlessly with different screen resolutions. The 'artistic images' are png formatted to preserve the details of the image while keeping a reasonable file size. The profile picture is jpg formatted as that's the only available format for that particular image.  
   
-The `display: inline; vertical-align: middle;` solution has been selected over the 'flex-box' solution for the 'icon & text grid cells' even though the icon vertical alignment is slightly worse. The reason for this is that the 'line wrap behavior' is way better for the 'vertical-align' solution when the (icon & text) line run out of horizontal space.
+The `display: inline; vertical-align: middle;` solution has been selected over the 'flex-box' solution for the 'icon & text grid cells' even though the icon vertical alignment is slightly worse. The reason for this, is that the 'line wrap behavior' is way better for the 'vertical-align' solution when the (icon & text) line run out of horizontal space.
   
 A 'three column menu' has been used for Tablet's & Small Desktop's in favor of a the 'two column menu' to reduce the header height as much as possible.
 
 The site is published on Netlify (see hyperlink below):  
 [https://chas-henrik-u01-designskiss.netlify.app/](https://chas-henrik-u01-designskiss.netlify.app/)
+  
 
-Known problems:
+*Known problems:*
 1. Contact gradient doesn't render properly when printed with Google Chrome.
 2. Gradients don't render properly when printed with Safari on iPad and iPhone.
 
-Notes:
+*Notes:*
 1. The 'Live Preview', GitHub, Twitter & LinkedIn icons have not been linked to any profile at this time.
 
-Deviations from Figma:
-1. The Tech Stack icon sizes deviates slightly from the Figma design as all icons have been scaled (while keeping their aspect ratio) to a width of 11rem. This is to align them perfectly underneath each other when the flex-box wraps, and to resize them as part of a responsive design.
+*Deviations from Figma:*
+1. The Tech Stack icons have been scaled to a unified width of 11rem (while keeping their aspect ratio). This is to align them perfectly underneath each other when the flex-box wraps, and to resize them as part of a responsive design.
 2. The Card footer is symmetric (it is asymmetric in Figma).
-3. The Card Title text is centered and use a 28px line-height & 28px font-size (instead of 26px line-height & 28px font-size), to avoid text-clipping on iOS devices.
+3. The Card Title text is centered and use a 28px line-height & 28px font-size (instead of the Figma specified 26px line-height & 28px font-size), to avoid text-clipping on iOS devices.
 
 ## Frågor:
 
