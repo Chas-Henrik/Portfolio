@@ -25,14 +25,14 @@ The site is published on Netlify (see hyperlink below):
 [https://chas-henrik-u01-designskiss.netlify.app/](https://chas-henrik-u01-designskiss.netlify.app/)
   
 
-*Known problems:*
+**Known problems:**
 1. Contact gradient doesn't render properly when printed with Google Chrome.
 2. Gradients don't render properly when printed with Safari on iPad and iPhone.
 
-*Notes:*
+**Notes:**
 1. The 'Live Preview', GitHub, Twitter & LinkedIn icons have not been linked to any profile at this time.
 
-*Deviations from Figma:*
+**Deviations from Figma:**
 1. The Tech Stack icons have been scaled to a unified width of 11rem (while keeping their aspect ratio). This is to align them perfectly underneath each other when the flex-box wraps, and to resize them as part of a responsive design.
 2. The Card footer is symmetric (it is asymmetric in Figma).
 3. The Card Title text is centered and use a 28px line-height & 28px font-size (instead of the Figma specified 26px line-height & 28px font-size), to avoid text-clipping on iOS devices.
