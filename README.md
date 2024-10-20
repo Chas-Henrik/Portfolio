@@ -74,7 +74,7 @@ CSS filen länkas in från HTML sidan med `<link>` elementet (t.ex. `<link rel="
 En responsiv design anpassar layouten och innehållet (text, bilder etc.) till skärmstorleken.
 
 Man kan använda följande 'metoder' för att utveckla responsiva sidor:
-1. Media Queries (t.ex. `@media (min-width: 601px)`).
+1. Media Queries (t.ex. `@media (min-width: 768px)`).
 2. Använd relativa dimensioner (%, em, rem, vh, vw)
 3. Använd rätt relativ enhet så att objektet skalar bra med skärmstorleken.
 4. Designa utifrån innehållet (ibland behövs fler Media Queries för att innehållet ska vara 'läsbart' för alla skärm resolutioner)
